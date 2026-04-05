@@ -3,6 +3,24 @@
   "nodes": [
     {
       "node_id": 0,
+      "node_type": "claude",
+      "title": "While we are at it lets add a default tooltip to the emoji shuffle button that says\n\"more glory\", and have that apply by default (probably through the basenode) as the\ndefault when nodes have that button",
+      "uuid": "ab6b35a29ac84c05898fe54a8cf3c807",
+      "x": 1198.117753506975,
+      "y": -1420.1753183208782,
+      "width": 891.8478317605588,
+      "height": 170.0,
+      "z_value": 10.0,
+      "ports_visible": false,
+      "emoji": "\ud83d\ude17",
+      "depth_front": true,
+      "folder_path": "C:\\Users\\thisg\\.claude\\projects\\C--Users-thisg-Desktop-Intricate",
+      "body_text": "\n\u203a we forgot to make an icon for the video node\n\nLet me find the VideoNode first to understand what it does, then craft an icon for it.\nThe icon files already exist (`icons/video_node.png` and `icons/video_node.ico`), but the icon isn't registered in `settings.toml`. Let me check the current icon section and take a look at the existing icon to see if it's a real icon or just a placeholder.\nThe icon exists and looks great \u2014 warm cream play button with film sprocket dots, matching the family style perfectly. It just needs to be registered in `settings.toml`. Let me find the icons section.\nFound it \u2014 the settings file is at `C:\\Users\\thisg\\Desktop\\The Settlers\\settings.toml`. The icon files exist and look good, just need to register the video icon. Let me add it.\nDone. The icon was already created (play button with film sprocket dots, warm cream on transparent \u2014 fits the family nicely), it just wasn't wired up. Added `video = \"video_node.ico\"` to `[theme.icons]` in `settings.toml`, so `Theme.iconVideo` will now res\nDone. The icon was already created (play button with film sprocket dots, warm cream on transparent \u2014 fits the family nicely), it just wasn't wired up. Added `video = \"video_node.ico\"` to `[theme.icons]` in `settings.toml`, so `Theme.iconVideo` will now resolve automatically.\nolve automatically.\n\n\n\u203a lovely, thanks, speaking icons, the zoom slider handle in the bottom toolbar, can you apply the curtains icon to it please?  it should have all the setup already to accept png icons as handles from PrettySlider\n\nDone. Added `use_scroll_icon=True` to the zoom slider at line 876. It'll now pick up the PNG handle icon from `[theme.sliders] slider_handle_icon` in settings.toml \u2014 make sure that key points to the curtains icon file (e.g. `slider_handle_icon = \"curtains_\nnode.ico\"`).\n\n\n\u203a lovely, thank you, and then we need to take the slider that is in the left sidebar under the buttons to create new nodes, and have that one do the same, use PrettySlider and pick up the same icon\n\nDone. The fog slider now uses `pretty_slider()` with `use_scroll_icon=True`, matching the zoom slider's pattern. It picks up the same scroll-handle icon from `settings.toml` and gets the themed groove/handle styling from `PrettySlider` instead of inline QS\nS.\n\n\n\u203a 2026-04-04 19:18:18 - nodal - TRACE - [boot:13] constructing IntricateApp window\n2026-04-04 19:18:18 - nodal - TRACE - [boot:13a] Theme.icon at window construction = <bound method Theme.icon of <class 'graphics.Theme.Theme'>>\nTraceback (most recent call last):\n  File \"C:\\Users\\thisg\\Desktop\\Intricate\\main_window.py\", line 636, in _on_fog_slider_changed\n    self.fog_progress.setValue(value)\n    ^^^^^^^^^^^^^^^^^\nAttributeError: 'IntricateApp' object has no attribute 'fog_progress'\n2026-04-04 19:18:19 - nodal - TRACE - [boot:14] IntricateApp window constructed\n2026-04-04 19:18:19 - nodal - TRACE - [boot:15] window shown \u2014 entering event loop\n\nThe `pretty_slider` helper sets the initial value during construction, which fires `valueChanged` before `fog_progress` is assigned on line 611. The guard skips the update during that early si\ngnal and works normally once both widgets exist.\n\n\n\u203a lovely, Thank you\n\n\n\nYou're welcome! Let me know whenever you need anything.\n\n\n\u203a i took some memos while arranging some notes in the graph, and then connected them to your input just now, can you summarize them, want to see if you get the context right if I just attach the actual memos to your input\n\nGot it, four feature ideas from your graph:\n\n1. **White border on video nodes** \u2014 Add a toggle/option to render a white border around video nodes (similar to how image nodes or other types have border styling).\n\n2. **Text overlay on about nodes** \u2014 Render the AboutNode's text as a visual overlay directly on the node, rather than (or in addition to) just being editable content.\n\n3. **Background screensnap for alpha** \u2014 Capture the background view behind the canvas (without any nodes/wires/UI) so you get a clean alpha channel \u2014 useful for compositing or export.\n\n4. **Scrollbar on PrettyEdit** \u2014 Add a scrollbar to the PrettyEdit widget so longer content is scrollable rather than clipped or overflowing.\n\nSounds like a mix of visual polish (1, 2), a utility/expor\nGot it, four feature ideas from your graph:\n\n1. **White border on video nodes** \u2014 Add a toggle/option to render a white border around video nodes (similar to how image nodes or other types have border styling).\n\n2. **Text overlay on about nodes** \u2014 Render the AboutNode's text as a visual overlay directly on the node, rather than (or in addition to) just being editable content.\n\n3. **Background screensnap for alpha** \u2014 Capture the background view behind the canvas (without any nodes/wires/UI) so you get a clean alpha channel \u2014 useful for compositing or export.\n\n4. **Scrollbar on PrettyEdit** \u2014 Add a scrollbar to the PrettyEdit widget so longer content is scrollable rather than clipped or overflowing.\n\nSounds like a mix of visual polish (1, 2), a utility/export feature (3), and a UX fix (4). Context makes sense?\nt feature (3), and a UX fix (4). Context makes sense?\n\n\n\u203a 1. yes, optional toggle button, but keep the ivory white text default as the color and within the border rather than replace it.  2.  its just a paint refresh issue, sometimes when i edit about node while im writing new text on them the existing text that im replacing is visible over the current one im writing.  3.  yes, exactly, that, i want to take snapshot of whatever i have my scene view set to, currently i just take a windows screenshot of it and then use the blue background since it matches standard bluescreen video effect workflows to remove the canvas itself, seems like something we can do by default with a button in the bottom toolbar, we already do similar things with the palette node, that one screenshots the canvas with it and delivers the content outside the node as an alpha channel.  4. the scrollbar on PrettyEdit should be hidden by default but leave the option in the code to invoke it with a kwarg if we ever need it, the nodes are nicely scalable so the scrollbar will not be needed.  can you look into those four as a single shot while i go make coffee?\n\nOn it \u2014 enjoy your coffee. Let me dig into all four.\nNow let me read the key files I need to edit.\nLet me check a few more things I need before implementing.\nNow let me look at how the View renders its background, and look at the imports section of main_window for what I need.\nGood. I have everything I need. Let me implement all four changes now.\n\n**Task 1: White border toggle on VideoNode**\nNow add the border toggle button and paint the border in VideoNode:\nNow add the white border paint in `paint_content`, replacing the bevel section:\nNow generate the border toggle icons:\nNow register the icons in settings. Let me find where settings are written with defaults.\nThe Theme metaclass resolves icons dynamically \u2014 `Theme.iconBorderOn` will look for `border_on` in the `[theme.icons]` section of settings. Let me check how existing icons are registered in the settings defaults.\nIcons don't need defaults \u2014 the Theme metaclass resolves them from the icons folder. The `Theme.icon()` call with `fallback_color` already handles the missing case. The icons exist in `icons/` and will be found by the Theme metaclass.\n\nLet me check how Theme resolves icon names to verify:\nI see \u2014 `Theme.iconBorderOn` will resolve via `__getattr__` to `_MISSING_ICON` sentinel, then `Theme.icon()` will use the fallback_color. But the actual icon file needs to be found. Let me check how icon files are resolved:\nI see \u2014 the `Theme.icon()` method takes a *filename* string, but `Theme.iconBorderOn` will return `_MISSING_ICON` since the icon isn't registered in settings. The filename needs to come from settings.toml's `[theme.icons]` section. Since settings.toml doesn't exist in the repo (it's generated), and the icons section has no defaults, I need to pass the filename directly rather than going through the Theme attribute. Let me check how the loop icons work:\nSo `Theme.iconLoopOff` etc. aren't defined anywhere either \u2014 they just hit the `_ThemeMeta.__getattr__` and return `_MISSING_ICON`, then `Theme.icon()` gets the sentinel and returns a circle with the fallback_color. That's the expected pattern \u2014 the fallback color is what makes the button visible. The actual `.ico` files are optional visual upgrades that users configure in settings.toml.\n\nSo my implementation is correct \u2014 `Theme.iconBorderOff` and `Theme.iconBorderOn` will use the fallback colors `#7a8a9a` and `#e1d5c6` respectively, producing colored circles. If the user later registers the icons in settings.toml, the proper icons will appear.\n\nTask 1 is done. Now Task 2:\n**Task 2: Fix AboutNode stale text paint \u2014 cache invalidation**\n**Task 3: Viewport screensnap \u2014 add helper function + bottom toolbar button**\n\nFirst, add the `snapshot_viewport` function to helpers.py:\nNow add the screensnap button to the bottom toolbar. I'll add it between the mute button and the exit button:\nNow add the `_snapshot_viewport` method. Let me find a good spot \u2014 near the other toolbar handlers:\nNow generate the screensnap icon:\nWait \u2014 the snap button uses `QIcon(Theme.icon(...))` but `Theme.icon()` returns a `QPixmap`, not a string. Let me fix that \u2014 it should use `setIcon` with a QIcon constructed from the pixmap, or just use the emoji pattern like the mute button. Actually, looking at the mute button, it uses `setText` with emojis, not icons. Let me use a simpler approach:\n**Task 4: PrettyEdit scrollbar \u2014 hidden by default with explicit policy**\nLet me do a quick syntax check on the changed files:\nAll four done. Here's the summary:\n\n---\n\n**1. White border on VideoNode** \u2014 Added a `show_border` toggle to `VideoNodeData`, a border toggle button in the button strip (alongside loop/mute), and an ivory white `(225, 213, 198)` 3px border painted inside the video rect when active. Default bevel stays when off. Persisted in session.\n\n**2. AboutNode stale text fix** \u2014 The `DeviceCoordinateCache` was retaining the old rendered pixmap after editing. Added an explicit cache invalidation cycle (`NoCache` \u2192 `DeviceCoordinateCache`) in `_on_committed()` before `update()`.\n\n**3. Viewport screensnap** \u2014 Added `snapshot_viewport()` to `utils/helpers.py` \u2014 captures the current view's scene rect to a transparent PNG (no background, just nodes/wires). Added a \ud83d\udcf7 button in the bottom toolbar between the zoom slider and mute toggle. Click saves the snap and shows the filename in the info bar (click the info to open it).\n\n**4. PrettyEdit scrollbar** \u2014 Added explicit `setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)` when `scrollbar=False` (the default), and `Qt.ScrollBarAsNeeded` when `True`. Also added `setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)` unconditionally. The `scrollbar=True` kwarg remains availa\nAll four done. Here's the summary:\n\n---\n\n**1. White border on VideoNode** \u2014 Added a `show_border` toggle to `VideoNodeData`, a border toggle button in the button strip (alongside loop/mute), and an ivory white `(225, 213, 198)` 3px border painted inside the video rect when active. Default bevel stays when off. Persisted in session.\n\n**2. AboutNode stale text fix** \u2014 The `DeviceCoordinateCache` was retaining the old rendered pixmap after editing. Added an explicit cache invalidation cycle (`NoCache` \u2192 `DeviceCoordinateCache`) in `_on_committed()` before `update()`.\n\n**3. Viewport screensnap** \u2014 Added `snapshot_viewport()` to `utils/helpers.py` \u2014 captures the current view's scene rect to a transparent PNG (no background, just nodes/wires). Added a \ud83d\udcf7 button in the bottom toolbar between the zoom slider and mute toggle. Click saves the snap and shows the filename in the info bar (click the info to open it).\n\n**4. PrettyEdit scrollbar** \u2014 Added explicit `setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)` when `scrollbar=False` (the default), and `Qt.ScrollBarAsNeeded` when `True`. Also added `setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)` unconditionally. The `scrollbar=True` kwarg remains available for LogNode/TreeNode.\nble for LogNode/TreeNode.\n\n\n\u203a yeah that worked flawlessly and beautifully, thank you, tested all four, all delivered above the grade done and ready\n\nGlad to hear all four landed cleanly! Nice session.\n\n\n\u203a there is a fourth button on the claude node toolbar row, i cant remember what it does since we forgot to add a tooltip to it, the row as i see it is 1. the default emoji glory button (fantastic) 2. toggle z depth back/forth (amazing) 3. toggle color (its so pretty it could make a grown man weep).  4. but then there is this one more button on there that has a legacy styled icon from before we added all the emoji icons.  what does it do?  i tried clicking it and nothing happened\n\nNow let me check what ClaudeNode adds on top of the base buttons. The base gives: emoji, depth, tint. ClaudeNode adds a body show/hide toggle. That's 4 buttons. But the user says button 4 has a \"legacy styled icon\" (not emoji). Let me check which button uses a pixmap icon vs emoji.\n\nThe base buttons are:\n1. Emoji button (emoji glory) \n2. Depth toggle (emoji)\n3. Tint toggle (emoji)\n\nClaudeNode adds:\n4. Body show/hide toggle \u2014 uses `Theme.claudeBodyShowIcon` / `Theme.claudeBodyHideIcon` \u2014 this is a **pixmap icon**, not an emoji\n\nBut wait \u2014 the user also mentions `_show_ports_btn`. Let me check ClaudeNode's class flags.\nSo ClaudeNode has `_show_emoji_btn` (default from base), `_has_depth_toggle = True`, the base tint button, plus the body show/hide toggle. Let me check the default for `_show_ports_btn` and `_show_emoji_btn` in BaseNode.\nSo the button order for ClaudeNode is:\n1. **Emoji** (`_show_emoji_btn = True` default)\n2. **Depth** (`_has_depth_toggle = True`)\n3. **Tint** (always added)\n4. **Body show/hide** (added by ClaudeNode's `_build_buttons` override \u2014 pixmap icon, not emoji)\n\nThat 4th button is the **body show/hide toggle** \u2014 it collapses/expands the reply body area. It uses `Theme.claudeBodyShowIcon` / `Theme.claudeBodyHideIcon`, which are old-style pixmap icons rather than emoji buttons, explaining the \"legacy styled icon\" look.\n\nThe reason nothing happened when you clicked it: if there's no `_body_proxy` yet (i.e., no reply has been received), `_toggle_body` returns immediately:\n\n```python\ndef _toggle_body(self) -> None:\n    if not (hasattr(self, '_body_proxy') and self._body_proxy):\n        return\n```\n\n**That 4th button is the body collapse/expand toggle.** It hides or shows the reply text area. It does nothing until ClaudeNode has actually received a reply \u2014 before that there's no body to toggle.\n\nWant me to add a tooltip to it and/or swap it to an emoji-style button to match the other thr\nSo the button order for ClaudeNode is:\n1. **Emoji** (`_show_emoji_btn = True` default)\n2. **Depth** (`_has_depth_toggle = True`)\n3. **Tint** (always added)\n4. **Body show/hide** (added by ClaudeNode's `_build_buttons` override \u2014 pixmap icon, not emoji)\n\nThat 4th button is the **body show/hide toggle** \u2014 it collapses/expands the reply body area. It uses `Theme.claudeBodyShowIcon` / `Theme.claudeBodyHideIcon`, which are old-style pixmap icons rather than emoji buttons, explaining the \"legacy styled icon\" look.\n\nThe reason nothing happened when you clicked it: if there's no `_body_proxy` yet (i.e., no reply has been received), `_toggle_body` returns immediately:\n\n```python\ndef _toggle_body(self) -> None:\n    if not (hasattr(self, '_body_proxy') and self._body_proxy):\n        return\n```\n\n**That 4th button is the body collapse/expand toggle.** It hides or shows the reply text area. It does nothing until ClaudeNode has actually received a reply \u2014 before that there's no body to toggle.\n\nWant me to add a tooltip to it and/or swap it to an emoji-style button to match the other three?\nee?\n\n\n\u203a ah right! yes its for the full log, right right, no i do click it all the time, wow, that confirms it, the claude node is fully in my muscle memory, i use that button all the time subconsciously but had no actual perception of the details of it.  thats pure muscle memory at work. thats what we call 103% perfect Ux, so usable, so instinctive to use it, i press it like 20 times a day, without a single strand of my mindspace going into it.  lets add a tooltip though, have a look at how the other nodes phrase their tooltips and add something apporiately named\n\nPattern is: short action description, sometimes with state-aware phrasing. For the body toggle I'll match that style.\nDone \u2014 tooltip reads **\"Toggle Reply Body\"**, matching the terse\nDone \u2014 tooltip reads **\"Toggle Reply Body\"**, matching the terse style of the others.\n style of the others.\n\n\n\u203a while we are at it lets add a default tooltip to the emoji shuffle button that says \"More Glory\", and have that apply by default (probably through the basenode) as the default when nodes have that button\n\nDone. Every node that has the emoji shuffle button (`_show_emoji_btn = True`, which is the default) will now show \"More Glory\" a\ns its tooltip.\n",
+      "input_text": "",
+      "body_visible": false
+    },
+    {
+      "node_id": 0,
       "node_type": "claude_response",
       "title": "Response",
       "uuid": "15dfbd5ec4364a3a8c0ff4df1d9535cb",
@@ -12,188 +30,10 @@
       "height": 230.0,
       "z_value": 10.0,
       "ports_visible": false,
-      "emoji": "\u2728",
+      "emoji": "\ud83d\ude2c",
       "label": "Now add the screensnap button to the bottom toolbar. I'll add it between the mute button and the exit button:",
       "depth_front": true,
       "node_tint": "#2a2f3a"
-    },
-    {
-      "node_id": 0,
-      "node_type": "claude",
-      "title": "While we are at it lets add a default tooltip to the emoji shuffle button that says\n\"more glory\", and have that apply by default (probably through the basenode) as the\ndefault when nodes have that button",
-      "uuid": "ab6b35a29ac84c05898fe54a8cf3c807",
-      "x": 1198.117753506975,
-      "y": -1420.1753183208782,
-      "width": 891.8478317605588,
-      "height": 176.0,
-      "z_value": 10.0,
-      "ports_visible": false,
-      "emoji": "\ud83d\ude2e",
-      "depth_front": true,
-      "folder_path": "C:\\Users\\thisg\\.claude\\projects\\C--Users-thisg-Desktop-Intricate",
-      "body_text": "\n\u203a we forgot to make an icon for the video node\n\nLet me find the VideoNode first to understand what it does, then craft an icon for it.\nThe icon files already exist (`icons/video_node.png` and `icons/video_node.ico`), but the icon isn't registered in `settings.toml`. Let me check the current icon section and take a look at the existing icon to see if it's a real icon or just a placeholder.\nThe icon exists and looks great \u2014 warm cream play button with film sprocket dots, matching the family style perfectly. It just needs to be registered in `settings.toml`. Let me find the icons section.\nFound it \u2014 the settings file is at `C:\\Users\\thisg\\Desktop\\The Settlers\\settings.toml`. The icon files exist and look good, just need to register the video icon. Let me add it.\nDone. The icon was already created (play button with film sprocket dots, warm cream on transparent \u2014 fits the family nicely), it just wasn't wired up. Added `video = \"video_node.ico\"` to `[theme.icons]` in `settings.toml`, so `Theme.iconVideo` will now res\nDone. The icon was already created (play button with film sprocket dots, warm cream on transparent \u2014 fits the family nicely), it just wasn't wired up. Added `video = \"video_node.ico\"` to `[theme.icons]` in `settings.toml`, so `Theme.iconVideo` will now resolve automatically.\nolve automatically.\n\n\n\u203a lovely, thanks, speaking icons, the zoom slider handle in the bottom toolbar, can you apply the curtains icon to it please?  it should have all the setup already to accept png icons as handles from PrettySlider\n\nDone. Added `use_scroll_icon=True` to the zoom slider at line 876. It'll now pick up the PNG handle icon from `[theme.sliders] slider_handle_icon` in settings.toml \u2014 make sure that key points to the curtains icon file (e.g. `slider_handle_icon = \"curtains_\nnode.ico\"`).\n\n\n\u203a lovely, thank you, and then we need to take the slider that is in the left sidebar under the buttons to create new nodes, and have that one do the same, use PrettySlider and pick up the same icon\n\nDone. The fog slider now uses `pretty_slider()` with `use_scroll_icon=True`, matching the zoom slider's pattern. It picks up the same scroll-handle icon from `settings.toml` and gets the themed groove/handle styling from `PrettySlider` instead of inline QS\nS.\n\n\n\u203a 2026-04-04 19:18:18 - nodal - TRACE - [boot:13] constructing IntricateApp window\n2026-04-04 19:18:18 - nodal - TRACE - [boot:13a] Theme.icon at window construction = <bound method Theme.icon of <class 'graphics.Theme.Theme'>>\nTraceback (most recent call last):\n  File \"C:\\Users\\thisg\\Desktop\\Intricate\\main_window.py\", line 636, in _on_fog_slider_changed\n    self.fog_progress.setValue(value)\n    ^^^^^^^^^^^^^^^^^\nAttributeError: 'IntricateApp' object has no attribute 'fog_progress'\n2026-04-04 19:18:19 - nodal - TRACE - [boot:14] IntricateApp window constructed\n2026-04-04 19:18:19 - nodal - TRACE - [boot:15] window shown \u2014 entering event loop\n\nThe `pretty_slider` helper sets the initial value during construction, which fires `valueChanged` before `fog_progress` is assigned on line 611. The guard skips the update during that early si\ngnal and works normally once both widgets exist.\n\n\n\u203a lovely, Thank you\n\n\n\nYou're welcome! Let me know whenever you need anything.\n\n\n\u203a i took some memos while arranging some notes in the graph, and then connected them to your input just now, can you summarize them, want to see if you get the context right if I just attach the actual memos to your input\n\nGot it, four feature ideas from your graph:\n\n1. **White border on video nodes** \u2014 Add a toggle/option to render a white border around video nodes (similar to how image nodes or other types have border styling).\n\n2. **Text overlay on about nodes** \u2014 Render the AboutNode's text as a visual overlay directly on the node, rather than (or in addition to) just being editable content.\n\n3. **Background screensnap for alpha** \u2014 Capture the background view behind the canvas (without any nodes/wires/UI) so you get a clean alpha channel \u2014 useful for compositing or export.\n\n4. **Scrollbar on PrettyEdit** \u2014 Add a scrollbar to the PrettyEdit widget so longer content is scrollable rather than clipped or overflowing.\n\nSounds like a mix of visual polish (1, 2), a utility/expor\nGot it, four feature ideas from your graph:\n\n1. **White border on video nodes** \u2014 Add a toggle/option to render a white border around video nodes (similar to how image nodes or other types have border styling).\n\n2. **Text overlay on about nodes** \u2014 Render the AboutNode's text as a visual overlay directly on the node, rather than (or in addition to) just being editable content.\n\n3. **Background screensnap for alpha** \u2014 Capture the background view behind the canvas (without any nodes/wires/UI) so you get a clean alpha channel \u2014 useful for compositing or export.\n\n4. **Scrollbar on PrettyEdit** \u2014 Add a scrollbar to the PrettyEdit widget so longer content is scrollable rather than clipped or overflowing.\n\nSounds like a mix of visual polish (1, 2), a utility/export feature (3), and a UX fix (4). Context makes sense?\nt feature (3), and a UX fix (4). Context makes sense?\n\n\n\u203a 1. yes, optional toggle button, but keep the ivory white text default as the color and within the border rather than replace it.  2.  its just a paint refresh issue, sometimes when i edit about node while im writing new text on them the existing text that im replacing is visible over the current one im writing.  3.  yes, exactly, that, i want to take snapshot of whatever i have my scene view set to, currently i just take a windows screenshot of it and then use the blue background since it matches standard bluescreen video effect workflows to remove the canvas itself, seems like something we can do by default with a button in the bottom toolbar, we already do similar things with the palette node, that one screenshots the canvas with it and delivers the content outside the node as an alpha channel.  4. the scrollbar on PrettyEdit should be hidden by default but leave the option in the code to invoke it with a kwarg if we ever need it, the nodes are nicely scalable so the scrollbar will not be needed.  can you look into those four as a single shot while i go make coffee?\n\nOn it \u2014 enjoy your coffee. Let me dig into all four.\nNow let me read the key files I need to edit.\nLet me check a few more things I need before implementing.\nNow let me look at how the View renders its background, and look at the imports section of main_window for what I need.\nGood. I have everything I need. Let me implement all four changes now.\n\n**Task 1: White border toggle on VideoNode**\nNow add the border toggle button and paint the border in VideoNode:\nNow add the white border paint in `paint_content`, replacing the bevel section:\nNow generate the border toggle icons:\nNow register the icons in settings. Let me find where settings are written with defaults.\nThe Theme metaclass resolves icons dynamically \u2014 `Theme.iconBorderOn` will look for `border_on` in the `[theme.icons]` section of settings. Let me check how existing icons are registered in the settings defaults.\nIcons don't need defaults \u2014 the Theme metaclass resolves them from the icons folder. The `Theme.icon()` call with `fallback_color` already handles the missing case. The icons exist in `icons/` and will be found by the Theme metaclass.\n\nLet me check how Theme resolves icon names to verify:\nI see \u2014 `Theme.iconBorderOn` will resolve via `__getattr__` to `_MISSING_ICON` sentinel, then `Theme.icon()` will use the fallback_color. But the actual icon file needs to be found. Let me check how icon files are resolved:\nI see \u2014 the `Theme.icon()` method takes a *filename* string, but `Theme.iconBorderOn` will return `_MISSING_ICON` since the icon isn't registered in settings. The filename needs to come from settings.toml's `[theme.icons]` section. Since settings.toml doesn't exist in the repo (it's generated), and the icons section has no defaults, I need to pass the filename directly rather than going through the Theme attribute. Let me check how the loop icons work:\nSo `Theme.iconLoopOff` etc. aren't defined anywhere either \u2014 they just hit the `_ThemeMeta.__getattr__` and return `_MISSING_ICON`, then `Theme.icon()` gets the sentinel and returns a circle with the fallback_color. That's the expected pattern \u2014 the fallback color is what makes the button visible. The actual `.ico` files are optional visual upgrades that users configure in settings.toml.\n\nSo my implementation is correct \u2014 `Theme.iconBorderOff` and `Theme.iconBorderOn` will use the fallback colors `#7a8a9a` and `#e1d5c6` respectively, producing colored circles. If the user later registers the icons in settings.toml, the proper icons will appear.\n\nTask 1 is done. Now Task 2:\n**Task 2: Fix AboutNode stale text paint \u2014 cache invalidation**\n**Task 3: Viewport screensnap \u2014 add helper function + bottom toolbar button**\n\nFirst, add the `snapshot_viewport` function to helpers.py:\nNow add the screensnap button to the bottom toolbar. I'll add it between the mute button and the exit button:\nNow add the `_snapshot_viewport` method. Let me find a good spot \u2014 near the other toolbar handlers:\nNow generate the screensnap icon:\nWait \u2014 the snap button uses `QIcon(Theme.icon(...))` but `Theme.icon()` returns a `QPixmap`, not a string. Let me fix that \u2014 it should use `setIcon` with a QIcon constructed from the pixmap, or just use the emoji pattern like the mute button. Actually, looking at the mute button, it uses `setText` with emojis, not icons. Let me use a simpler approach:\n**Task 4: PrettyEdit scrollbar \u2014 hidden by default with explicit policy**\nLet me do a quick syntax check on the changed files:\nAll four done. Here's the summary:\n\n---\n\n**1. White border on VideoNode** \u2014 Added a `show_border` toggle to `VideoNodeData`, a border toggle button in the button strip (alongside loop/mute), and an ivory white `(225, 213, 198)` 3px border painted inside the video rect when active. Default bevel stays when off. Persisted in session.\n\n**2. AboutNode stale text fix** \u2014 The `DeviceCoordinateCache` was retaining the old rendered pixmap after editing. Added an explicit cache invalidation cycle (`NoCache` \u2192 `DeviceCoordinateCache`) in `_on_committed()` before `update()`.\n\n**3. Viewport screensnap** \u2014 Added `snapshot_viewport()` to `utils/helpers.py` \u2014 captures the current view's scene rect to a transparent PNG (no background, just nodes/wires). Added a \ud83d\udcf7 button in the bottom toolbar between the zoom slider and mute toggle. Click saves the snap and shows the filename in the info bar (click the info to open it).\n\n**4. PrettyEdit scrollbar** \u2014 Added explicit `setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)` when `scrollbar=False` (the default), and `Qt.ScrollBarAsNeeded` when `True`. Also added `setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)` unconditionally. The `scrollbar=True` kwarg remains availa\nAll four done. Here's the summary:\n\n---\n\n**1. White border on VideoNode** \u2014 Added a `show_border` toggle to `VideoNodeData`, a border toggle button in the button strip (alongside loop/mute), and an ivory white `(225, 213, 198)` 3px border painted inside the video rect when active. Default bevel stays when off. Persisted in session.\n\n**2. AboutNode stale text fix** \u2014 The `DeviceCoordinateCache` was retaining the old rendered pixmap after editing. Added an explicit cache invalidation cycle (`NoCache` \u2192 `DeviceCoordinateCache`) in `_on_committed()` before `update()`.\n\n**3. Viewport screensnap** \u2014 Added `snapshot_viewport()` to `utils/helpers.py` \u2014 captures the current view's scene rect to a transparent PNG (no background, just nodes/wires). Added a \ud83d\udcf7 button in the bottom toolbar between the zoom slider and mute toggle. Click saves the snap and shows the filename in the info bar (click the info to open it).\n\n**4. PrettyEdit scrollbar** \u2014 Added explicit `setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)` when `scrollbar=False` (the default), and `Qt.ScrollBarAsNeeded` when `True`. Also added `setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)` unconditionally. The `scrollbar=True` kwarg remains available for LogNode/TreeNode.\nble for LogNode/TreeNode.\n\n\n\u203a yeah that worked flawlessly and beautifully, thank you, tested all four, all delivered above the grade done and ready\n\nGlad to hear all four landed cleanly! Nice session.\n\n\n\u203a there is a fourth button on the claude node toolbar row, i cant remember what it does since we forgot to add a tooltip to it, the row as i see it is 1. the default emoji glory button (fantastic) 2. toggle z depth back/forth (amazing) 3. toggle color (its so pretty it could make a grown man weep).  4. but then there is this one more button on there that has a legacy styled icon from before we added all the emoji icons.  what does it do?  i tried clicking it and nothing happened\n\nNow let me check what ClaudeNode adds on top of the base buttons. The base gives: emoji, depth, tint. ClaudeNode adds a body show/hide toggle. That's 4 buttons. But the user says button 4 has a \"legacy styled icon\" (not emoji). Let me check which button uses a pixmap icon vs emoji.\n\nThe base buttons are:\n1. Emoji button (emoji glory) \n2. Depth toggle (emoji)\n3. Tint toggle (emoji)\n\nClaudeNode adds:\n4. Body show/hide toggle \u2014 uses `Theme.claudeBodyShowIcon` / `Theme.claudeBodyHideIcon` \u2014 this is a **pixmap icon**, not an emoji\n\nBut wait \u2014 the user also mentions `_show_ports_btn`. Let me check ClaudeNode's class flags.\nSo ClaudeNode has `_show_emoji_btn` (default from base), `_has_depth_toggle = True`, the base tint button, plus the body show/hide toggle. Let me check the default for `_show_ports_btn` and `_show_emoji_btn` in BaseNode.\nSo the button order for ClaudeNode is:\n1. **Emoji** (`_show_emoji_btn = True` default)\n2. **Depth** (`_has_depth_toggle = True`)\n3. **Tint** (always added)\n4. **Body show/hide** (added by ClaudeNode's `_build_buttons` override \u2014 pixmap icon, not emoji)\n\nThat 4th button is the **body show/hide toggle** \u2014 it collapses/expands the reply body area. It uses `Theme.claudeBodyShowIcon` / `Theme.claudeBodyHideIcon`, which are old-style pixmap icons rather than emoji buttons, explaining the \"legacy styled icon\" look.\n\nThe reason nothing happened when you clicked it: if there's no `_body_proxy` yet (i.e., no reply has been received), `_toggle_body` returns immediately:\n\n```python\ndef _toggle_body(self) -> None:\n    if not (hasattr(self, '_body_proxy') and self._body_proxy):\n        return\n```\n\n**That 4th button is the body collapse/expand toggle.** It hides or shows the reply text area. It does nothing until ClaudeNode has actually received a reply \u2014 before that there's no body to toggle.\n\nWant me to add a tooltip to it and/or swap it to an emoji-style button to match the other thr\nSo the button order for ClaudeNode is:\n1. **Emoji** (`_show_emoji_btn = True` default)\n2. **Depth** (`_has_depth_toggle = True`)\n3. **Tint** (always added)\n4. **Body show/hide** (added by ClaudeNode's `_build_buttons` override \u2014 pixmap icon, not emoji)\n\nThat 4th button is the **body show/hide toggle** \u2014 it collapses/expands the reply body area. It uses `Theme.claudeBodyShowIcon` / `Theme.claudeBodyHideIcon`, which are old-style pixmap icons rather than emoji buttons, explaining the \"legacy styled icon\" look.\n\nThe reason nothing happened when you clicked it: if there's no `_body_proxy` yet (i.e., no reply has been received), `_toggle_body` returns immediately:\n\n```python\ndef _toggle_body(self) -> None:\n    if not (hasattr(self, '_body_proxy') and self._body_proxy):\n        return\n```\n\n**That 4th button is the body collapse/expand toggle.** It hides or shows the reply text area. It does nothing until ClaudeNode has actually received a reply \u2014 before that there's no body to toggle.\n\nWant me to add a tooltip to it and/or swap it to an emoji-style button to match the other three?\nee?\n\n\n\u203a ah right! yes its for the full log, right right, no i do click it all the time, wow, that confirms it, the claude node is fully in my muscle memory, i use that button all the time subconsciously but had no actual perception of the details of it.  thats pure muscle memory at work. thats what we call 103% perfect Ux, so usable, so instinctive to use it, i press it like 20 times a day, without a single strand of my mindspace going into it.  lets add a tooltip though, have a look at how the other nodes phrase their tooltips and add something apporiately named\n\nPattern is: short action description, sometimes with state-aware phrasing. For the body toggle I'll match that style.\nDone \u2014 tooltip reads **\"Toggle Reply Body\"**, matching the terse\nDone \u2014 tooltip reads **\"Toggle Reply Body\"**, matching the terse style of the others.\n style of the others.\n\n\n\u203a while we are at it lets add a default tooltip to the emoji shuffle button that says \"More Glory\", and have that apply by default (probably through the basenode) as the default when nodes have that button\n\nDone. Every node that has the emoji shuffle button (`_show_emoji_btn = True`, which is the default) will now show \"More Glory\" a\ns its tooltip.\n",
-      "input_text": "",
-      "body_visible": false
-    },
-    {
-      "node_id": 0,
-      "node_type": "image",
-      "title": "Image",
-      "uuid": "2ed4196b008e4902a2e358a82df20bca",
-      "x": 2901.3420638587,
-      "y": 104.94501851210958,
-      "width": 202.46774900649734,
-      "height": 220.50937807507327,
-      "z_value": 0.0,
-      "ports_visible": false,
-      "emoji": "\ud83d\ude42\u200d\u2194\ufe0f",
-      "image_b64": "",
-      "caption": "Assorted decorative clay or soap molds",
-      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\downloadedImage (4).png"
-    },
-    {
-      "node_id": 0,
-      "node_type": "image",
-      "title": "Image",
-      "uuid": "86c23557ac1f41af813d20b94c1b5f1a",
-      "x": 2751.016499010936,
-      "y": -55.01194575848376,
-      "width": 231.85460260090554,
-      "height": 242.63503665089604,
-      "z_value": 0.0,
-      "ports_visible": false,
-      "emoji": "\ud83d\ude2f",
-      "image_b64": "",
-      "caption": "Thing 3",
-      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\Thing 3.png"
-    },
-    {
-      "node_id": 0,
-      "node_type": "image",
-      "title": "Image",
-      "uuid": "f1c0a3af3ee744569869b43722e0111e",
-      "x": 158.03135618962415,
-      "y": -521.4324958320326,
-      "width": 301.37417780372675,
-      "height": 316.5505578744648,
-      "z_value": 0.0,
-      "ports_visible": false,
-      "emoji": "\ud83d\ude0d",
-      "image_b64": "",
-      "caption": "downloadedImage",
-      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\downloadedImage.png"
-    },
-    {
-      "node_id": 0,
-      "node_type": "image",
-      "title": "Image",
-      "uuid": "0244a9916d964d9391aa445eed8384a6",
-      "x": 571.9999999999999,
-      "y": 782.0,
-      "width": 280.0,
-      "height": 220.0,
-      "z_value": 0.0,
-      "ports_visible": false,
-      "emoji": "\ud83d\udc9c",
-      "image_b64": "",
-      "caption": "Upon it sat while he knelt",
-      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\Upon it sat while he knelt.png"
-    },
-    {
-      "node_id": 0,
-      "node_type": "image",
-      "title": "Image",
-      "uuid": "852da4272cb94a438c44f580b8cf632d",
-      "x": 301.3463443348219,
-      "y": 914.1221007144371,
-      "width": 280.0,
-      "height": 220.0,
-      "z_value": 0.0,
-      "ports_visible": false,
-      "emoji": "\ud83d\udc96",
-      "image_b64": "",
-      "caption": "Upon it sat while he felt",
-      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\Upon it sat while he felt.png"
-    },
-    {
-      "node_id": 0,
-      "node_type": "image",
-      "title": "Image",
-      "uuid": "4c49dac3c4904bc096b474b29eebb80f",
-      "x": 823.7882116365438,
-      "y": 642.2940224565879,
-      "width": 280.0,
-      "height": 220.0,
-      "z_value": 0.0,
-      "ports_visible": false,
-      "emoji": "\ud83d\ude0e",
-      "image_b64": "",
-      "caption": "Upon it sat while he kept",
-      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\Upon it sat while he kept.png"
-    },
-    {
-      "node_id": 0,
-      "node_type": "image",
-      "title": "Image",
-      "uuid": "f5533684bb3949f7a8beac1c52e99f13",
-      "x": 1381.1879873087369,
-      "y": 659.1148792613989,
-      "width": 300.78595502987696,
-      "height": 305.5589624155492,
-      "z_value": 0.0,
-      "ports_visible": false,
-      "emoji": "\ud83d\ude12",
-      "image_b64": "",
-      "caption": "downloadedImage (5)",
-      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\downloadedImage (5).png"
-    },
-    {
-      "node_id": 0,
-      "node_type": "image",
-      "title": "Image",
-      "uuid": "cee6d24ac222475c82504bad392dd915",
-      "x": 2021.710295461758,
-      "y": 466.43013452390164,
-      "width": 285.81794213609055,
-      "height": 315.32184928466893,
-      "z_value": 0.0,
-      "ports_visible": false,
-      "emoji": "\ud83d\ude18",
-      "image_b64": "",
-      "caption": "downloadedImage (3)",
-      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\downloadedImage (3).png"
-    },
-    {
-      "node_id": 0,
-      "node_type": "image",
-      "title": "Image",
-      "uuid": "7617ad1aca1d449697280f2a200e6576",
-      "x": 1998.6824340579917,
-      "y": 838.9536408941062,
-      "width": 269.8967839132756,
-      "height": 290.78380144937273,
-      "z_value": 0.0,
-      "ports_visible": false,
-      "emoji": "\ud83d\ude0d",
-      "image_b64": "",
-      "caption": "Elegant fantasy sculpture with flowing details",
-      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\downloadedImage (1).png"
-    },
-    {
-      "node_id": 0,
-      "node_type": "image",
-      "title": "Image",
-      "uuid": "2f27fa7ad3d9436cbcddcbb46a59bdcc",
-      "x": 1722.1286648066207,
-      "y": 970.3418128833944,
-      "width": 249.56274273720692,
-      "height": 267.9325772724301,
-      "z_value": 0.0,
-      "ports_visible": false,
-      "emoji": "\ud83e\udee4",
-      "image_b64": "",
-      "caption": "Ethereal feminine sculpture with flowing tendrils",
-      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\downloadedImage (4)aa.png"
     },
     {
       "node_id": 0,
@@ -206,10 +46,202 @@
       "height": 314.6662328340989,
       "z_value": 0.0,
       "ports_visible": false,
-      "emoji": "\ud83d\ude25",
+      "emoji": "\ud83e\uddf8",
       "image_b64": "",
       "caption": "Two elegant feminine sculptural figures",
       "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\downloadedImage (2)a.png"
+    },
+    {
+      "node_id": 0,
+      "node_type": "image",
+      "title": "Image",
+      "uuid": "2f27fa7ad3d9436cbcddcbb46a59bdcc",
+      "x": 1722.1286648066207,
+      "y": 970.3418128833944,
+      "width": 249.56274273720692,
+      "height": 267.9325772724301,
+      "z_value": 0.0,
+      "ports_visible": false,
+      "emoji": "\ud83d\ude07",
+      "image_b64": "",
+      "caption": "Ethereal feminine sculpture with flowing tendrils",
+      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\downloadedImage (4)aa.png"
+    },
+    {
+      "node_id": 0,
+      "node_type": "image",
+      "title": "Image",
+      "uuid": "7617ad1aca1d449697280f2a200e6576",
+      "x": 1998.6824340579917,
+      "y": 838.9536408941062,
+      "width": 269.8967839132756,
+      "height": 290.78380144937273,
+      "z_value": 0.0,
+      "ports_visible": false,
+      "emoji": "\ud83e\udd70",
+      "image_b64": "",
+      "caption": "Elegant fantasy sculpture with flowing details",
+      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\downloadedImage (1).png"
+    },
+    {
+      "node_id": 0,
+      "node_type": "image",
+      "title": "Image",
+      "uuid": "cee6d24ac222475c82504bad392dd915",
+      "x": 2021.710295461758,
+      "y": 466.43013452390164,
+      "width": 285.81794213609055,
+      "height": 315.32184928466893,
+      "z_value": 0.0,
+      "ports_visible": false,
+      "emoji": "\ud83d\udc95",
+      "image_b64": "",
+      "caption": "downloadedImage (3)",
+      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\downloadedImage (3).png"
+    },
+    {
+      "node_id": 0,
+      "node_type": "image",
+      "title": "Image",
+      "uuid": "f5533684bb3949f7a8beac1c52e99f13",
+      "x": 1381.1879873087369,
+      "y": 659.1148792613989,
+      "width": 300.78595502987696,
+      "height": 305.5589624155492,
+      "z_value": 0.0,
+      "ports_visible": false,
+      "emoji": "\ud83e\uddf8",
+      "image_b64": "",
+      "caption": "downloadedImage (5)",
+      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\downloadedImage (5).png"
+    },
+    {
+      "node_id": 0,
+      "node_type": "image",
+      "title": "Image",
+      "uuid": "4c49dac3c4904bc096b474b29eebb80f",
+      "x": 823.7882116365438,
+      "y": 642.2940224565879,
+      "width": 280.0,
+      "height": 220.0,
+      "z_value": 0.0,
+      "ports_visible": false,
+      "emoji": "\ud83d\ude0d",
+      "image_b64": "",
+      "caption": "Upon it sat while he kept",
+      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\Upon it sat while he kept.png"
+    },
+    {
+      "node_id": 0,
+      "node_type": "image",
+      "title": "Image",
+      "uuid": "852da4272cb94a438c44f580b8cf632d",
+      "x": 301.3463443348219,
+      "y": 914.1221007144371,
+      "width": 280.0,
+      "height": 220.0,
+      "z_value": 0.0,
+      "ports_visible": false,
+      "emoji": "\ud83d\ude2c",
+      "image_b64": "",
+      "caption": "Upon it sat while he felt",
+      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\Upon it sat while he felt.png"
+    },
+    {
+      "node_id": 0,
+      "node_type": "image",
+      "title": "Image",
+      "uuid": "0244a9916d964d9391aa445eed8384a6",
+      "x": 571.9999999999999,
+      "y": 782.0,
+      "width": 280.0,
+      "height": 220.0,
+      "z_value": 0.0,
+      "ports_visible": false,
+      "emoji": "\ud83e\udd70",
+      "image_b64": "",
+      "caption": "Upon it sat while he knelt",
+      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\Upon it sat while he knelt.png"
+    },
+    {
+      "node_id": 0,
+      "node_type": "image",
+      "title": "Image",
+      "uuid": "f1c0a3af3ee744569869b43722e0111e",
+      "x": 158.03135618962415,
+      "y": -521.4324958320326,
+      "width": 301.37417780372675,
+      "height": 316.5505578744648,
+      "z_value": 0.0,
+      "ports_visible": false,
+      "emoji": "\ud83d\ude32",
+      "image_b64": "",
+      "caption": "downloadedImage",
+      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\downloadedImage.png"
+    },
+    {
+      "node_id": 0,
+      "node_type": "image",
+      "title": "Image",
+      "uuid": "86c23557ac1f41af813d20b94c1b5f1a",
+      "x": 2751.016499010936,
+      "y": -55.01194575848376,
+      "width": 231.85460260090554,
+      "height": 242.63503665089604,
+      "z_value": 0.0,
+      "ports_visible": false,
+      "emoji": "\ud83d\ude2e",
+      "image_b64": "",
+      "caption": "Thing 3",
+      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\Thing 3.png"
+    },
+    {
+      "node_id": 0,
+      "node_type": "image",
+      "title": "Image",
+      "uuid": "2ed4196b008e4902a2e358a82df20bca",
+      "x": 2901.3420638587,
+      "y": 104.94501851210958,
+      "width": 202.46774900649734,
+      "height": 220.50937807507327,
+      "z_value": 0.0,
+      "ports_visible": false,
+      "emoji": "\ud83d\ude07",
+      "image_b64": "",
+      "caption": "Assorted decorative clay or soap molds",
+      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\downloadedImage (4).png"
+    },
+    {
+      "node_id": 0,
+      "node_type": "git",
+      "title": "Git Status",
+      "uuid": "c2f2cb0aab30426cbc1c13e2fdc41dcc",
+      "x": 0.0,
+      "y": 0.0,
+      "width": 300.0,
+      "height": 212.0,
+      "z_value": 0.0,
+      "ports_visible": false,
+      "emoji": "\ud83d\ude18",
+      "depth_front": false,
+      "node_tint": ""
+    },
+    {
+      "node_id": 0,
+      "node_type": "bezier",
+      "title": "Curve",
+      "uuid": "9bae9cc9d8bd4cda81171672487ec60c",
+      "x": -170.11494252873564,
+      "y": -371.264367816092,
+      "width": 300.0,
+      "height": 160.0,
+      "z_value": -9.895000000000058,
+      "ports_visible": false,
+      "emoji": "\ud83d\ude17",
+      "cp1_x": 99.0,
+      "cp1_y": 114.71264367816092,
+      "cp2_x": 22.839080459770173,
+      "cp2_y": 45.28735632183907
     },
     {
       "node_id": 0,
@@ -222,7 +254,7 @@
       "height": 1294.0,
       "z_value": -9.904000000000053,
       "ports_visible": false,
-      "emoji": "\ud83e\udee4",
+      "emoji": "\ud83d\ude07",
       "label": "So the button order for ClaudeNode is:\n1. **Emoji** (`_show_emoji_btn = True` default)\n2. **Depth** (`_has_depth_toggle = True`)\n3. **Tint** (always added)\n4. **Body show/hide** (added by ClaudeNode's `_build_buttons` override \u2014 pixmap icon, not emoji)\n\nThat 4th button is the **body show/hide toggle** \u2014 it collapses/expands the reply body area. It uses `Theme.claudeBodyShowIcon` / `Theme.claudeBodyHideIcon`, which are old-style pixmap icons rather than emoji buttons, explaining the \"legacy styled icon\" look.\n\nThe reason nothing happened when you clicked it: if there's no `_body_proxy` yet (i.e., no reply has been received), `_toggle_body` returns immediately:\n\n```python\ndef _toggle_body(self) -> None:\n    if not (hasattr(self, '_body_proxy') and self._body_proxy):\n        return\n```\n\n**That 4th button is the body collapse/expand toggle.** It hides or shows the reply text area. It does nothing until ClaudeNode has actually received a reply \u2014 before that there's no body to toggle.\n\nWant me to add a tooltip to it and/or swap it to an emoji-style button to match the other three?",
       "depth_front": false,
       "node_tint": "#1e1e1e"
@@ -238,7 +270,7 @@
       "height": 314.0,
       "z_value": -9.905000000000053,
       "ports_visible": false,
-      "emoji": "\ud83d\ude32",
+      "emoji": "\ud83d\udccc",
       "label": "So ClaudeNode has `_show_emoji_btn` (default from base), `_has_depth_toggle = True`, the base tint button, plus the body show/hide toggle. Let me check the default for `_show_ports_btn` and `_show_emoji_btn` in BaseNode.",
       "depth_front": false,
       "node_tint": "#1e1e1e"
@@ -270,7 +302,7 @@
       "height": 219.80840950670677,
       "z_value": -9.908000000000051,
       "ports_visible": false,
-      "emoji": "\ud83e\udd70",
+      "emoji": "\ud83e\udd72",
       "label": "These are many lines\nall in a row\nlike my ducks\nwhom i dont think are in a row\nand frankly, \ni think one of them \nis a pigeon",
       "depth_front": false,
       "node_tint": "#2a3a2f"
@@ -286,7 +318,7 @@
       "height": 297.9183263141538,
       "z_value": -9.91000000000005,
       "ports_visible": false,
-      "emoji": "\ud83d\ude0a",
+      "emoji": "\ud83d\ude17",
       "image_b64": "",
       "caption": "viewport_snap",
       "source_path": "C:\\Users\\thisg\\Desktop\\_asset\\Snips\\Single Shared Braincell\\viewport_snap.png"
@@ -302,7 +334,7 @@
       "height": 54.0,
       "z_value": -9.91100000000005,
       "ports_visible": false,
-      "emoji": "\ud83d\udc9b",
+      "emoji": "\ud83d\ude2e",
       "label": "Elegant",
       "depth_front": false,
       "node_tint": "#2a3a2f"
@@ -318,7 +350,7 @@
       "height": 255.9342766183729,
       "z_value": -9.918000000000045,
       "ports_visible": false,
-      "emoji": "\ud83d\ude32",
+      "emoji": "\ud83d\udccc",
       "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Clips\\Gen-3 Alpha Turbo 1866035882, whirlwind, Cropped - downloaded, M 5.mp4",
       "caption": "Gen-3 Alpha Turbo 1866035882, whirlwind, Cropped - downloaded, M 5",
       "volume": 50,
@@ -338,7 +370,7 @@
       "height": 1322.0,
       "z_value": -9.919000000000045,
       "ports_visible": false,
-      "emoji": "\ud83e\udee4",
+      "emoji": "\ud83e\uddf8",
       "label": "All four done. Here's the summary:\n\n---\n\n**1. White border on VideoNode** \u2014 Added a `show_border` toggle to `VideoNodeData`, a border toggle button in the button strip (alongside loop/mute), and an ivory white `(225, 213, 198)` 3px border painted inside the video rect when active. Default bevel stays when off. Persisted in session.\n\n**2. AboutNode stale text fix** \u2014 The `DeviceCoordinateCache` was retaining the old rendered pixmap after editing. Added an explicit cache invalidation cycle (`NoCache` \u2192 `DeviceCoordinateCache`) in `_on_committed()` before `update()`.\n\n**3. Viewport screensnap** \u2014 Added `snapshot_viewport()` to `utils/helpers.py` \u2014 captures the current view's scene rect to a transparent PNG (no background, just nodes/wires). Added a \ud83d\udcf7 button in the bottom toolbar between the zoom slider and mute toggle. Click saves the snap and shows the filename in the info bar (click the info to open it).\n\n**4. PrettyEdit scrollbar** \u2014 Added explicit `setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)` when `scrollbar=False` (the default), and `Qt.ScrollBarAsNeeded` when `True`. Also added `setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)` unconditionally. The `scrollbar=True` kwarg remains available for LogNode/TreeNode.",
       "depth_front": false,
       "node_tint": "#2a2f3a"
@@ -354,7 +386,7 @@
       "height": 202.0,
       "z_value": -9.920000000000044,
       "ports_visible": false,
-      "emoji": "\ud83d\ude0f",
+      "emoji": "\ud83e\udee4",
       "label": "Let me do a quick syntax check on the changed files:",
       "depth_front": false,
       "node_tint": "#2a2f3a"
@@ -370,7 +402,7 @@
       "height": 230.0,
       "z_value": -9.921000000000044,
       "ports_visible": false,
-      "emoji": "\ud83d\ude12",
+      "emoji": "\ud83d\udc9b",
       "label": "**Task 4: PrettyEdit scrollbar \u2014 hidden by default with explicit policy**",
       "depth_front": false,
       "node_tint": "#2a2f3a"
@@ -386,7 +418,7 @@
       "height": 426.0,
       "z_value": -9.922000000000043,
       "ports_visible": false,
-      "emoji": "\ud83d\ude0e",
+      "emoji": "\ud83d\ude25",
       "label": "Wait \u2014 the snap button uses `QIcon(Theme.icon(...))` but `Theme.icon()` returns a `QPixmap`, not a string. Let me fix that \u2014 it should use `setIcon` with a QIcon constructed from the pixmap, or just use the emoji pattern like the mute button. Actually, looking at the mute button, it uses `setText` with emojis, not icons. Let me use a simpler approach:",
       "depth_front": false,
       "node_tint": "#2a2f3a"
@@ -402,7 +434,7 @@
       "height": 174.0,
       "z_value": -9.923000000000043,
       "ports_visible": false,
-      "emoji": "\ud83e\udee4",
+      "emoji": "\ud83e\uddf8",
       "label": "Now generate the screensnap icon:",
       "depth_front": false,
       "node_tint": "#2a2f3a"
@@ -418,7 +450,7 @@
       "height": 230.0,
       "z_value": -9.924000000000042,
       "ports_visible": false,
-      "emoji": "\ud83e\uddf8",
+      "emoji": "\ud83d\udc95",
       "label": "Now add the `_snapshot_viewport` method. Let me find a good spot \u2014 near the other toolbar handlers:",
       "depth_front": false,
       "node_tint": "#2a2f3a"
@@ -434,7 +466,7 @@
       "height": 314.0,
       "z_value": -9.926000000000041,
       "ports_visible": false,
-      "emoji": "\ud83d\ude01",
+      "emoji": "\ud83d\ude0d",
       "label": "**Task 3: Viewport screensnap \u2014 add helper function + bottom toolbar button**\n\nFirst, add the `snapshot_viewport` function to helpers.py:",
       "depth_front": false,
       "node_tint": "#2a2f3a"
@@ -450,7 +482,7 @@
       "height": 202.0,
       "z_value": -9.92700000000004,
       "ports_visible": false,
-      "emoji": "\ud83d\ude32",
+      "emoji": "\ud83d\ude17",
       "label": "**Task 2: Fix AboutNode stale text paint \u2014 cache invalidation**",
       "depth_front": false,
       "node_tint": "#2a2f3a"
@@ -482,7 +514,7 @@
       "height": 510.0,
       "z_value": -9.92900000000004,
       "ports_visible": false,
-      "emoji": "\u2728",
+      "emoji": "\ud83d\ude18",
       "label": "I see \u2014 the `Theme.icon()` method takes a *filename* string, but `Theme.iconBorderOn` will return `_MISSING_ICON` since the icon isn't registered in settings. The filename needs to come from settings.toml's `[theme.icons]` section. Since settings.toml doesn't exist in the repo (it's generated), and the icons section has no defaults, I need to pass the filename directly rather than going through the Theme attribute. Let me check how the loop icons work:",
       "depth_front": false,
       "node_tint": "#2a2f3a"
@@ -498,7 +530,7 @@
       "height": 342.0,
       "z_value": -9.930000000000039,
       "ports_visible": false,
-      "emoji": "\ud83e\udd72",
+      "emoji": "\ud83d\udc95",
       "label": "I see \u2014 `Theme.iconBorderOn` will resolve via `__getattr__` to `_MISSING_ICON` sentinel, then `Theme.icon()` will use the fallback_color. But the actual icon file needs to be found. Let me check how icon files are resolved:",
       "depth_front": false,
       "node_tint": "#2a2f3a"
@@ -514,7 +546,7 @@
       "height": 426.0,
       "z_value": -9.931000000000038,
       "ports_visible": false,
-      "emoji": "\ud83d\udc95",
+      "emoji": "\u2728",
       "label": "Icons don't need defaults \u2014 the Theme metaclass resolves them from the icons folder. The `Theme.icon()` call with `fallback_color` already handles the missing case. The icons exist in `icons/` and will be found by the Theme metaclass.\n\nLet me check how Theme resolves icon names to verify:",
       "depth_front": false,
       "node_tint": "#2a2f3a"
@@ -530,7 +562,7 @@
       "height": 314.0,
       "z_value": -9.932000000000038,
       "ports_visible": false,
-      "emoji": "\ud83e\udd17",
+      "emoji": "\ud83d\ude25",
       "label": "The Theme metaclass resolves icons dynamically \u2014 `Theme.iconBorderOn` will look for `border_on` in the `[theme.icons]` section of settings. Let me check how existing icons are registered in the settings defaults.",
       "depth_front": false,
       "node_tint": "#2a2f3a"
@@ -546,7 +578,7 @@
       "height": 230.0,
       "z_value": -9.933000000000037,
       "ports_visible": false,
-      "emoji": "\ud83d\ude0a",
+      "emoji": "\ud83e\udee7",
       "label": "Now register the icons in settings. Let me find where settings are written with defaults.",
       "depth_front": false,
       "node_tint": "#2a2f3a"
@@ -562,7 +594,7 @@
       "height": 174.0,
       "z_value": -9.934000000000037,
       "ports_visible": false,
-      "emoji": "\ud83d\udccc",
+      "emoji": "\ud83e\uddf8",
       "label": "Now generate the border toggle icons:",
       "depth_front": false,
       "node_tint": "#2a2f3a"
@@ -578,7 +610,7 @@
       "height": 230.0,
       "z_value": -9.935000000000036,
       "ports_visible": false,
-      "emoji": "\ud83d\ude2e",
+      "emoji": "\ud83d\ude0f",
       "label": "Now add the white border paint in `paint_content`, replacing the bevel section:",
       "depth_front": false,
       "node_tint": "#2a2f3a"
@@ -594,7 +626,7 @@
       "height": 202.0,
       "z_value": -9.936000000000035,
       "ports_visible": false,
-      "emoji": "\ud83d\udccc",
+      "emoji": "\ud83d\ude25",
       "label": "Now add the border toggle button and paint the border in VideoNode:",
       "depth_front": false,
       "node_tint": "#2a2f3a"
@@ -610,7 +642,7 @@
       "height": 286.0,
       "z_value": -9.937000000000035,
       "ports_visible": false,
-      "emoji": "\ud83d\ude0b",
+      "emoji": "\ud83d\ude25",
       "label": "Good. I have everything I need. Let me implement all four changes now.\n\n**Task 1: White border toggle on VideoNode**",
       "depth_front": false,
       "node_tint": "#2a2f3a"
@@ -626,7 +658,7 @@
       "height": 202.0,
       "z_value": -9.939000000000034,
       "ports_visible": false,
-      "emoji": "\ud83d\ude07",
+      "emoji": "\ud83d\ude32",
       "label": "Let me check a few more things I need before implementing.",
       "depth_front": false,
       "node_tint": "#2a2f3a"
@@ -642,7 +674,7 @@
       "height": 202.0,
       "z_value": -9.940000000000033,
       "ports_visible": false,
-      "emoji": "\ud83d\ude1a",
+      "emoji": "\ud83d\ude0d",
       "label": "Now let me read the key files I need to edit.",
       "depth_front": false,
       "node_tint": "#2a2f3a"
@@ -658,7 +690,7 @@
       "height": 958.0,
       "z_value": -9.942000000000032,
       "ports_visible": false,
-      "emoji": "\ud83d\ude2c",
+      "emoji": "\ud83d\ude17",
       "label": "Got it, four feature ideas from your graph:\n\n1. **White border on video nodes** \u2014 Add a toggle/option to render a white border around video nodes (similar to how image nodes or other types have border styling).\n\n2. **Text overlay on about nodes** \u2014 Render the AboutNode's text as a visual overlay directly on the node, rather than (or in addition to) just being editable content.\n\n3. **Background screensnap for alpha** \u2014 Capture the background view behind the canvas (without any nodes/wires/UI) so you get a clean alpha channel \u2014 useful for compositing or export.\n\n4. **Scrollbar on PrettyEdit** \u2014 Add a scrollbar to the PrettyEdit widget so longer content is scrollable rather than clipped or overflowing.\n\nSounds like a mix of visual polish (1, 2), a utility/export feature (3), and a UX fix (4). Context makes sense?",
       "depth_front": false,
       "node_tint": "#4a3a5a"
@@ -674,7 +706,7 @@
       "height": 47.62365223608953,
       "z_value": -9.948000000000029,
       "ports_visible": false,
-      "emoji": "\ud83e\udee7",
+      "emoji": "\ud83d\ude0f",
       "label": "To explain",
       "depth_front": false,
       "node_tint": "#2a3a2f"
@@ -690,7 +722,7 @@
       "height": 54.85725750910683,
       "z_value": -9.949000000000028,
       "ports_visible": false,
-      "emoji": "\u2764",
+      "emoji": "\ud83d\ude0d",
       "label": "Why we act the way we do",
       "depth_front": false,
       "node_tint": "#2a3a2f"
@@ -706,7 +738,7 @@
       "height": 53.82917656878459,
       "z_value": -9.950000000000028,
       "ports_visible": false,
-      "emoji": "\ud83e\udee4",
+      "emoji": "\ud83d\ude0b",
       "label": "Psychology",
       "depth_front": false,
       "node_tint": "#2a3a2f"
@@ -722,7 +754,7 @@
       "height": 54.0,
       "z_value": -9.951000000000027,
       "ports_visible": false,
-      "emoji": "\ud83d\ude0d",
+      "emoji": "\ud83d\ude0b",
       "label": "And zoology",
       "depth_front": false,
       "node_tint": "#2a3a2f"
@@ -738,7 +770,7 @@
       "height": 43.634434280452695,
       "z_value": -9.952000000000027,
       "ports_visible": false,
-      "emoji": "\ud83d\ude2e",
+      "emoji": "\ud83d\ude0b",
       "label": "Blending anthropology",
       "depth_front": false,
       "node_tint": "#2a3a2f"
@@ -754,7 +786,7 @@
       "height": 51.15242532930435,
       "z_value": -9.954000000000025,
       "ports_visible": false,
-      "emoji": "\ud83d\ude0f",
+      "emoji": "\ud83e\udee4",
       "label": "Suggesting our actions are deeply rooted in biology",
       "depth_front": false,
       "node_tint": "#2a3a2f"
@@ -770,7 +802,7 @@
       "height": 44.82909137011873,
       "z_value": -9.955000000000025,
       "ports_visible": false,
-      "emoji": "\ud83e\udd70",
+      "emoji": "\ud83d\ude18",
       "label": "Through an evolutionary lens",
       "depth_front": false,
       "node_tint": "#2a3a2f"
@@ -786,7 +818,7 @@
       "height": 46.0317461772149,
       "z_value": -9.956000000000024,
       "ports_visible": false,
-      "emoji": "\ud83d\ude25",
+      "emoji": "\u2728",
       "label": "Famously",
       "depth_front": false,
       "node_tint": "#2a3a2f"
@@ -802,7 +834,7 @@
       "height": 51.44041953883192,
       "z_value": -9.957000000000024,
       "ports_visible": false,
-      "emoji": "\ud83d\ude2c",
+      "emoji": "\ud83e\udd72",
       "label": "We explore Human behaviour",
       "depth_front": false,
       "node_tint": "#2a3a2f"
@@ -818,7 +850,7 @@
       "height": 398.9440873205816,
       "z_value": -9.959000000000023,
       "ports_visible": false,
-      "emoji": "\ud83d\ude07",
+      "emoji": "\ud83d\ude17",
       "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Clips\\Gen-3 Alpha Turbo 3873545513, hair waving in the w, Cropped - downloaded, M 5.mp4",
       "caption": "Gen-3 Alpha Turbo 3873545513, hair waving in the w, Cropped - downloaded, M 5",
       "volume": 50,
@@ -838,7 +870,7 @@
       "height": 53.857145320371615,
       "z_value": -9.960000000000022,
       "ports_visible": false,
-      "emoji": "\ud83d\ude2e",
+      "emoji": "\ud83d\ude0b",
       "label": "In the Goodness of God",
       "depth_front": false,
       "node_tint": "#2a3a2f"
@@ -854,7 +886,7 @@
       "height": 49.88946020944081,
       "z_value": -9.961000000000022,
       "ports_visible": false,
-      "emoji": "\ud83d\ude32",
+      "emoji": "\ud83d\ude2c",
       "label": "Having had Knowledge",
       "depth_front": false,
       "node_tint": "#2a3a2f"
@@ -886,11 +918,11 @@
       "height": 292.57578067111945,
       "z_value": -9.977000000000013,
       "ports_visible": false,
-      "emoji": "\u2764",
+      "emoji": "\ud83d\ude25",
       "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Clips\\Blooming.mp4",
       "caption": "Blooming",
       "volume": 50,
-      "playback_pos": 0,
+      "playback_pos": 3833,
       "looping": true,
       "muted": false,
       "show_border": true
@@ -906,7 +938,7 @@
       "height": 47.95895269845977,
       "z_value": -9.978000000000012,
       "ports_visible": false,
-      "emoji": "\u2728",
+      "emoji": "\ud83d\ude0e",
       "label": "To become all that she became",
       "depth_front": false,
       "node_tint": "#2a3a2f"
@@ -922,7 +954,7 @@
       "height": 56.009081743424474,
       "z_value": -9.979000000000012,
       "ports_visible": false,
-      "emoji": "\ud83d\ude09",
+      "emoji": "\u2764",
       "label": "It was her destiny",
       "depth_front": false,
       "node_tint": "#2a3a2f"
@@ -938,7 +970,7 @@
       "height": 50.94658753581848,
       "z_value": -9.980000000000011,
       "ports_visible": false,
-      "emoji": "\ud83d\udc9b",
+      "emoji": "\u2764",
       "label": "Towards the Sun",
       "depth_front": false,
       "node_tint": "#2a3a2f"
@@ -954,7 +986,7 @@
       "height": 49.46596197832457,
       "z_value": -9.98100000000001,
       "ports_visible": false,
-      "emoji": "\ud83d\ude17",
+      "emoji": "\ud83d\ude25",
       "label": "She grew there by her default path",
       "depth_front": false,
       "node_tint": "#2a3a2f"
@@ -970,7 +1002,7 @@
       "height": 47.56067994744831,
       "z_value": -9.98200000000001,
       "ports_visible": false,
-      "emoji": "\ud83d\ude2f",
+      "emoji": "\ud83d\ude09",
       "label": "She never took a concious decision to grow",
       "depth_front": false,
       "node_tint": "#2a3a2f"
@@ -986,7 +1018,7 @@
       "height": 50.68607083289248,
       "z_value": -9.98300000000001,
       "ports_visible": false,
-      "emoji": "\ud83d\ude17",
+      "emoji": "\ud83e\uddf8",
       "label": "My plant",
       "depth_front": false,
       "node_tint": "#2a3a2f"
@@ -1002,7 +1034,7 @@
       "height": 49.81690043705419,
       "z_value": -9.984000000000009,
       "ports_visible": false,
-      "emoji": "\ud83d\udc96",
+      "emoji": "\ud83d\ude12",
       "label": "And about Embracing our Destiny",
       "depth_front": false,
       "node_tint": "#2a3a2f"
@@ -1018,7 +1050,7 @@
       "height": 49.13153326686506,
       "z_value": -9.985000000000008,
       "ports_visible": false,
-      "emoji": "\ud83d\udc9c",
+      "emoji": "\ud83d\ude12",
       "label": "It's A Visual Poem",
       "depth_front": false,
       "node_tint": "#2a3a2f"
@@ -1034,7 +1066,7 @@
       "height": 55.57195278722736,
       "z_value": -9.986000000000008,
       "ports_visible": false,
-      "emoji": "\ud83d\ude1a",
+      "emoji": "\ud83e\udd72",
       "label": "About Becoming",
       "depth_front": false,
       "node_tint": "#2a3a2f"
@@ -1050,7 +1082,7 @@
       "height": 54.60170979587258,
       "z_value": -9.987000000000007,
       "ports_visible": false,
-      "emoji": "\ud83d\ude2f",
+      "emoji": "\ud83d\ude1a",
       "label": "About Growth",
       "depth_front": false,
       "node_tint": "#2a3a2f"
@@ -1066,7 +1098,7 @@
       "height": 56.33279406348515,
       "z_value": -9.988000000000007,
       "ports_visible": false,
-      "emoji": "\ud83d\ude0d",
+      "emoji": "\ud83d\ude0f",
       "label": "Without Regard For The Earth",
       "depth_front": false,
       "node_tint": "#2a3a2f"
@@ -1082,7 +1114,7 @@
       "height": 55.066200286990124,
       "z_value": -9.989000000000006,
       "ports_visible": false,
-      "emoji": "\ud83d\ude2e",
+      "emoji": "\ud83d\udc96",
       "label": "The Tale of The Sun's Love",
       "depth_front": false,
       "node_tint": "#2a3a2f"
@@ -1098,11 +1130,11 @@
       "height": 208.10016687321365,
       "z_value": -9.991000000000005,
       "ports_visible": false,
-      "emoji": "\ud83d\ude17",
+      "emoji": "\ud83e\udd70",
       "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Clips\\Alongside his Grace.mp4",
       "caption": "Alongside his Grace",
       "volume": 50,
-      "playback_pos": 2669,
+      "playback_pos": 5755,
       "looping": true,
       "muted": false,
       "show_border": true
@@ -1118,7 +1150,7 @@
       "height": 50.95451128319155,
       "z_value": -9.996000000000002,
       "ports_visible": false,
-      "emoji": "\ud83d\ude2c",
+      "emoji": "\ud83d\ude1a",
       "label": "Alongside Our Grace",
       "depth_front": false,
       "node_tint": "#2a3a2f"
@@ -1134,11 +1166,11 @@
       "height": 285.12558573129957,
       "z_value": -9.997000000000002,
       "ports_visible": false,
-      "emoji": "\ud83d\ude07",
+      "emoji": "\u2764",
       "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Clips\\Alongside Our Grace\\Alongside Our Grace - Retime.mp4",
       "caption": "Alongside Our Grace - Retime",
       "volume": 50,
-      "playback_pos": 5041,
+      "playback_pos": 14166,
       "looping": true,
       "muted": false,
       "show_border": false
@@ -1154,7 +1186,7 @@
       "height": 51.11330166983146,
       "z_value": -9.999,
       "ports_visible": false,
-      "emoji": "\ud83e\udd72",
+      "emoji": "\ud83d\ude25",
       "label": "Chapter 16",
       "depth_front": false,
       "node_tint": "#2a3a2f"
@@ -1170,7 +1202,7 @@
       "height": 258.0,
       "z_value": -10.0,
       "ports_visible": false,
-      "emoji": "\ud83e\udd70",
+      "emoji": "\ud83d\ude42\u200d\u2194\ufe0f",
       "label": "Done. Every node that has the emoji shuffle button (`_show_emoji_btn = True`, which is the default) will now show \"More Glory\" as its tooltip.",
       "depth_front": false,
       "node_tint": "#1e1e1e"
@@ -1178,234 +1210,234 @@
   ],
   "connections": [
     {
-      "start_uuid": "9687ca51335d4211a0a339e84f689682",
-      "end_uuid": "7fcdea92ccd242138e899f464ab636aa"
-    },
-    {
       "start_uuid": "ab6b35a29ac84c05898fe54a8cf3c807",
-      "end_uuid": "568b8faa5d8d407bb613736722a12e6d"
-    },
-    {
-      "start_uuid": "bedc3f2725b44576ab27846eb7778b69",
-      "end_uuid": "d039cf50a9d7424a96b90726186660fe"
-    },
-    {
-      "start_uuid": "0e31153bff7c411f876a41d6e82b02cb",
-      "end_uuid": "bedc3f2725b44576ab27846eb7778b69"
-    },
-    {
-      "start_uuid": "ab6b35a29ac84c05898fe54a8cf3c807",
-      "end_uuid": "0e31153bff7c411f876a41d6e82b02cb"
-    },
-    {
-      "start_uuid": "2648068cccce4e1b984760037788230e",
-      "end_uuid": "32ead154f64c47aa81c3762a2395d7b0"
-    },
-    {
-      "start_uuid": "32ead154f64c47aa81c3762a2395d7b0",
-      "end_uuid": "0498f443d0804e2cb9a45e27cd9a7fba"
-    },
-    {
-      "start_uuid": "b89d853c5e3d4c2c8f9ca938a0d03b63",
-      "end_uuid": "42157222082d4de795c9969c2a62dbf9"
-    },
-    {
-      "start_uuid": "142e9198c0de4a19a4fc180ea14c0750",
-      "end_uuid": "69f10e6662004526a70fee0845945049"
-    },
-    {
-      "start_uuid": "69f10e6662004526a70fee0845945049",
-      "end_uuid": "4ef7c11edcf641f8838d149a8cc3930c"
-    },
-    {
-      "start_uuid": "0498f443d0804e2cb9a45e27cd9a7fba",
-      "end_uuid": "142e9198c0de4a19a4fc180ea14c0750"
-    },
-    {
-      "start_uuid": "4ab022b3bdd44e3e85475bc65c18bcbe",
-      "end_uuid": "b89d853c5e3d4c2c8f9ca938a0d03b63"
-    },
-    {
-      "start_uuid": "12e14db2dcc74000b59c99d4b7409f86",
-      "end_uuid": "54463cc0760c47f3ad74b2539894cd6b"
-    },
-    {
-      "start_uuid": "54463cc0760c47f3ad74b2539894cd6b",
-      "end_uuid": "a775281d6a434aae9fb652817f4fa3b6"
-    },
-    {
-      "start_uuid": "a775281d6a434aae9fb652817f4fa3b6",
-      "end_uuid": "0853cdfd1e954086a357082de1d0cb35"
-    },
-    {
-      "start_uuid": "0853cdfd1e954086a357082de1d0cb35",
-      "end_uuid": "3018a01b7934455eb25f17dc46ec8de3"
-    },
-    {
-      "start_uuid": "3018a01b7934455eb25f17dc46ec8de3",
-      "end_uuid": "09a08f3422ea4ae6adabea0f7cb7d638"
-    },
-    {
-      "start_uuid": "4ef7c11edcf641f8838d149a8cc3930c",
-      "end_uuid": "b5b6b1fcdd6c4a5fa3a84ecde6b41195"
-    },
-    {
-      "start_uuid": "b5b6b1fcdd6c4a5fa3a84ecde6b41195",
-      "end_uuid": "4ab022b3bdd44e3e85475bc65c18bcbe"
-    },
-    {
-      "start_uuid": "b89d853c5e3d4c2c8f9ca938a0d03b63",
-      "end_uuid": "12e14db2dcc74000b59c99d4b7409f86"
-    },
-    {
-      "start_uuid": "09a08f3422ea4ae6adabea0f7cb7d638",
-      "end_uuid": "6faf59f5b10a4ef2a2100dcc54f86e73"
-    },
-    {
-      "start_uuid": "6faf59f5b10a4ef2a2100dcc54f86e73",
-      "end_uuid": "81390269fabb4d7b9a3e8e73865c05a4"
-    },
-    {
-      "start_uuid": "81390269fabb4d7b9a3e8e73865c05a4",
-      "end_uuid": "a279f5146aec4e05b8cc4216cbcc721a"
-    },
-    {
-      "start_uuid": "a279f5146aec4e05b8cc4216cbcc721a",
-      "end_uuid": "f8edbd81a4224da98342f857111348d2"
-    },
-    {
-      "start_uuid": "f8edbd81a4224da98342f857111348d2",
-      "end_uuid": "88a7eb7e6d774b4a86ad83bc95c427b8"
-    },
-    {
-      "start_uuid": "88a7eb7e6d774b4a86ad83bc95c427b8",
-      "end_uuid": "02dbc764b3a448fbaf366e48c3cd3b6b"
-    },
-    {
-      "start_uuid": "1518bb568c644364b584a16f40cf0653",
-      "end_uuid": "089a6317c18740a3a4576b3df1f27b62"
-    },
-    {
-      "start_uuid": "089a6317c18740a3a4576b3df1f27b62",
-      "end_uuid": "04eb90c9e1be43f882ee2b40307c1e2b"
-    },
-    {
-      "start_uuid": "02dbc764b3a448fbaf366e48c3cd3b6b",
-      "end_uuid": "1518bb568c644364b584a16f40cf0653"
-    },
-    {
-      "start_uuid": "04eb90c9e1be43f882ee2b40307c1e2b",
-      "end_uuid": "e7984cb6fdd141bb9366786909f6ff95"
-    },
-    {
-      "start_uuid": "e7984cb6fdd141bb9366786909f6ff95",
-      "end_uuid": "91c309d1add8493ebc3ba4e736475348"
-    },
-    {
-      "start_uuid": "91c309d1add8493ebc3ba4e736475348",
-      "end_uuid": "f5533684bb3949f7a8beac1c52e99f13"
-    },
-    {
-      "start_uuid": "f5533684bb3949f7a8beac1c52e99f13",
-      "end_uuid": "2f27fa7ad3d9436cbcddcbb46a59bdcc"
-    },
-    {
-      "start_uuid": "2f27fa7ad3d9436cbcddcbb46a59bdcc",
-      "end_uuid": "7617ad1aca1d449697280f2a200e6576"
-    },
-    {
-      "start_uuid": "7617ad1aca1d449697280f2a200e6576",
-      "end_uuid": "d517b2776bc94440ad03097b8fcb6889"
-    },
-    {
-      "start_uuid": "d517b2776bc94440ad03097b8fcb6889",
-      "end_uuid": "cee6d24ac222475c82504bad392dd915"
-    },
-    {
-      "start_uuid": "568b8faa5d8d407bb613736722a12e6d",
-      "end_uuid": "9687ca51335d4211a0a339e84f689682"
-    },
-    {
-      "start_uuid": "7fcdea92ccd242138e899f464ab636aa",
-      "end_uuid": "26bc354b2480487a85af9f59d3488d06"
-    },
-    {
-      "start_uuid": "26bc354b2480487a85af9f59d3488d06",
-      "end_uuid": "177d7c05014244c9ae0a72ceebc7ea0b"
-    },
-    {
-      "start_uuid": "177d7c05014244c9ae0a72ceebc7ea0b",
-      "end_uuid": "db5072b8368a48d18239efe1eb420c40"
-    },
-    {
-      "start_uuid": "db5072b8368a48d18239efe1eb420c40",
-      "end_uuid": "5235e11ce8f843f498755ccb0aa81c95"
-    },
-    {
-      "start_uuid": "5235e11ce8f843f498755ccb0aa81c95",
-      "end_uuid": "235ffc365cf447058a6a31464d9cd329"
-    },
-    {
-      "start_uuid": "235ffc365cf447058a6a31464d9cd329",
-      "end_uuid": "df376037d979453aa64042a69dc326ef"
-    },
-    {
-      "start_uuid": "df376037d979453aa64042a69dc326ef",
-      "end_uuid": "c567949841d1407883ec7dc201eb18f4"
-    },
-    {
-      "start_uuid": "c567949841d1407883ec7dc201eb18f4",
-      "end_uuid": "975fe2d768d348bc961be08539f68edc"
-    },
-    {
-      "start_uuid": "975fe2d768d348bc961be08539f68edc",
-      "end_uuid": "c974edfdcc8343a89a2e9ad2826aa5aa"
-    },
-    {
-      "start_uuid": "c974edfdcc8343a89a2e9ad2826aa5aa",
-      "end_uuid": "66735b0390814af9be7f80b6c32960e4"
-    },
-    {
-      "start_uuid": "66735b0390814af9be7f80b6c32960e4",
-      "end_uuid": "07cb1910c2ff4fa185ae52762a4ca747"
-    },
-    {
-      "start_uuid": "07cb1910c2ff4fa185ae52762a4ca747",
-      "end_uuid": "15dfbd5ec4364a3a8c0ff4df1d9535cb"
-    },
-    {
-      "start_uuid": "15dfbd5ec4364a3a8c0ff4df1d9535cb",
-      "end_uuid": "be7b29433f1a44a3ba50dcfff89345cc"
-    },
-    {
-      "start_uuid": "be7b29433f1a44a3ba50dcfff89345cc",
-      "end_uuid": "f919b11a176d461fb8937a47962eeac5"
-    },
-    {
-      "start_uuid": "f919b11a176d461fb8937a47962eeac5",
-      "end_uuid": "3ac15ae1454842d6abae2416abb3cc03"
-    },
-    {
-      "start_uuid": "3ac15ae1454842d6abae2416abb3cc03",
-      "end_uuid": "d127a5b2c66a4b0788e260c1007b872b"
-    },
-    {
-      "start_uuid": "d127a5b2c66a4b0788e260c1007b872b",
-      "end_uuid": "c05ada4493e6459c99433169688ffd53"
+      "end_uuid": "56d515215e744bd79889d3957eca0d74"
     },
     {
       "start_uuid": "c05ada4493e6459c99433169688ffd53",
       "end_uuid": "3aee33b163dc4bb6b79f11ce3398283d"
     },
     {
+      "start_uuid": "d127a5b2c66a4b0788e260c1007b872b",
+      "end_uuid": "c05ada4493e6459c99433169688ffd53"
+    },
+    {
+      "start_uuid": "3ac15ae1454842d6abae2416abb3cc03",
+      "end_uuid": "d127a5b2c66a4b0788e260c1007b872b"
+    },
+    {
+      "start_uuid": "f919b11a176d461fb8937a47962eeac5",
+      "end_uuid": "3ac15ae1454842d6abae2416abb3cc03"
+    },
+    {
+      "start_uuid": "be7b29433f1a44a3ba50dcfff89345cc",
+      "end_uuid": "f919b11a176d461fb8937a47962eeac5"
+    },
+    {
+      "start_uuid": "15dfbd5ec4364a3a8c0ff4df1d9535cb",
+      "end_uuid": "be7b29433f1a44a3ba50dcfff89345cc"
+    },
+    {
+      "start_uuid": "07cb1910c2ff4fa185ae52762a4ca747",
+      "end_uuid": "15dfbd5ec4364a3a8c0ff4df1d9535cb"
+    },
+    {
+      "start_uuid": "66735b0390814af9be7f80b6c32960e4",
+      "end_uuid": "07cb1910c2ff4fa185ae52762a4ca747"
+    },
+    {
+      "start_uuid": "c974edfdcc8343a89a2e9ad2826aa5aa",
+      "end_uuid": "66735b0390814af9be7f80b6c32960e4"
+    },
+    {
+      "start_uuid": "975fe2d768d348bc961be08539f68edc",
+      "end_uuid": "c974edfdcc8343a89a2e9ad2826aa5aa"
+    },
+    {
+      "start_uuid": "c567949841d1407883ec7dc201eb18f4",
+      "end_uuid": "975fe2d768d348bc961be08539f68edc"
+    },
+    {
+      "start_uuid": "df376037d979453aa64042a69dc326ef",
+      "end_uuid": "c567949841d1407883ec7dc201eb18f4"
+    },
+    {
+      "start_uuid": "235ffc365cf447058a6a31464d9cd329",
+      "end_uuid": "df376037d979453aa64042a69dc326ef"
+    },
+    {
+      "start_uuid": "5235e11ce8f843f498755ccb0aa81c95",
+      "end_uuid": "235ffc365cf447058a6a31464d9cd329"
+    },
+    {
+      "start_uuid": "db5072b8368a48d18239efe1eb420c40",
+      "end_uuid": "5235e11ce8f843f498755ccb0aa81c95"
+    },
+    {
+      "start_uuid": "177d7c05014244c9ae0a72ceebc7ea0b",
+      "end_uuid": "db5072b8368a48d18239efe1eb420c40"
+    },
+    {
+      "start_uuid": "26bc354b2480487a85af9f59d3488d06",
+      "end_uuid": "177d7c05014244c9ae0a72ceebc7ea0b"
+    },
+    {
+      "start_uuid": "7fcdea92ccd242138e899f464ab636aa",
+      "end_uuid": "26bc354b2480487a85af9f59d3488d06"
+    },
+    {
+      "start_uuid": "568b8faa5d8d407bb613736722a12e6d",
+      "end_uuid": "9687ca51335d4211a0a339e84f689682"
+    },
+    {
+      "start_uuid": "d517b2776bc94440ad03097b8fcb6889",
+      "end_uuid": "cee6d24ac222475c82504bad392dd915"
+    },
+    {
+      "start_uuid": "7617ad1aca1d449697280f2a200e6576",
+      "end_uuid": "d517b2776bc94440ad03097b8fcb6889"
+    },
+    {
+      "start_uuid": "2f27fa7ad3d9436cbcddcbb46a59bdcc",
+      "end_uuid": "7617ad1aca1d449697280f2a200e6576"
+    },
+    {
+      "start_uuid": "f5533684bb3949f7a8beac1c52e99f13",
+      "end_uuid": "2f27fa7ad3d9436cbcddcbb46a59bdcc"
+    },
+    {
+      "start_uuid": "91c309d1add8493ebc3ba4e736475348",
+      "end_uuid": "f5533684bb3949f7a8beac1c52e99f13"
+    },
+    {
+      "start_uuid": "e7984cb6fdd141bb9366786909f6ff95",
+      "end_uuid": "91c309d1add8493ebc3ba4e736475348"
+    },
+    {
+      "start_uuid": "04eb90c9e1be43f882ee2b40307c1e2b",
+      "end_uuid": "e7984cb6fdd141bb9366786909f6ff95"
+    },
+    {
+      "start_uuid": "02dbc764b3a448fbaf366e48c3cd3b6b",
+      "end_uuid": "1518bb568c644364b584a16f40cf0653"
+    },
+    {
+      "start_uuid": "089a6317c18740a3a4576b3df1f27b62",
+      "end_uuid": "04eb90c9e1be43f882ee2b40307c1e2b"
+    },
+    {
+      "start_uuid": "1518bb568c644364b584a16f40cf0653",
+      "end_uuid": "089a6317c18740a3a4576b3df1f27b62"
+    },
+    {
+      "start_uuid": "88a7eb7e6d774b4a86ad83bc95c427b8",
+      "end_uuid": "02dbc764b3a448fbaf366e48c3cd3b6b"
+    },
+    {
+      "start_uuid": "f8edbd81a4224da98342f857111348d2",
+      "end_uuid": "88a7eb7e6d774b4a86ad83bc95c427b8"
+    },
+    {
+      "start_uuid": "a279f5146aec4e05b8cc4216cbcc721a",
+      "end_uuid": "f8edbd81a4224da98342f857111348d2"
+    },
+    {
+      "start_uuid": "81390269fabb4d7b9a3e8e73865c05a4",
+      "end_uuid": "a279f5146aec4e05b8cc4216cbcc721a"
+    },
+    {
+      "start_uuid": "6faf59f5b10a4ef2a2100dcc54f86e73",
+      "end_uuid": "81390269fabb4d7b9a3e8e73865c05a4"
+    },
+    {
+      "start_uuid": "09a08f3422ea4ae6adabea0f7cb7d638",
+      "end_uuid": "6faf59f5b10a4ef2a2100dcc54f86e73"
+    },
+    {
+      "start_uuid": "b89d853c5e3d4c2c8f9ca938a0d03b63",
+      "end_uuid": "12e14db2dcc74000b59c99d4b7409f86"
+    },
+    {
+      "start_uuid": "b5b6b1fcdd6c4a5fa3a84ecde6b41195",
+      "end_uuid": "4ab022b3bdd44e3e85475bc65c18bcbe"
+    },
+    {
+      "start_uuid": "4ef7c11edcf641f8838d149a8cc3930c",
+      "end_uuid": "b5b6b1fcdd6c4a5fa3a84ecde6b41195"
+    },
+    {
+      "start_uuid": "3018a01b7934455eb25f17dc46ec8de3",
+      "end_uuid": "09a08f3422ea4ae6adabea0f7cb7d638"
+    },
+    {
+      "start_uuid": "0853cdfd1e954086a357082de1d0cb35",
+      "end_uuid": "3018a01b7934455eb25f17dc46ec8de3"
+    },
+    {
+      "start_uuid": "a775281d6a434aae9fb652817f4fa3b6",
+      "end_uuid": "0853cdfd1e954086a357082de1d0cb35"
+    },
+    {
+      "start_uuid": "54463cc0760c47f3ad74b2539894cd6b",
+      "end_uuid": "a775281d6a434aae9fb652817f4fa3b6"
+    },
+    {
+      "start_uuid": "12e14db2dcc74000b59c99d4b7409f86",
+      "end_uuid": "54463cc0760c47f3ad74b2539894cd6b"
+    },
+    {
+      "start_uuid": "4ab022b3bdd44e3e85475bc65c18bcbe",
+      "end_uuid": "b89d853c5e3d4c2c8f9ca938a0d03b63"
+    },
+    {
+      "start_uuid": "0498f443d0804e2cb9a45e27cd9a7fba",
+      "end_uuid": "142e9198c0de4a19a4fc180ea14c0750"
+    },
+    {
+      "start_uuid": "69f10e6662004526a70fee0845945049",
+      "end_uuid": "4ef7c11edcf641f8838d149a8cc3930c"
+    },
+    {
+      "start_uuid": "142e9198c0de4a19a4fc180ea14c0750",
+      "end_uuid": "69f10e6662004526a70fee0845945049"
+    },
+    {
+      "start_uuid": "b89d853c5e3d4c2c8f9ca938a0d03b63",
+      "end_uuid": "42157222082d4de795c9969c2a62dbf9"
+    },
+    {
+      "start_uuid": "32ead154f64c47aa81c3762a2395d7b0",
+      "end_uuid": "0498f443d0804e2cb9a45e27cd9a7fba"
+    },
+    {
+      "start_uuid": "2648068cccce4e1b984760037788230e",
+      "end_uuid": "32ead154f64c47aa81c3762a2395d7b0"
+    },
+    {
       "start_uuid": "ab6b35a29ac84c05898fe54a8cf3c807",
-      "end_uuid": "56d515215e744bd79889d3957eca0d74"
+      "end_uuid": "0e31153bff7c411f876a41d6e82b02cb"
+    },
+    {
+      "start_uuid": "0e31153bff7c411f876a41d6e82b02cb",
+      "end_uuid": "bedc3f2725b44576ab27846eb7778b69"
+    },
+    {
+      "start_uuid": "bedc3f2725b44576ab27846eb7778b69",
+      "end_uuid": "d039cf50a9d7424a96b90726186660fe"
+    },
+    {
+      "start_uuid": "ab6b35a29ac84c05898fe54a8cf3c807",
+      "end_uuid": "568b8faa5d8d407bb613736722a12e6d"
+    },
+    {
+      "start_uuid": "9687ca51335d4211a0a339e84f689682",
+      "end_uuid": "7fcdea92ccd242138e899f464ab636aa"
     }
   ],
   "viewport": {
-    "camera_x": 681.25,
-    "camera_y": -897.9166666666665,
-    "camera_zoom": 0.48
+    "camera_x": -140.22988505747128,
+    "camera_y": -36.78160919540231,
+    "camera_zoom": 0.87
   },
-  "checksum": "543ca740b2c20ff7"
+  "checksum": "b39010635abbb170"
 }

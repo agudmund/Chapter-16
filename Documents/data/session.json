@@ -213,38 +213,6 @@
     },
     {
       "node_id": 0,
-      "node_type": "git",
-      "title": "Git Status",
-      "uuid": "c2f2cb0aab30426cbc1c13e2fdc41dcc",
-      "x": 0.0,
-      "y": 0.0,
-      "width": 300.0,
-      "height": 212.0,
-      "z_value": 0.0,
-      "ports_visible": false,
-      "emoji": "\ud83d\ude18",
-      "depth_front": false,
-      "node_tint": ""
-    },
-    {
-      "node_id": 0,
-      "node_type": "bezier",
-      "title": "Curve",
-      "uuid": "9bae9cc9d8bd4cda81171672487ec60c",
-      "x": -170.11494252873564,
-      "y": -371.264367816092,
-      "width": 300.0,
-      "height": 160.0,
-      "z_value": -9.895000000000058,
-      "ports_visible": false,
-      "emoji": "\ud83d\ude17",
-      "cp1_x": 99.0,
-      "cp1_y": 114.71264367816092,
-      "cp2_x": 22.839080459770173,
-      "cp2_y": 45.28735632183907
-    },
-    {
-      "node_id": 0,
       "node_type": "claude_response",
       "title": "Response",
       "uuid": "d039cf50a9d7424a96b90726186660fe",
@@ -844,8 +812,8 @@
       "node_type": "video",
       "title": "Video",
       "uuid": "4b23e058ca6d48e98293b67b0cd4cfee",
-      "x": 414.4548891528484,
-      "y": 102.25482603150692,
+      "x": 413.30546386549213,
+      "y": 99.95597545679425,
       "width": 627.0271303704177,
       "height": 398.9440873205816,
       "z_value": -9.959000000000023,
@@ -854,7 +822,7 @@
       "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Clips\\Gen-3 Alpha Turbo 3873545513, hair waving in the w, Cropped - downloaded, M 5.mp4",
       "caption": "Gen-3 Alpha Turbo 3873545513, hair waving in the w, Cropped - downloaded, M 5",
       "volume": 50,
-      "playback_pos": 2333,
+      "playback_pos": 5083,
       "looping": true,
       "muted": false,
       "show_border": true
@@ -912,8 +880,8 @@
       "node_type": "video",
       "title": "Video",
       "uuid": "0d80d97658104827a41ca2850e56e401",
-      "x": 1495.7069074840742,
-      "y": -629.7100728689289,
+      "x": 1494.557482196718,
+      "y": -632.0089234436416,
       "width": 447.3949395844961,
       "height": 292.57578067111945,
       "z_value": -9.977000000000013,
@@ -922,7 +890,7 @@
       "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Clips\\Blooming.mp4",
       "caption": "Blooming",
       "volume": 50,
-      "playback_pos": 3833,
+      "playback_pos": 1208,
       "looping": true,
       "muted": false,
       "show_border": true
@@ -1124,8 +1092,8 @@
       "node_type": "video",
       "title": "Video",
       "uuid": "0272947eface4c75b6253d884c3ca0e0",
-      "x": -451.93457029118264,
-      "y": -1305.8034036454783,
+      "x": -453.08399557853903,
+      "y": -1305.803403645478,
       "width": 815.64972678465,
       "height": 208.10016687321365,
       "z_value": -9.991000000000005,
@@ -1134,7 +1102,7 @@
       "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Clips\\Alongside his Grace.mp4",
       "caption": "Alongside his Grace",
       "volume": 50,
-      "playback_pos": 5755,
+      "playback_pos": 4129,
       "looping": true,
       "muted": false,
       "show_border": true
@@ -1160,8 +1128,8 @@
       "node_type": "video",
       "title": "Video",
       "uuid": "42157222082d4de795c9969c2a62dbf9",
-      "x": -159.8495062555927,
-      "y": -1020.0545041890589,
+      "x": -166.7460579797306,
+      "y": -1025.8016306258405,
       "width": 358.31870726358795,
       "height": 285.12558573129957,
       "z_value": -9.997000000000002,
@@ -1170,7 +1138,7 @@
       "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Clips\\Alongside Our Grace\\Alongside Our Grace - Retime.mp4",
       "caption": "Alongside Our Grace - Retime",
       "volume": 50,
-      "playback_pos": 14166,
+      "playback_pos": 3125,
       "looping": true,
       "muted": false,
       "show_border": false
@@ -1190,6 +1158,21 @@
       "label": "Chapter 16",
       "depth_front": false,
       "node_tint": "#2a3a2f"
+    },
+    {
+      "node_id": 0,
+      "node_type": "info",
+      "title": "Intricate",
+      "uuid": "00a54b7af8db4955851a438b656b5935",
+      "x": -243.67816091954023,
+      "y": -350.5747126436781,
+      "width": 289.0,
+      "height": 385.0,
+      "z_value": 0.0,
+      "ports_visible": false,
+      "emoji": "\ud83e\udd70",
+      "depth_front": false,
+      "node_tint": ""
     },
     {
       "node_id": 0,
@@ -1435,9 +1418,9 @@
     }
   ],
   "viewport": {
-    "camera_x": -140.22988505747128,
-    "camera_y": -36.78160919540231,
+    "camera_x": 1837.9310344827586,
+    "camera_y": 811.4942528735633,
     "camera_zoom": 0.87
   },
-  "checksum": "b39010635abbb170"
+  "checksum": "778ce963ee261580"
 }

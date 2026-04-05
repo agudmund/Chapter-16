@@ -213,35 +213,21 @@
     },
     {
       "node_id": 0,
-      "node_type": "git",
-      "title": "Git Status",
-      "uuid": "c2f2cb0aab30426cbc1c13e2fdc41dcc",
-      "x": 0.0,
-      "y": 0.0,
-      "width": 300.0,
-      "height": 212.0,
-      "z_value": 0.0,
+      "node_type": "claude",
+      "title": "Claude",
+      "uuid": "1b6169cbfcdd48a0bc804aa8195e9feb",
+      "x": -724.1379310344826,
+      "y": 128.35632183908044,
+      "width": 800.0,
+      "height": 118.0,
+      "z_value": -9.888000000000062,
       "ports_visible": false,
-      "emoji": "\ud83d\ude18",
+      "emoji": "\ud83d\ude12",
       "depth_front": false,
-      "node_tint": ""
-    },
-    {
-      "node_id": 0,
-      "node_type": "bezier",
-      "title": "Curve",
-      "uuid": "9bae9cc9d8bd4cda81171672487ec60c",
-      "x": -170.11494252873564,
-      "y": -371.264367816092,
-      "width": 300.0,
-      "height": 160.0,
-      "z_value": -9.895000000000058,
-      "ports_visible": false,
-      "emoji": "\ud83d\ude17",
-      "cp1_x": 99.0,
-      "cp1_y": 114.71264367816092,
-      "cp2_x": 22.839080459770173,
-      "cp2_y": 45.28735632183907
+      "folder_path": "C:\\Users\\thisg\\.claude\\projects\\C--Users-thisg-Desktop-Intricate",
+      "body_text": "",
+      "input_text": "",
+      "body_visible": false
     },
     {
       "node_id": 0,
@@ -1193,6 +1179,21 @@
     },
     {
       "node_id": 0,
+      "node_type": "info",
+      "title": "Intricate",
+      "uuid": "00a54b7af8db4955851a438b656b5935",
+      "x": -243.67816091954023,
+      "y": -350.5747126436781,
+      "width": 289.0,
+      "height": 385.0,
+      "z_value": 0.0,
+      "ports_visible": false,
+      "emoji": "\ud83e\udd70",
+      "depth_front": false,
+      "node_tint": ""
+    },
+    {
+      "node_id": 0,
       "node_type": "claude_response",
       "title": "Response",
       "uuid": "56d515215e744bd79889d3957eca0d74",
@@ -1435,9 +1436,9 @@
     }
   ],
   "viewport": {
-    "camera_x": -140.22988505747128,
-    "camera_y": -36.78160919540231,
+    "camera_x": -106.89655172413791,
+    "camera_y": 126.4367816091954,
     "camera_zoom": 0.87
   },
-  "checksum": "b39010635abbb170"
+  "checksum": "a1a46c7dc869fc3f"
 }

@@ -1343,8 +1343,8 @@
     }
   ],
   "viewport": {
-    "camera_x": -740.2448935436788,
-    "camera_y": -35.90102255061721,
+    "camera_x": -739.6750360428764,
+    "camera_y": -20.514870028923383,
     "camera_zoom": 1.7548246686059055
   },
   "ui_migrations": [
@@ -1353,5 +1353,5 @@
   "last_browse_dirs": {
     "audio": "C:\\Users\\thebe\\Desktop\\_asset\\Audio\\Grok Samples"
   },
-  "checksum": "9d597ee4b625675c"
+  "checksum": "fd80c906448d9dd9"
 }

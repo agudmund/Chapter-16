@@ -44,71 +44,18 @@
     {
       "node_id": 0,
       "node_type": "about",
-      "title": "She never made a conscious decision to grow",
-      "uuid": "54463cc0760c47f3ad74b2539894cd6b",
-      "x": 960.8464679616143,
-      "y": -491.15028112227697,
-      "width": 458.5,
-      "height": 29.0,
-      "z_value": -9.98200000000001,
+      "title": "About Growth",
+      "uuid": "69f10e6662004526a70fee0845945049",
+      "x": 357.1140108062682,
+      "y": -1042.6486818890455,
+      "width": 145.99650704013527,
+      "height": 29.405379211119453,
+      "z_value": -9.987000000000007,
       "ports_visible": false,
       "shelf_visible": false,
-      "label": "She never made a conscious decision to grow",
+      "label": "About Growth",
       "depth_front": false,
       "node_tint": "#2a3a2f"
-    },
-    {
-      "node_id": 0,
-      "node_type": "claude_response",
-      "title": "Response",
-      "uuid": "5235e11ce8f843f498755ccb0aa81c95",
-      "x": 4844.085726034307,
-      "y": -1459.8644305226,
-      "width": 420.0,
-      "height": 230.0,
-      "z_value": -9.933000000000037,
-      "ports_visible": false,
-      "shelf_visible": true,
-      "label": "Now register the icons in settings. Let me find where settings are written with defaults.",
-      "depth_front": false,
-      "node_tint": "#2a2f3a"
-    },
-    {
-      "node_id": 0,
-      "node_type": "about",
-      "title": "She grew there by her default path",
-      "uuid": "a775281d6a434aae9fb652817f4fa3b6",
-      "x": 1100.3644891685458,
-      "y": -416.6495908700906,
-      "width": 368.86322084167557,
-      "height": 31.176963838994993,
-      "z_value": -9.98100000000001,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "label": "She grew there by her default path",
-      "depth_front": false,
-      "node_tint": "#2a3a2f"
-    },
-    {
-      "node_id": 0,
-      "node_type": "image",
-      "title": "Image",
-      "uuid": "4c49dac3c4904bc096b474b29eebb80f",
-      "x": 821.1136398458098,
-      "y": 1456.8308606442022,
-      "width": 414.5146174540274,
-      "height": 426.9608260201037,
-      "z_value": 0.0,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "image_b64": "",
-      "cache_key": "a41b5615037618dea7790effee929e1e4ccb0a7cb0a6ad2017d9d1de06ee02fc",
-      "caption": "Upon it sat while he kept",
-      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\Upon it sat while he kept.png",
-      "source_size": 1227252,
-      "source_mtime": 1744609849.5239227,
-      "show_border": true,
-      "depth_front": false
     },
     {
       "node_id": 0,
@@ -144,28 +91,12 @@
       "source_mtime": 1761486823.1269565,
       "caption": "Alongside his Grace",
       "volume": 50,
-      "playback_pos": 1209,
+      "playback_pos": 5130,
       "looping": true,
       "muted": false,
       "show_border": true,
       "was_playing": true,
       "cache_enabled": true
-    },
-    {
-      "node_id": 0,
-      "node_type": "about",
-      "title": "About Growth",
-      "uuid": "69f10e6662004526a70fee0845945049",
-      "x": 357.1140108062682,
-      "y": -1042.6486818890455,
-      "width": 145.99650704013527,
-      "height": 29.405379211119453,
-      "z_value": -9.987000000000007,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "label": "About Growth",
-      "depth_front": false,
-      "node_tint": "#2a3a2f"
     },
     {
       "node_id": 0,
@@ -182,22 +113,6 @@
       "label": "Good. I have everything I need. Let me implement all four changes now.\n\n**Task 1: White border toggle on VideoNode**",
       "depth_front": false,
       "node_tint": "#2a2f3a"
-    },
-    {
-      "node_id": 0,
-      "node_type": "about",
-      "title": "Blending anthropology",
-      "uuid": "1518bb568c644364b584a16f40cf0653",
-      "x": 1142.5035631042026,
-      "y": 302.7596862826249,
-      "width": 251.6927771336973,
-      "height": 32.31267352753429,
-      "z_value": -9.952000000000027,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "label": "Blending anthropology",
-      "depth_front": false,
-      "node_tint": "#2a3a2f"
     },
     {
       "node_id": 0,
@@ -238,6 +153,22 @@
     },
     {
       "node_id": 0,
+      "node_type": "about",
+      "title": "Blending anthropology",
+      "uuid": "1518bb568c644364b584a16f40cf0653",
+      "x": 1142.5035631042026,
+      "y": 302.7596862826249,
+      "width": 251.6927771336973,
+      "height": 32.31267352753429,
+      "z_value": -9.952000000000027,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "label": "Blending anthropology",
+      "depth_front": false,
+      "node_tint": "#2a3a2f"
+    },
+    {
+      "node_id": 0,
       "node_type": "image",
       "title": "Image",
       "uuid": "2f27fa7ad3d9436cbcddcbb46a59bdcc",
@@ -259,22 +190,6 @@
     },
     {
       "node_id": 0,
-      "node_type": "about",
-      "title": "This is incredible to actually use",
-      "uuid": "5c50f10fc350481880c2c0e23e36d7df",
-      "x": 1227.0979097444513,
-      "y": 1964.8216090800079,
-      "width": 363.9366548276755,
-      "height": 29.26668533015345,
-      "z_value": -9.899000000000056,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "label": "This is incredible to actually use",
-      "depth_front": false,
-      "node_tint": "#2a3a2f"
-    },
-    {
-      "node_id": 0,
       "node_type": "claude_response",
       "title": "Response",
       "uuid": "07cb1910c2ff4fa185ae52762a4ca747",
@@ -288,6 +203,22 @@
       "label": "**Task 3: Viewport screensnap \u2014 add helper function + bottom toolbar button**\n\nFirst, add the `snapshot_viewport` function to helpers.py:",
       "depth_front": false,
       "node_tint": "#2a2f3a"
+    },
+    {
+      "node_id": 0,
+      "node_type": "about",
+      "title": "This is incredible to actually use",
+      "uuid": "5c50f10fc350481880c2c0e23e36d7df",
+      "x": 1349.007283259195,
+      "y": 1631.602654806377,
+      "width": 363.9366548276755,
+      "height": 29.26668533015345,
+      "z_value": -9.899000000000056,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "label": "This is incredible to actually use",
+      "depth_front": false,
+      "node_tint": "#2a3a2f"
     },
     {
       "node_id": 0,
@@ -312,6 +243,27 @@
     },
     {
       "node_id": 0,
+      "node_type": "image",
+      "title": "Image",
+      "uuid": "2ed4196b008e4902a2e358a82df20bca",
+      "x": 1946.8020687264266,
+      "y": -105.77134800087447,
+      "width": 384.76502753323985,
+      "height": 393.2425831367948,
+      "z_value": 0.0,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "image_b64": "",
+      "cache_key": "d54f47c2d5dae523c7729fdc467c23a32545d5fc71aa0726be1e35b9d98f7db8",
+      "caption": "Assorted decorative clay or soap molds",
+      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\downloadedImage (4).png",
+      "source_size": 1563293,
+      "source_mtime": 1746360664.6527257,
+      "show_border": true,
+      "depth_front": false
+    },
+    {
+      "node_id": 0,
       "node_type": "warm",
       "title": "Elegant",
       "uuid": "28f1b6e7f18140afa7ff9c9f88d34b3e",
@@ -323,27 +275,6 @@
       "ports_visible": false,
       "shelf_visible": true,
       "body_text": "These are many lines\nAll in a row\nLike my ducks\nWhom i don't think are in a row\nAnd frankly, \nI think one of them \nIs a pigeon"
-    },
-    {
-      "node_id": 0,
-      "node_type": "image",
-      "title": "Image",
-      "uuid": "7617ad1aca1d449697280f2a200e6576",
-      "x": 2025.9551613307185,
-      "y": 760.1657621062274,
-      "width": 269.8967839132756,
-      "height": 290.78380144937273,
-      "z_value": 0.0,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "image_b64": "",
-      "cache_key": "584afaf7ac732ef475404b0677965c768afbd60ad610fad3d2cdbdceed3cc264",
-      "caption": "Elegant fantasy sculpture with flowing details",
-      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\downloadedImage (1).png",
-      "source_size": 1249685,
-      "source_mtime": 1742167398.8083436,
-      "show_border": true,
-      "depth_front": false
     },
     {
       "node_id": 0,
@@ -379,43 +310,6 @@
     },
     {
       "node_id": 0,
-      "node_type": "image",
-      "title": "Image",
-      "uuid": "2ed4196b008e4902a2e358a82df20bca",
-      "x": 1946.8020687264266,
-      "y": -105.77134800087447,
-      "width": 377.4631309049357,
-      "height": 392.7145605851341,
-      "z_value": 0.0,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "image_b64": "",
-      "cache_key": "d54f47c2d5dae523c7729fdc467c23a32545d5fc71aa0726be1e35b9d98f7db8",
-      "caption": "Assorted decorative clay or soap molds",
-      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\downloadedImage (4).png",
-      "source_size": 1563293,
-      "source_mtime": 1746360664.6527257,
-      "show_border": true,
-      "depth_front": false
-    },
-    {
-      "node_id": 0,
-      "node_type": "about",
-      "title": "In the Goodness of God",
-      "uuid": "81390269fabb4d7b9a3e8e73865c05a4",
-      "x": 680.2382330035277,
-      "y": 36.86672616616302,
-      "width": 248.93840264871505,
-      "height": 29.840150411114024,
-      "z_value": -9.960000000000022,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "label": "In the Goodness of God",
-      "depth_front": false,
-      "node_tint": "#2a3a2f"
-    },
-    {
-      "node_id": 0,
       "node_type": "video",
       "title": "Video",
       "uuid": "42157222082d4de795c9969c2a62dbf9",
@@ -432,12 +326,28 @@
       "source_mtime": 1746438806.6077483,
       "caption": "Alongside Our Grace - Retime",
       "volume": 50,
-      "playback_pos": 5375,
+      "playback_pos": 9333,
       "looping": true,
       "muted": false,
       "show_border": false,
       "was_playing": true,
       "cache_enabled": true
+    },
+    {
+      "node_id": 0,
+      "node_type": "about",
+      "title": "In the Goodness of God",
+      "uuid": "81390269fabb4d7b9a3e8e73865c05a4",
+      "x": 680.2382330035277,
+      "y": 36.86672616616302,
+      "width": 248.93840264871505,
+      "height": 29.840150411114024,
+      "z_value": -9.960000000000022,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "label": "In the Goodness of God",
+      "depth_front": false,
+      "node_tint": "#2a3a2f"
     },
     {
       "node_id": 0,
@@ -473,24 +383,19 @@
     },
     {
       "node_id": 0,
-      "node_type": "image",
-      "title": "Image",
-      "uuid": "0244a9916d964d9391aa445eed8384a6",
-      "x": -285.8619233517941,
-      "y": 1338.702166152886,
-      "width": 479.4678759236963,
-      "height": 486.9559562196158,
-      "z_value": 0.0,
+      "node_type": "about",
+      "title": "It's a fact that Chapter 16, is a masterpiece",
+      "uuid": "1b58a4b9218340999415494003f9aa76",
+      "x": 298.9608252410924,
+      "y": 1212.83040293751,
+      "width": 481.33498049753166,
+      "height": 31.23259192998171,
+      "z_value": -9.900000000000055,
       "ports_visible": false,
       "shelf_visible": false,
-      "image_b64": "",
-      "cache_key": "ff71c66ac649b25a304d16bcedd559059696656ef90d0cb33bb2ff6c3df10843",
-      "caption": "Upon it sat while he knelt",
-      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\Upon it sat while he knelt.png",
-      "source_size": 1234692,
-      "source_mtime": 1744609826.106294,
-      "show_border": true,
-      "depth_front": false
+      "label": "It's a fact that Chapter 16, is a masterpiece",
+      "depth_front": false,
+      "node_tint": "#2a3a2f"
     },
     {
       "node_id": 0,
@@ -510,19 +415,24 @@
     },
     {
       "node_id": 0,
-      "node_type": "about",
-      "title": "It's a fact that Chapter 16, is a masterpiece",
-      "uuid": "1b58a4b9218340999415494003f9aa76",
-      "x": 298.9608252410924,
-      "y": 1212.83040293751,
-      "width": 481.33498049753166,
-      "height": 31.23259192998171,
-      "z_value": -9.900000000000055,
+      "node_type": "image",
+      "title": "Image",
+      "uuid": "0244a9916d964d9391aa445eed8384a6",
+      "x": -285.8619233517941,
+      "y": 1338.702166152886,
+      "width": 479.4678759236963,
+      "height": 486.9559562196158,
+      "z_value": 0.0,
       "ports_visible": false,
       "shelf_visible": false,
-      "label": "It's a fact that Chapter 16, is a masterpiece",
-      "depth_front": false,
-      "node_tint": "#2a3a2f"
+      "image_b64": "",
+      "cache_key": "ff71c66ac649b25a304d16bcedd559059696656ef90d0cb33bb2ff6c3df10843",
+      "caption": "Upon it sat while he knelt",
+      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\Upon it sat while he knelt.png",
+      "source_size": 1234692,
+      "source_mtime": 1744609826.106294,
+      "show_border": true,
+      "depth_front": false
     },
     {
       "node_id": 0,
@@ -580,18 +490,34 @@
     {
       "node_id": 0,
       "node_type": "about",
-      "title": "Chapter 16",
-      "uuid": "2648068cccce4e1b984760037788230e",
-      "x": 685.2546340260619,
-      "y": -1474.3639233005622,
-      "width": 128.27877860764931,
-      "height": 29.96834344393858,
-      "z_value": -9.999,
+      "title": "Scale pulse on zoom and size",
+      "uuid": "6e544291f53c438291afa1b02ba8ad68",
+      "x": 1127.363075609638,
+      "y": -1036.3327527202607,
+      "width": 308.0,
+      "height": 29.0,
+      "z_value": -9.959000000000023,
       "ports_visible": false,
       "shelf_visible": false,
-      "label": "Chapter 16",
+      "label": "Scale pulse on zoom and size",
       "depth_front": false,
-      "node_tint": "#2a3a2f"
+      "node_tint": ""
+    },
+    {
+      "node_id": 0,
+      "node_type": "claude_response",
+      "title": "Response",
+      "uuid": "bedc3f2725b44576ab27846eb7778b69",
+      "x": 2001.2313127082484,
+      "y": -2140.519450495703,
+      "width": 420.0,
+      "height": 314.0,
+      "z_value": -9.905000000000053,
+      "ports_visible": false,
+      "shelf_visible": true,
+      "label": "So ClaudeNode has `_show_emoji_btn` (default from base), `_has_depth_toggle = True`, the base tint button, plus the body show/hide toggle. Let me check the default for `_show_ports_btn` and `_show_emoji_btn` in BaseNode.",
+      "depth_front": false,
+      "node_tint": "#1e1e1e"
     },
     {
       "node_id": 0,
@@ -608,6 +534,27 @@
       "label": "We explore Human behaviour",
       "depth_front": false,
       "node_tint": "#2a3a2f"
+    },
+    {
+      "node_id": 0,
+      "node_type": "image",
+      "title": "Image",
+      "uuid": "7617ad1aca1d449697280f2a200e6576",
+      "x": 2025.9551613307185,
+      "y": 760.1657621062274,
+      "width": 269.8967839132756,
+      "height": 290.78380144937273,
+      "z_value": 0.0,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "image_b64": "",
+      "cache_key": "584afaf7ac732ef475404b0677965c768afbd60ad610fad3d2cdbdceed3cc264",
+      "caption": "Elegant fantasy sculpture with flowing details",
+      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\downloadedImage (1).png",
+      "source_size": 1249685,
+      "source_mtime": 1742167398.8083436,
+      "show_border": true,
+      "depth_front": false
     },
     {
       "node_id": 0,
@@ -661,33 +608,17 @@
       "node_id": 0,
       "node_type": "claude_response",
       "title": "Response",
-      "uuid": "235ffc365cf447058a6a31464d9cd329",
-      "x": 3971.019355932016,
-      "y": -898.7715889098645,
-      "width": 572.8191892976351,
-      "height": 175.89956140953575,
-      "z_value": -9.932000000000038,
+      "uuid": "56d515215e744bd79889d3957eca0d74",
+      "x": 1833.6668301333293,
+      "y": -1752.6213587531156,
+      "width": 420.0,
+      "height": 258.0,
+      "z_value": -10.0,
       "ports_visible": false,
       "shelf_visible": true,
-      "label": "The Theme metaclass resolves icons dynamically \u2014 `Theme.iconBorderOn` will look for `border_on` in the `[theme.icons]` section of settings. Let me check how existing icons are registered in the settings defaults.",
+      "label": "Done. Every node that has the emoji shuffle button (`_show_emoji_btn = True`, which is the default) will now show \"More Glory\" as its tooltip.",
       "depth_front": false,
-      "node_tint": "#2a2f3a"
-    },
-    {
-      "node_id": 0,
-      "node_type": "about",
-      "title": "Huge Folder Structure Nodes",
-      "uuid": "6a396298ddb54ee08cce6bb4e164214a",
-      "x": 1315.2375449673086,
-      "y": -1102.5014644097057,
-      "width": 298.0,
-      "height": 29.0,
-      "z_value": -9.960000000000022,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "label": "Huge Folder Structure Nodes",
-      "depth_front": false,
-      "node_tint": ""
+      "node_tint": "#1e1e1e"
     },
     {
       "node_id": 0,
@@ -713,34 +644,50 @@
     {
       "node_id": 0,
       "node_type": "about",
-      "title": "And about Embracing our Destiny",
-      "uuid": "4ab022b3bdd44e3e85475bc65c18bcbe",
-      "x": 310.90175479191987,
-      "y": -796.6605076258655,
-      "width": 338.648473535139,
-      "height": 29.00254038877995,
-      "z_value": -9.984000000000009,
+      "title": "Chapter 16",
+      "uuid": "2648068cccce4e1b984760037788230e",
+      "x": 685.2546340260619,
+      "y": -1474.3639233005622,
+      "width": 128.27877860764931,
+      "height": 29.96834344393858,
+      "z_value": -9.999,
       "ports_visible": false,
       "shelf_visible": false,
-      "label": "And about Embracing our Destiny",
+      "label": "Chapter 16",
       "depth_front": false,
       "node_tint": "#2a3a2f"
     },
     {
       "node_id": 0,
       "node_type": "about",
-      "title": "All the way from art to aggression",
-      "uuid": "cba1fb493aa64d158b545cf5feb97a1f",
-      "x": 977.011494252874,
-      "y": 787.3563218390801,
-      "width": 368.9197808348591,
-      "height": 29.68497897300233,
-      "z_value": -9.903000000000054,
+      "title": "Huge Folder Structure Nodes",
+      "uuid": "6a396298ddb54ee08cce6bb4e164214a",
+      "x": 1178.428136911875,
+      "y": -1109.274207382747,
+      "width": 298.0,
+      "height": 29.0,
+      "z_value": -9.960000000000022,
       "ports_visible": false,
       "shelf_visible": false,
-      "label": "All the way from art to aggression",
+      "label": "Huge Folder Structure Nodes",
       "depth_front": false,
-      "node_tint": "#2a3a2f"
+      "node_tint": ""
+    },
+    {
+      "node_id": 0,
+      "node_type": "claude_response",
+      "title": "Response",
+      "uuid": "235ffc365cf447058a6a31464d9cd329",
+      "x": 3971.019355932016,
+      "y": -898.7715889098645,
+      "width": 572.8191892976351,
+      "height": 175.89956140953575,
+      "z_value": -9.932000000000038,
+      "ports_visible": false,
+      "shelf_visible": true,
+      "label": "The Theme metaclass resolves icons dynamically \u2014 `Theme.iconBorderOn` will look for `border_on` in the `[theme.icons]` section of settings. Let me check how existing icons are registered in the settings defaults.",
+      "depth_front": false,
+      "node_tint": "#2a2f3a"
     },
     {
       "node_id": 0,
@@ -761,6 +708,22 @@
     {
       "node_id": 0,
       "node_type": "about",
+      "title": "And about Embracing our Destiny",
+      "uuid": "4ab022b3bdd44e3e85475bc65c18bcbe",
+      "x": 310.90175479191987,
+      "y": -796.6605076258655,
+      "width": 338.648473535139,
+      "height": 29.00254038877995,
+      "z_value": -9.984000000000009,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "label": "And about Embracing our Destiny",
+      "depth_front": false,
+      "node_tint": "#2a3a2f"
+    },
+    {
+      "node_id": 0,
+      "node_type": "about",
       "title": "Through an evolutionary lens",
       "uuid": "f8edbd81a4224da98342f857111348d2",
       "x": 1118.76037849487,
@@ -771,6 +734,22 @@
       "ports_visible": false,
       "shelf_visible": false,
       "label": "Through an evolutionary lens",
+      "depth_front": false,
+      "node_tint": "#2a3a2f"
+    },
+    {
+      "node_id": 0,
+      "node_type": "about",
+      "title": "All the way from art to aggression",
+      "uuid": "cba1fb493aa64d158b545cf5feb97a1f",
+      "x": 977.011494252874,
+      "y": 787.3563218390801,
+      "width": 368.9197808348591,
+      "height": 29.68497897300233,
+      "z_value": -9.903000000000054,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "label": "All the way from art to aggression",
       "depth_front": false,
       "node_tint": "#2a3a2f"
     },
@@ -820,8 +799,8 @@
       "node_type": "about",
       "title": "Objective facts are the source of truth in this world and the only thing that information can be extrapolated from",
       "uuid": "13c2c4d81d784e4f84b29844e40e3d6e",
-      "x": 491.19213280989743,
-      "y": 798.5302477360922,
+      "x": 439.7192862147833,
+      "y": 873.0304204395466,
       "width": 419.46368702783917,
       "height": 87.38761839083827,
       "z_value": -9.902000000000054,
@@ -830,22 +809,6 @@
       "label": "Objective facts are the source of truth in this world and the only thing that information can be extrapolated from",
       "depth_front": false,
       "node_tint": "#2a3a2f"
-    },
-    {
-      "node_id": 0,
-      "node_type": "about",
-      "title": "Play sticker on the audio node",
-      "uuid": "e22d11b6cc0f4a42801196de16056d04",
-      "x": 1234.8207631598327,
-      "y": -1377.907729550682,
-      "width": 328.0,
-      "height": 29.0,
-      "z_value": -9.961000000000022,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "label": "Play sticker on the audio node",
-      "depth_front": false,
-      "node_tint": ""
     },
     {
       "node_id": 0,
@@ -862,6 +825,31 @@
       "label": "Now add the border toggle button and paint the border in VideoNode:",
       "depth_front": false,
       "node_tint": "#2a2f3a"
+    },
+    {
+      "node_id": 0,
+      "node_type": "video",
+      "title": "Video",
+      "uuid": "164fe70d6b9f4cc181930bb5033bc40a",
+      "x": 2746.049393154718,
+      "y": 768.8772342705442,
+      "width": 817.1924675985796,
+      "height": 510.1154805591477,
+      "z_value": -9.918000000000045,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Clips\\Gen-3 Alpha Turbo 1866035882, whirlwind, Cropped - downloaded, M 5.mp4",
+      "cache_key": "c92e15a5a9ec250d1ca1f264d50a78b17b89a4cb399359e3e944492c305a22b5.mp4",
+      "source_size": 2964450,
+      "source_mtime": 1746375783.5019355,
+      "caption": "Gen-3 Alpha Turbo 1866035882, whirlwind, Cropped - downloaded, M 5",
+      "volume": 50,
+      "playback_pos": 0,
+      "looping": true,
+      "muted": false,
+      "show_border": true,
+      "was_playing": false,
+      "cache_enabled": true
     },
     {
       "node_id": 0,
@@ -882,6 +870,22 @@
     {
       "node_id": 0,
       "node_type": "about",
+      "title": "Play sticker on the audio node",
+      "uuid": "e22d11b6cc0f4a42801196de16056d04",
+      "x": 1192.8297567269767,
+      "y": -1178.7890861432682,
+      "width": 328.0,
+      "height": 29.0,
+      "z_value": -9.961000000000022,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "label": "Play sticker on the audio node",
+      "depth_front": false,
+      "node_tint": ""
+    },
+    {
+      "node_id": 0,
+      "node_type": "about",
       "title": "Towards the Sun",
       "uuid": "0853cdfd1e954086a357082de1d0cb35",
       "x": 996.5899240362978,
@@ -892,47 +896,6 @@
       "ports_visible": false,
       "shelf_visible": false,
       "label": "Towards the Sun",
-      "depth_front": false,
-      "node_tint": "#2a3a2f"
-    },
-    {
-      "node_id": 0,
-      "node_type": "video",
-      "title": "Video",
-      "uuid": "4b23e058ca6d48e98293b67b0cd4cfee",
-      "x": -37.48058410347127,
-      "y": 86.21987226346619,
-      "width": 631.9068122009694,
-      "height": 398.9440873205816,
-      "z_value": -9.959000000000023,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "source_path": "C:\\Users\\thebe\\Desktop\\Chapter 16\\Documents\\Data\\Cache\\f5ec3238ae0801d849e8389f51f5b1d25583900f96dc1ad5dc0673d387157649.mp4",
-      "cache_key": "f5ec3238ae0801d849e8389f51f5b1d25583900f96dc1ad5dc0673d387157649.mp4",
-      "source_size": 2414796,
-      "source_mtime": 1746374795.2638292,
-      "caption": "Gen-3 Alpha Turbo 3873545513, hair waving in the w, Cropped - downloaded, M 5",
-      "volume": 50,
-      "playback_pos": 0,
-      "looping": true,
-      "muted": false,
-      "show_border": true,
-      "was_playing": true,
-      "cache_enabled": true
-    },
-    {
-      "node_id": 0,
-      "node_type": "about",
-      "title": "And zoology",
-      "uuid": "04eb90c9e1be43f882ee2b40307c1e2b",
-      "x": 1320.5914948462441,
-      "y": 428.4641921040902,
-      "width": 138.62561057317907,
-      "height": 30.927326999236072,
-      "z_value": -9.951000000000027,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "label": "And zoology",
       "depth_front": false,
       "node_tint": "#2a3a2f"
     },
@@ -954,13 +917,29 @@
     },
     {
       "node_id": 0,
+      "node_type": "about",
+      "title": "And zoology",
+      "uuid": "04eb90c9e1be43f882ee2b40307c1e2b",
+      "x": 1320.5914948462441,
+      "y": 428.4641921040902,
+      "width": 138.62561057317907,
+      "height": 30.927326999236072,
+      "z_value": -9.951000000000027,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "label": "And zoology",
+      "depth_front": false,
+      "node_tint": "#2a3a2f"
+    },
+    {
+      "node_id": 0,
       "node_type": "image",
       "title": "Image",
       "uuid": "852da4272cb94a438c44f580b8cf632d",
-      "x": 93.95741752174399,
-      "y": 727.5701337407318,
-      "width": 291.24365422066535,
-      "height": 306.2934547299211,
+      "x": 150.84845849529074,
+      "y": 818.324889579485,
+      "width": 212.1839080459772,
+      "height": 226.8965517241379,
       "z_value": 0.0,
       "ports_visible": false,
       "shelf_visible": false,
@@ -972,6 +951,63 @@
       "source_mtime": 1744609841.040611,
       "show_border": true,
       "depth_front": false
+    },
+    {
+      "node_id": 0,
+      "node_type": "video",
+      "title": "Video",
+      "uuid": "4b23e058ca6d48e98293b67b0cd4cfee",
+      "x": -331.4176291334629,
+      "y": 289.4021614547046,
+      "width": 631.9068122009694,
+      "height": 398.9440873205816,
+      "z_value": -9.959000000000023,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "source_path": "C:\\Users\\thebe\\Desktop\\Chapter 16\\Documents\\Data\\Cache\\f5ec3238ae0801d849e8389f51f5b1d25583900f96dc1ad5dc0673d387157649.mp4",
+      "cache_key": "f5ec3238ae0801d849e8389f51f5b1d25583900f96dc1ad5dc0673d387157649.mp4",
+      "source_size": 2414796,
+      "source_mtime": 1746374795.2638292,
+      "caption": "Gen-3 Alpha Turbo 3873545513, hair waving in the w, Cropped - downloaded, M 5",
+      "volume": 50,
+      "playback_pos": 2291,
+      "looping": true,
+      "muted": false,
+      "show_border": true,
+      "was_playing": true,
+      "cache_enabled": true
+    },
+    {
+      "node_id": 0,
+      "node_type": "about",
+      "title": "The zoom slider focal area",
+      "uuid": "38433a47a51a4be38819f6eaed656aef",
+      "x": 1178.8838722330077,
+      "y": -1248.065491089544,
+      "width": 288.0,
+      "height": 29.0,
+      "z_value": -9.98100000000001,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "label": "The zoom slider focal area",
+      "depth_front": false,
+      "node_tint": ""
+    },
+    {
+      "node_id": 0,
+      "node_type": "about",
+      "title": "Still need even larger scale handels on the about nodes",
+      "uuid": "cd4c9f92697647909c58166f46746824",
+      "x": 1116.6456705061594,
+      "y": -948.2767636927335,
+      "width": 578.0,
+      "height": 29.0,
+      "z_value": -9.958000000000023,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "label": "Still need even larger scale handels on the about nodes",
+      "depth_front": false,
+      "node_tint": ""
     },
     {
       "node_id": 0,
@@ -991,56 +1027,72 @@
     },
     {
       "node_id": 0,
-      "node_type": "about",
-      "title": "The video cache is using absolute paths on source",
-      "uuid": "71909e6e6880403289f1dbe880da58b6",
-      "x": 1287.9048037535354,
-      "y": -1033.2496679671783,
-      "width": 501.921875,
-      "height": 31.0,
-      "z_value": -9.869000000000073,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "label": "The video cache is using absolute paths on source",
-      "depth_front": false,
-      "node_tint": ""
-    },
-    {
-      "node_id": 0,
-      "node_type": "audio",
-      "title": "Hopeful Interim",
-      "uuid": "91e74c5285bc4c24bbdcc6a29362279f",
-      "x": 1551.0793817616454,
-      "y": -266.08230061419,
-      "width": 310.27091538529135,
-      "height": 129.78396445627538,
-      "z_value": -9.870000000000072,
-      "ports_visible": false,
-      "shelf_visible": true,
-      "source_path": "C:\\Users\\thebe\\Desktop\\_asset\\Audio\\Grok Samples\\Hopeful Interim.wav",
-      "caption": "Hopeful Interim",
-      "volume": 50,
-      "playback_pos": 9195,
-      "looping": true,
-      "muted": false,
-      "depth_front": false,
-      "node_tint": ""
-    },
-    {
-      "node_id": 0,
       "node_type": "claude_response",
       "title": "Response",
-      "uuid": "db5072b8368a48d18239efe1eb420c40",
-      "x": 4331.427983945136,
-      "y": -1412.119897938354,
-      "width": 394.0,
-      "height": 174.0,
-      "z_value": -9.934000000000037,
+      "uuid": "5235e11ce8f843f498755ccb0aa81c95",
+      "x": 4844.085726034307,
+      "y": -1459.8644305226,
+      "width": 420.0,
+      "height": 230.0,
+      "z_value": -9.933000000000037,
       "ports_visible": false,
       "shelf_visible": true,
-      "label": "Now generate the border toggle icons:",
+      "label": "Now register the icons in settings. Let me find where settings are written with defaults.",
       "depth_front": false,
       "node_tint": "#2a2f3a"
+    },
+    {
+      "node_id": 0,
+      "node_type": "image",
+      "title": "Image",
+      "uuid": "4c49dac3c4904bc096b474b29eebb80f",
+      "x": 821.1136398458098,
+      "y": 1456.8308606442022,
+      "width": 414.5146174540274,
+      "height": 426.9608260201037,
+      "z_value": 0.0,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "image_b64": "",
+      "cache_key": "a41b5615037618dea7790effee929e1e4ccb0a7cb0a6ad2017d9d1de06ee02fc",
+      "caption": "Upon it sat while he kept",
+      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\Upon it sat while he kept.png",
+      "source_size": 1227252,
+      "source_mtime": 1744609849.5239227,
+      "show_border": true,
+      "depth_front": false
+    },
+    {
+      "node_id": 0,
+      "node_type": "about",
+      "title": "She never made a conscious decision to grow",
+      "uuid": "54463cc0760c47f3ad74b2539894cd6b",
+      "x": 960.8464679616143,
+      "y": -491.15028112227697,
+      "width": 458.5,
+      "height": 29.0,
+      "z_value": -9.98200000000001,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "label": "She never made a conscious decision to grow",
+      "depth_front": false,
+      "node_tint": "#2a3a2f"
+    },
+    {
+      "node_id": 0,
+      "node_type": "about",
+      "title": "She grew there by her default path",
+      "uuid": "a775281d6a434aae9fb652817f4fa3b6",
+      "x": 1100.3644891685458,
+      "y": -416.6495908700906,
+      "width": 368.86322084167557,
+      "height": 31.176963838994993,
+      "z_value": -9.98100000000001,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "label": "She grew there by her default path",
+      "depth_front": false,
+      "node_tint": "#2a3a2f"
     },
     {
       "node_id": 0,
@@ -1065,157 +1117,141 @@
     },
     {
       "node_id": 0,
+      "node_type": "claude_response",
+      "title": "Response",
+      "uuid": "db5072b8368a48d18239efe1eb420c40",
+      "x": 4331.427983945136,
+      "y": -1412.119897938354,
+      "width": 394.0,
+      "height": 174.0,
+      "z_value": -9.934000000000037,
+      "ports_visible": false,
+      "shelf_visible": true,
+      "label": "Now generate the border toggle icons:",
+      "depth_front": false,
+      "node_tint": "#2a2f3a"
+    },
+    {
+      "node_id": 0,
       "node_type": "about",
-      "title": "If you ever wonder about how to spend your day",
-      "uuid": "acbc53c8326a4bac9d60e82d3cadae7b",
-      "x": -978.5259047450049,
-      "y": -187.7404352127021,
-      "width": 473.96875,
-      "height": 31.0,
-      "z_value": -9.868000000000073,
+      "title": "Note",
+      "uuid": "f9d9093fea4f47e8ab2d777be3adbcfb",
+      "x": 1496.9741889133925,
+      "y": -314.59972933917265,
+      "width": 1034.0,
+      "height": 29.0,
+      "z_value": -9.87300000000007,
       "ports_visible": false,
       "shelf_visible": false,
-      "label": "If you ever wonder about how to spend your day",
+      "label": "source missing \u2014 playing from cache\n3c6750335b7e611328626507d908b6e9b698be54c17c15513c6f86284dbbbcfb.mp4",
       "depth_front": false,
       "node_tint": ""
     },
     {
       "node_id": 0,
       "node_type": "about",
-      "title": "That years from now someone will ask you",
-      "uuid": "5cc3380763394f6aaa779819a3170aac",
-      "x": -804.9787730427822,
-      "y": -46.54725601334053,
-      "width": 415.390625,
-      "height": 31.0,
-      "z_value": -9.867000000000074,
+      "title": "Note",
+      "uuid": "43985d5b478a4cab9f1609932890572b",
+      "x": -331.4176291334629,
+      "y": 708.3462487752862,
+      "width": 1034.0,
+      "height": 29.0,
+      "z_value": -9.87400000000007,
       "ports_visible": false,
       "shelf_visible": false,
-      "label": "That years from now someone will ask you",
-      "depth_front": false,
-      "node_tint": ""
-    },
-    {
-      "node_id": 0,
-      "node_type": "about",
-      "title": "Then keep in mind",
-      "uuid": "924574173f72473c80fd90f376687337",
-      "x": -612.3372793213346,
-      "y": -121.28512913466352,
-      "width": 192.921875,
-      "height": 31.0,
-      "z_value": -9.866000000000074,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "label": "Then keep in mind",
-      "depth_front": false,
-      "node_tint": ""
-    },
-    {
-      "node_id": 0,
-      "node_type": "about",
-      "title": "How did you spend your life?",
-      "uuid": "0b5c73b405f74774abd88cb81021b47b",
-      "x": -1062.2533758451607,
-      "y": 72.81120793326758,
-      "width": 298.8125,
-      "height": 31.0,
-      "z_value": -9.865000000000075,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "label": "How did you spend your life?",
+      "label": "source missing \u2014 playing from cache\nf5ec3238ae0801d849e8389f51f5b1d25583900f96dc1ad5dc0673d387157649.mp4",
       "depth_front": false,
       "node_tint": ""
     }
   ],
   "connections": [
     {
-      "start_uuid": "c567949841d1407883ec7dc201eb18f4",
-      "end_uuid": "07cb1910c2ff4fa185ae52762a4ca747"
+      "start_uuid": "88a7eb7e6d774b4a86ad83bc95c427b8",
+      "end_uuid": "02dbc764b3a448fbaf366e48c3cd3b6b"
     },
     {
-      "start_uuid": "0498f443d0804e2cb9a45e27cd9a7fba",
-      "end_uuid": "142e9198c0de4a19a4fc180ea14c0750"
-    },
-    {
-      "start_uuid": "4c49dac3c4904bc096b474b29eebb80f",
-      "end_uuid": "5c50f10fc350481880c2c0e23e36d7df"
-    },
-    {
-      "start_uuid": "81390269fabb4d7b9a3e8e73865c05a4",
-      "end_uuid": "a279f5146aec4e05b8cc4216cbcc721a"
-    },
-    {
-      "start_uuid": "7fcdea92ccd242138e899f464ab636aa",
-      "end_uuid": "26bc354b2480487a85af9f59d3488d06"
-    },
-    {
-      "start_uuid": "41e36537fd2045db9147b32dc906a717",
-      "end_uuid": "1b58a4b9218340999415494003f9aa76"
+      "start_uuid": "1518bb568c644364b584a16f40cf0653",
+      "end_uuid": "089a6317c18740a3a4576b3df1f27b62"
     },
     {
       "start_uuid": "69f10e6662004526a70fee0845945049",
       "end_uuid": "4ef7c11edcf641f8838d149a8cc3930c"
     },
     {
-      "start_uuid": "4ab022b3bdd44e3e85475bc65c18bcbe",
-      "end_uuid": "b89d853c5e3d4c2c8f9ca938a0d03b63"
-    },
-    {
-      "start_uuid": "2648068cccce4e1b984760037788230e",
-      "end_uuid": "32ead154f64c47aa81c3762a2395d7b0"
-    },
-    {
-      "start_uuid": "b89d853c5e3d4c2c8f9ca938a0d03b63",
-      "end_uuid": "12e14db2dcc74000b59c99d4b7409f86"
-    },
-    {
-      "start_uuid": "32ead154f64c47aa81c3762a2395d7b0",
-      "end_uuid": "0498f443d0804e2cb9a45e27cd9a7fba"
-    },
-    {
       "start_uuid": "02dbc764b3a448fbaf366e48c3cd3b6b",
       "end_uuid": "1518bb568c644364b584a16f40cf0653"
     },
     {
-      "start_uuid": "b89d853c5e3d4c2c8f9ca938a0d03b63",
-      "end_uuid": "42157222082d4de795c9969c2a62dbf9"
-    },
-    {
-      "start_uuid": "4ef7c11edcf641f8838d149a8cc3930c",
-      "end_uuid": "b5b6b1fcdd6c4a5fa3a84ecde6b41195"
-    },
-    {
-      "start_uuid": "235ffc365cf447058a6a31464d9cd329",
-      "end_uuid": "c567949841d1407883ec7dc201eb18f4"
-    },
-    {
-      "start_uuid": "a279f5146aec4e05b8cc4216cbcc721a",
-      "end_uuid": "f8edbd81a4224da98342f857111348d2"
-    },
-    {
-      "start_uuid": "852da4272cb94a438c44f580b8cf632d",
-      "end_uuid": "13c2c4d81d784e4f84b29844e40e3d6e"
-    },
-    {
-      "start_uuid": "0244a9916d964d9391aa445eed8384a6",
-      "end_uuid": "852da4272cb94a438c44f580b8cf632d"
+      "start_uuid": "04eb90c9e1be43f882ee2b40307c1e2b",
+      "end_uuid": "e7984cb6fdd141bb9366786909f6ff95"
     },
     {
       "start_uuid": "cba1fb493aa64d158b545cf5feb97a1f",
       "end_uuid": "f5533684bb3949f7a8beac1c52e99f13"
     },
     {
-      "start_uuid": "089a6317c18740a3a4576b3df1f27b62",
-      "end_uuid": "04eb90c9e1be43f882ee2b40307c1e2b"
+      "start_uuid": "6e544291f53c438291afa1b02ba8ad68",
+      "end_uuid": "cd4c9f92697647909c58166f46746824"
     },
     {
-      "start_uuid": "4c49dac3c4904bc096b474b29eebb80f",
-      "end_uuid": "0244a9916d964d9391aa445eed8384a6"
+      "start_uuid": "2648068cccce4e1b984760037788230e",
+      "end_uuid": "32ead154f64c47aa81c3762a2395d7b0"
     },
     {
-      "start_uuid": "88a7eb7e6d774b4a86ad83bc95c427b8",
-      "end_uuid": "02dbc764b3a448fbaf366e48c3cd3b6b"
+      "start_uuid": "26bc354b2480487a85af9f59d3488d06",
+      "end_uuid": "db5072b8368a48d18239efe1eb420c40"
+    },
+    {
+      "start_uuid": "235ffc365cf447058a6a31464d9cd329",
+      "end_uuid": "c567949841d1407883ec7dc201eb18f4"
+    },
+    {
+      "start_uuid": "91c309d1add8493ebc3ba4e736475348",
+      "end_uuid": "f5533684bb3949f7a8beac1c52e99f13"
+    },
+    {
+      "start_uuid": "6a396298ddb54ee08cce6bb4e164214a",
+      "end_uuid": "6e544291f53c438291afa1b02ba8ad68"
+    },
+    {
+      "start_uuid": "b89d853c5e3d4c2c8f9ca938a0d03b63",
+      "end_uuid": "12e14db2dcc74000b59c99d4b7409f86"
+    },
+    {
+      "start_uuid": "2f27fa7ad3d9436cbcddcbb46a59bdcc",
+      "end_uuid": "7617ad1aca1d449697280f2a200e6576"
+    },
+    {
+      "start_uuid": "12e14db2dcc74000b59c99d4b7409f86",
+      "end_uuid": "54463cc0760c47f3ad74b2539894cd6b"
+    },
+    {
+      "start_uuid": "a279f5146aec4e05b8cc4216cbcc721a",
+      "end_uuid": "f8edbd81a4224da98342f857111348d2"
+    },
+    {
+      "start_uuid": "81390269fabb4d7b9a3e8e73865c05a4",
+      "end_uuid": "a279f5146aec4e05b8cc4216cbcc721a"
+    },
+    {
+      "start_uuid": "852da4272cb94a438c44f580b8cf632d",
+      "end_uuid": "13c2c4d81d784e4f84b29844e40e3d6e"
+    },
+    {
+      "start_uuid": "d517b2776bc94440ad03097b8fcb6889",
+      "end_uuid": "cee6d24ac222475c82504bad392dd915"
+    },
+    {
+      "start_uuid": "32ead154f64c47aa81c3762a2395d7b0",
+      "end_uuid": "0498f443d0804e2cb9a45e27cd9a7fba"
+    },
+    {
+      "start_uuid": "38433a47a51a4be38819f6eaed656aef",
+      "end_uuid": "e22d11b6cc0f4a42801196de16056d04"
+    },
+    {
+      "start_uuid": "86c23557ac1f41af813d20b94c1b5f1a",
+      "end_uuid": "2ed4196b008e4902a2e358a82df20bca"
     },
     {
       "start_uuid": "142e9198c0de4a19a4fc180ea14c0750",
@@ -1226,16 +1262,60 @@
       "end_uuid": "6faf59f5b10a4ef2a2100dcc54f86e73"
     },
     {
+      "start_uuid": "b89d853c5e3d4c2c8f9ca938a0d03b63",
+      "end_uuid": "42157222082d4de795c9969c2a62dbf9"
+    },
+    {
+      "start_uuid": "4ef7c11edcf641f8838d149a8cc3930c",
+      "end_uuid": "b5b6b1fcdd6c4a5fa3a84ecde6b41195"
+    },
+    {
+      "start_uuid": "db5072b8368a48d18239efe1eb420c40",
+      "end_uuid": "5235e11ce8f843f498755ccb0aa81c95"
+    },
+    {
+      "start_uuid": "0244a9916d964d9391aa445eed8384a6",
+      "end_uuid": "852da4272cb94a438c44f580b8cf632d"
+    },
+    {
+      "start_uuid": "54463cc0760c47f3ad74b2539894cd6b",
+      "end_uuid": "a775281d6a434aae9fb652817f4fa3b6"
+    },
+    {
+      "start_uuid": "089a6317c18740a3a4576b3df1f27b62",
+      "end_uuid": "04eb90c9e1be43f882ee2b40307c1e2b"
+    },
+    {
+      "start_uuid": "7fcdea92ccd242138e899f464ab636aa",
+      "end_uuid": "26bc354b2480487a85af9f59d3488d06"
+    },
+    {
+      "start_uuid": "4c49dac3c4904bc096b474b29eebb80f",
+      "end_uuid": "0244a9916d964d9391aa445eed8384a6"
+    },
+    {
+      "start_uuid": "e7984cb6fdd141bb9366786909f6ff95",
+      "end_uuid": "91c309d1add8493ebc3ba4e736475348"
+    },
+    {
       "start_uuid": "f5533684bb3949f7a8beac1c52e99f13",
       "end_uuid": "2f27fa7ad3d9436cbcddcbb46a59bdcc"
     },
     {
-      "start_uuid": "26bc354b2480487a85af9f59d3488d06",
-      "end_uuid": "db5072b8368a48d18239efe1eb420c40"
-    },
-    {
       "start_uuid": "6faf59f5b10a4ef2a2100dcc54f86e73",
       "end_uuid": "81390269fabb4d7b9a3e8e73865c05a4"
+    },
+    {
+      "start_uuid": "5235e11ce8f843f498755ccb0aa81c95",
+      "end_uuid": "235ffc365cf447058a6a31464d9cd329"
+    },
+    {
+      "start_uuid": "4ab022b3bdd44e3e85475bc65c18bcbe",
+      "end_uuid": "b89d853c5e3d4c2c8f9ca938a0d03b63"
+    },
+    {
+      "start_uuid": "0498f443d0804e2cb9a45e27cd9a7fba",
+      "end_uuid": "142e9198c0de4a19a4fc180ea14c0750"
     },
     {
       "start_uuid": "13c2c4d81d784e4f84b29844e40e3d6e",
@@ -1246,76 +1326,32 @@
       "end_uuid": "4c49dac3c4904bc096b474b29eebb80f"
     },
     {
-      "start_uuid": "0d80d97658104827a41ca2850e56e401",
-      "end_uuid": "86c23557ac1f41af813d20b94c1b5f1a"
+      "start_uuid": "3018a01b7934455eb25f17dc46ec8de3",
+      "end_uuid": "09a08f3422ea4ae6adabea0f7cb7d638"
     },
     {
-      "start_uuid": "f8edbd81a4224da98342f857111348d2",
-      "end_uuid": "88a7eb7e6d774b4a86ad83bc95c427b8"
-    },
-    {
-      "start_uuid": "e22d11b6cc0f4a42801196de16056d04",
-      "end_uuid": "6a396298ddb54ee08cce6bb4e164214a"
-    },
-    {
-      "start_uuid": "2f27fa7ad3d9436cbcddcbb46a59bdcc",
-      "end_uuid": "7617ad1aca1d449697280f2a200e6576"
-    },
-    {
-      "start_uuid": "0853cdfd1e954086a357082de1d0cb35",
-      "end_uuid": "3018a01b7934455eb25f17dc46ec8de3"
-    },
-    {
-      "start_uuid": "b5b6b1fcdd6c4a5fa3a84ecde6b41195",
-      "end_uuid": "4ab022b3bdd44e3e85475bc65c18bcbe"
-    },
-    {
-      "start_uuid": "1518bb568c644364b584a16f40cf0653",
-      "end_uuid": "089a6317c18740a3a4576b3df1f27b62"
-    },
-    {
-      "start_uuid": "54463cc0760c47f3ad74b2539894cd6b",
-      "end_uuid": "a775281d6a434aae9fb652817f4fa3b6"
-    },
-    {
-      "start_uuid": "d517b2776bc94440ad03097b8fcb6889",
-      "end_uuid": "cee6d24ac222475c82504bad392dd915"
-    },
-    {
-      "start_uuid": "e7984cb6fdd141bb9366786909f6ff95",
-      "end_uuid": "91c309d1add8493ebc3ba4e736475348"
-    },
-    {
-      "start_uuid": "5235e11ce8f843f498755ccb0aa81c95",
-      "end_uuid": "235ffc365cf447058a6a31464d9cd329"
+      "start_uuid": "41e36537fd2045db9147b32dc906a717",
+      "end_uuid": "1b58a4b9218340999415494003f9aa76"
     },
     {
       "start_uuid": "a775281d6a434aae9fb652817f4fa3b6",
       "end_uuid": "0853cdfd1e954086a357082de1d0cb35"
     },
     {
-      "start_uuid": "db5072b8368a48d18239efe1eb420c40",
-      "end_uuid": "5235e11ce8f843f498755ccb0aa81c95"
+      "start_uuid": "b5b6b1fcdd6c4a5fa3a84ecde6b41195",
+      "end_uuid": "4ab022b3bdd44e3e85475bc65c18bcbe"
     },
     {
-      "start_uuid": "91c309d1add8493ebc3ba4e736475348",
-      "end_uuid": "f5533684bb3949f7a8beac1c52e99f13"
+      "start_uuid": "c567949841d1407883ec7dc201eb18f4",
+      "end_uuid": "07cb1910c2ff4fa185ae52762a4ca747"
     },
     {
-      "start_uuid": "12e14db2dcc74000b59c99d4b7409f86",
-      "end_uuid": "54463cc0760c47f3ad74b2539894cd6b"
+      "start_uuid": "0d80d97658104827a41ca2850e56e401",
+      "end_uuid": "86c23557ac1f41af813d20b94c1b5f1a"
     },
     {
-      "start_uuid": "04eb90c9e1be43f882ee2b40307c1e2b",
-      "end_uuid": "e7984cb6fdd141bb9366786909f6ff95"
-    },
-    {
-      "start_uuid": "86c23557ac1f41af813d20b94c1b5f1a",
-      "end_uuid": "2ed4196b008e4902a2e358a82df20bca"
-    },
-    {
-      "start_uuid": "3018a01b7934455eb25f17dc46ec8de3",
-      "end_uuid": "09a08f3422ea4ae6adabea0f7cb7d638"
+      "start_uuid": "f8edbd81a4224da98342f857111348d2",
+      "end_uuid": "88a7eb7e6d774b4a86ad83bc95c427b8"
     },
     {
       "start_uuid": "7617ad1aca1d449697280f2a200e6576",
@@ -1326,32 +1362,30 @@
       "end_uuid": "cba1fb493aa64d158b545cf5feb97a1f"
     },
     {
-      "start_uuid": "6a396298ddb54ee08cce6bb4e164214a",
-      "end_uuid": "71909e6e6880403289f1dbe880da58b6"
+      "start_uuid": "0853cdfd1e954086a357082de1d0cb35",
+      "end_uuid": "3018a01b7934455eb25f17dc46ec8de3"
     },
     {
-      "start_uuid": "acbc53c8326a4bac9d60e82d3cadae7b",
-      "end_uuid": "924574173f72473c80fd90f376687337"
+      "start_uuid": "e22d11b6cc0f4a42801196de16056d04",
+      "end_uuid": "6a396298ddb54ee08cce6bb4e164214a"
     },
     {
-      "start_uuid": "924574173f72473c80fd90f376687337",
-      "end_uuid": "5cc3380763394f6aaa779819a3170aac"
+      "start_uuid": "0d80d97658104827a41ca2850e56e401",
+      "end_uuid": "f9d9093fea4f47e8ab2d777be3adbcfb"
     },
     {
-      "start_uuid": "5cc3380763394f6aaa779819a3170aac",
-      "end_uuid": "0b5c73b405f74774abd88cb81021b47b"
+      "start_uuid": "4b23e058ca6d48e98293b67b0cd4cfee",
+      "end_uuid": "43985d5b478a4cab9f1609932890572b"
     }
   ],
   "viewport": {
-    "camera_x": -740.2448935436788,
-    "camera_y": -35.90102255061721,
-    "camera_zoom": 1.7548246686059055
+    "camera_x": 2432.227456478585,
+    "camera_y": -1782.5859505044652,
+    "camera_zoom": 0.738253322162433
   },
   "ui_migrations": [
     "image_border_default_on_v1"
   ],
-  "last_browse_dirs": {
-    "audio": "C:\\Users\\thebe\\Desktop\\_asset\\Audio\\Grok Samples"
-  },
-  "checksum": "9d597ee4b625675c"
+  "last_browse_dirs": {},
+  "checksum": "0e0bb8a0f72693ec"
 }

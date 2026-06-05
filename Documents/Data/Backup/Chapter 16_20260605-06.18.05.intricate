@@ -154,6 +154,47 @@
       "node_id": 0,
       "node_type": "video",
       "title": "Video",
+      "uuid": "115ab79722d2400ab4fb9640d6ae3a30",
+      "x": 3404.544244707091,
+      "y": 2358.662329824556,
+      "width": 549.6842713564918,
+      "height": 454.0264070347366,
+      "z_value": -9.808000000000106,
+      "ports_visible": false,
+      "shelf_visible": true,
+      "source_path": "C:\\Users\\thebe\\Desktop\\Chapter 16\\Clips\\Gen-3 Alpha Turbo 3549546814, static camera sunris, Cropped - Upon it sa, M 5.mp4",
+      "cache_key": "9e3a479e77d52edb76dd3377559ebc0347bf84c54421d122891f87b4025475bc.mp4",
+      "source_size": 1863063,
+      "source_mtime": 1780535518.0442305,
+      "caption": "Gen-3 Alpha Turbo 3549546814, static camera sunris, Cropped - Upon it sa, M 5",
+      "volume": 50,
+      "playback_pos": 5083,
+      "looping": true,
+      "muted": false,
+      "show_border": true,
+      "was_playing": true,
+      "cache_enabled": true
+    },
+    {
+      "node_id": 0,
+      "node_type": "about",
+      "title": "Note",
+      "uuid": "e45a16c18d964800a22c74d02641e44c",
+      "x": 3308.6066100597363,
+      "y": 2839.382060206782,
+      "width": 773.0,
+      "height": 29.0,
+      "z_value": -9.807000000000107,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "label": "Gen-3 Alpha Turbo 3549546814, static camera sunris, Cropped - Upon it sa, M 5",
+      "depth_front": false,
+      "node_tint": ""
+    },
+    {
+      "node_id": 0,
+      "node_type": "video",
+      "title": "Video",
       "uuid": "cc9caaf851a2422ba156a39f00eac356",
       "x": 3181.045659665714,
       "y": 14.845951567229179,
@@ -750,7 +791,7 @@
       "source_mtime": 1780535518.0196283,
       "caption": "Blending",
       "volume": 0,
-      "playback_pos": 4041,
+      "playback_pos": 0,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -919,6 +960,10 @@
     }
   ],
   "connections": [
+    {
+      "start_uuid": "115ab79722d2400ab4fb9640d6ae3a30",
+      "end_uuid": "e45a16c18d964800a22c74d02641e44c"
+    },
     {
       "start_uuid": "998e1218dc49492983d5b8a79168829a",
       "end_uuid": "32ead154f64c47aa81c3762a2395d7b0"
@@ -1111,5 +1156,5 @@
   "last_browse_dirs": {
     "audio": "C:\\Users\\thebe\\Desktop\\_asset\\Audio\\Grok Samples"
   },
-  "checksum": "96ff1f5df816b899"
+  "checksum": "bdc13492bbd05f2c"
 }

@@ -143,7 +143,7 @@
       "source_mtime": 1780535518.0037863,
       "caption": "Alongside his Grace",
       "volume": 0,
-      "playback_pos": 5171,
+      "playback_pos": 2502,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -168,7 +168,7 @@
       "source_mtime": 1780535518.0037863,
       "caption": "Blending Alternate Version",
       "volume": 0,
-      "playback_pos": 10041,
+      "playback_pos": 2208,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -608,7 +608,7 @@
       "source_mtime": 1746619720.3192794,
       "caption": "Blooming",
       "volume": 50,
-      "playback_pos": 4125,
+      "playback_pos": 4458,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -750,7 +750,7 @@
       "source_mtime": 1780535518.0196283,
       "caption": "Blending",
       "volume": 0,
-      "playback_pos": 4041,
+      "playback_pos": 1250,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -807,7 +807,7 @@
       "source_mtime": 1780535518.051318,
       "caption": "The Majestic",
       "volume": 0,
-      "playback_pos": 3458,
+      "playback_pos": 2541,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -864,7 +864,7 @@
       "source_mtime": 1780535517.988034,
       "caption": "Alongside Our Grace",
       "volume": 0,
-      "playback_pos": 9125,
+      "playback_pos": 5708,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -889,7 +889,7 @@
       "source_mtime": 1780535518.03558,
       "caption": "ooooo",
       "volume": 0,
-      "playback_pos": 4541,
+      "playback_pos": 0,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -919,10 +919,6 @@
     }
   ],
   "connections": [
-    {
-      "start_uuid": "998e1218dc49492983d5b8a79168829a",
-      "end_uuid": "32ead154f64c47aa81c3762a2395d7b0"
-    },
     {
       "start_uuid": "41e36537fd2045db9147b32dc906a717",
       "end_uuid": "1b58a4b9218340999415494003f9aa76"
@@ -1088,21 +1084,25 @@
       "end_uuid": "54463cc0760c47f3ad74b2539894cd6b"
     },
     {
-      "start_uuid": "998e1218dc49492983d5b8a79168829a",
-      "end_uuid": "69f10e6662004526a70fee0845945049"
-    },
-    {
       "start_uuid": "0d80d97658104827a41ca2850e56e401",
       "end_uuid": "cc9caaf851a2422ba156a39f00eac356"
     },
     {
       "start_uuid": "b29b1628b27e4ef2a59da02a529f3635",
       "end_uuid": "cc9caaf851a2422ba156a39f00eac356"
+    },
+    {
+      "start_uuid": "998e1218dc49492983d5b8a79168829a",
+      "end_uuid": "32ead154f64c47aa81c3762a2395d7b0"
+    },
+    {
+      "start_uuid": "998e1218dc49492983d5b8a79168829a",
+      "end_uuid": "69f10e6662004526a70fee0845945049"
     }
   ],
   "viewport": {
-    "camera_x": 2894.639237011119,
-    "camera_y": 994.6278494369922,
+    "camera_x": 1049.0668793299133,
+    "camera_y": -1466.7302562132816,
     "camera_zoom": 0.44820783999999997
   },
   "ui_migrations": [
@@ -1111,5 +1111,5 @@
   "last_browse_dirs": {
     "audio": "C:\\Users\\thebe\\Desktop\\_asset\\Audio\\Grok Samples"
   },
-  "checksum": "96ff1f5df816b899"
+  "checksum": "19a2779b93ebb7cd"
 }

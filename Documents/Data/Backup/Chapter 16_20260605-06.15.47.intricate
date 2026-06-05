@@ -129,31 +129,6 @@
       "node_id": 0,
       "node_type": "video",
       "title": "Video",
-      "uuid": "998e1218dc49492983d5b8a79168829a",
-      "x": -760.9676843658563,
-      "y": -1388.049900889647,
-      "width": 1165.2168502296636,
-      "height": 285.3308708929543,
-      "z_value": -9.814000000000103,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "source_path": "C:\\Users\\thebe\\Desktop\\Chapter 16\\Clips\\Alongside his Grace.mp4",
-      "cache_key": "48e06a557698d9d2e4396b14e2078f455fcffeb44a25f9181ebaa5bfd5292add.mp4",
-      "source_size": 4776267,
-      "source_mtime": 1780535518.0037863,
-      "caption": "Alongside his Grace",
-      "volume": 0,
-      "playback_pos": 5171,
-      "looping": true,
-      "muted": false,
-      "show_border": true,
-      "was_playing": true,
-      "cache_enabled": true
-    },
-    {
-      "node_id": 0,
-      "node_type": "video",
-      "title": "Video",
       "uuid": "cc9caaf851a2422ba156a39f00eac356",
       "x": 3181.045659665714,
       "y": 14.845951567229179,
@@ -168,7 +143,7 @@
       "source_mtime": 1780535518.0037863,
       "caption": "Blending Alternate Version",
       "volume": 0,
-      "playback_pos": 10041,
+      "playback_pos": 2208,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -454,6 +429,31 @@
     },
     {
       "node_id": 0,
+      "node_type": "video",
+      "title": "Video",
+      "uuid": "0272947eface4c75b6253d884c3ca0e0",
+      "x": -455.50070229521344,
+      "y": -1293.719870062104,
+      "width": 838.5118457638747,
+      "height": 216.8909157601489,
+      "z_value": -9.991000000000005,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "source_path": "C:\\Users\\thebe\\Desktop\\Chapter 16\\Documents\\Data\\Cache\\48e06a557698d9d2e4396b14e2078f455fcffeb44a25f9181ebaa5bfd5292add.mp4",
+      "cache_key": "48e06a557698d9d2e4396b14e2078f455fcffeb44a25f9181ebaa5bfd5292add.mp4",
+      "source_size": 4776267,
+      "source_mtime": 1761486823.1269565,
+      "caption": "Alongside his Grace",
+      "volume": 0,
+      "playback_pos": 0,
+      "looping": true,
+      "muted": false,
+      "show_border": true,
+      "was_playing": true,
+      "cache_enabled": true
+    },
+    {
+      "node_id": 0,
       "node_type": "about",
       "title": "Without Regard For The Earth",
       "uuid": "0498f443d0804e2cb9a45e27cd9a7fba",
@@ -608,7 +608,7 @@
       "source_mtime": 1746619720.3192794,
       "caption": "Blooming",
       "volume": 50,
-      "playback_pos": 4125,
+      "playback_pos": 4166,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -750,7 +750,7 @@
       "source_mtime": 1780535518.0196283,
       "caption": "Blending",
       "volume": 0,
-      "playback_pos": 4041,
+      "playback_pos": 1250,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -807,7 +807,7 @@
       "source_mtime": 1780535518.051318,
       "caption": "The Majestic",
       "volume": 0,
-      "playback_pos": 3458,
+      "playback_pos": 2916,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -864,7 +864,7 @@
       "source_mtime": 1780535517.988034,
       "caption": "Alongside Our Grace",
       "volume": 0,
-      "playback_pos": 9125,
+      "playback_pos": 958,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -889,7 +889,7 @@
       "source_mtime": 1780535518.03558,
       "caption": "ooooo",
       "volume": 0,
-      "playback_pos": 4541,
+      "playback_pos": 0,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -919,10 +919,6 @@
     }
   ],
   "connections": [
-    {
-      "start_uuid": "998e1218dc49492983d5b8a79168829a",
-      "end_uuid": "32ead154f64c47aa81c3762a2395d7b0"
-    },
     {
       "start_uuid": "41e36537fd2045db9147b32dc906a717",
       "end_uuid": "1b58a4b9218340999415494003f9aa76"
@@ -1088,22 +1084,18 @@
       "end_uuid": "54463cc0760c47f3ad74b2539894cd6b"
     },
     {
-      "start_uuid": "998e1218dc49492983d5b8a79168829a",
-      "end_uuid": "69f10e6662004526a70fee0845945049"
+      "start_uuid": "b29b1628b27e4ef2a59da02a529f3635",
+      "end_uuid": "cc9caaf851a2422ba156a39f00eac356"
     },
     {
       "start_uuid": "0d80d97658104827a41ca2850e56e401",
       "end_uuid": "cc9caaf851a2422ba156a39f00eac356"
-    },
-    {
-      "start_uuid": "b29b1628b27e4ef2a59da02a529f3635",
-      "end_uuid": "cc9caaf851a2422ba156a39f00eac356"
     }
   ],
   "viewport": {
-    "camera_x": 2894.639237011119,
-    "camera_y": 994.6278494369922,
-    "camera_zoom": 0.44820783999999997
+    "camera_x": 430.3428479734596,
+    "camera_y": 672.7231377215357,
+    "camera_zoom": 1.4002788772666326
   },
   "ui_migrations": [
     "image_border_default_on_v1"
@@ -1111,5 +1103,5 @@
   "last_browse_dirs": {
     "audio": "C:\\Users\\thebe\\Desktop\\_asset\\Audio\\Grok Samples"
   },
-  "checksum": "96ff1f5df816b899"
+  "checksum": "15ff9a31c4d9169e"
 }

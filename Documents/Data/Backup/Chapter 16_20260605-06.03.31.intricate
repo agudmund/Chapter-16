@@ -64,22 +64,6 @@
     {
       "node_id": 0,
       "node_type": "about",
-      "title": "We explore Human behaviour",
-      "uuid": "a279f5146aec4e05b8cc4216cbcc721a",
-      "x": 1102.4886730848566,
-      "y": 17.482052720766326,
-      "width": 283.64758486637993,
-      "height": 33.15142139950234,
-      "z_value": -9.957000000000024,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "label": "We explore Human behaviour",
-      "depth_front": false,
-      "node_tint": "#2a3a2f"
-    },
-    {
-      "node_id": 0,
-      "node_type": "about",
       "title": "Having had Knowledge",
       "uuid": "6faf59f5b10a4ef2a2100dcc54f86e73",
       "x": 690.7694419968193,
@@ -98,8 +82,8 @@
       "node_type": "about",
       "title": "All the way from art to aggression",
       "uuid": "cba1fb493aa64d158b545cf5feb97a1f",
-      "x": 1067.6604534768874,
-      "y": 702.4934663953231,
+      "x": 977.011494252874,
+      "y": 787.3563218390801,
       "width": 368.9197808348591,
       "height": 29.68497897300233,
       "z_value": -9.903000000000054,
@@ -127,53 +111,51 @@
     },
     {
       "node_id": 0,
-      "node_type": "video",
-      "title": "Video",
-      "uuid": "998e1218dc49492983d5b8a79168829a",
-      "x": -760.9676843658563,
-      "y": -1388.049900889647,
-      "width": 1165.2168502296636,
-      "height": 285.3308708929543,
-      "z_value": -9.814000000000103,
+      "node_type": "about",
+      "title": "We explore Human behaviour",
+      "uuid": "a279f5146aec4e05b8cc4216cbcc721a",
+      "x": 1102.4886730848566,
+      "y": 17.482052720766326,
+      "width": 283.64758486637993,
+      "height": 33.15142139950234,
+      "z_value": -9.957000000000024,
       "ports_visible": false,
       "shelf_visible": false,
-      "source_path": "C:\\Users\\thebe\\Desktop\\Chapter 16\\Clips\\Alongside his Grace.mp4",
-      "cache_key": "48e06a557698d9d2e4396b14e2078f455fcffeb44a25f9181ebaa5bfd5292add.mp4",
-      "source_size": 4776267,
-      "source_mtime": 1780535518.0037863,
-      "caption": "Alongside his Grace",
-      "volume": 0,
-      "playback_pos": 5171,
-      "looping": true,
-      "muted": false,
-      "show_border": true,
-      "was_playing": true,
-      "cache_enabled": true
+      "label": "We explore Human behaviour",
+      "depth_front": false,
+      "node_tint": "#2a3a2f"
     },
     {
       "node_id": 0,
-      "node_type": "video",
-      "title": "Video",
-      "uuid": "cc9caaf851a2422ba156a39f00eac356",
-      "x": 3181.045659665714,
-      "y": 14.845951567229179,
-      "width": 959.2294168382325,
-      "height": 595.3376501029395,
-      "z_value": -9.817000000000101,
+      "node_type": "about",
+      "title": "It's A Visual Poem",
+      "uuid": "142e9198c0de4a19a4fc180ea14c0750",
+      "x": 514.2494563008036,
+      "y": -1109.248190904114,
+      "width": 208.58788348300584,
+      "height": 27.986575040972184,
+      "z_value": -9.985000000000008,
       "ports_visible": false,
       "shelf_visible": false,
-      "source_path": "C:\\Users\\thebe\\Desktop\\Chapter 16\\Clips\\Blending Alternate Version.mp4",
-      "cache_key": "ec24c725552110d19e28c308dcced88cb433d9f683a0900bf923db4ce4c64edd.mp4",
-      "source_size": 3038498,
-      "source_mtime": 1780535518.0037863,
-      "caption": "Blending Alternate Version",
-      "volume": 0,
-      "playback_pos": 10041,
-      "looping": true,
-      "muted": false,
-      "show_border": true,
-      "was_playing": true,
-      "cache_enabled": true
+      "label": "It's A Visual Poem",
+      "depth_front": false,
+      "node_tint": "#2a3a2f"
+    },
+    {
+      "node_id": 0,
+      "node_type": "about",
+      "title": "She grew there by her default path",
+      "uuid": "a775281d6a434aae9fb652817f4fa3b6",
+      "x": 973.3003333276129,
+      "y": -500.536606376726,
+      "width": 368.86322084167557,
+      "height": 31.176963838994993,
+      "z_value": -9.98100000000001,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "label": "She grew there by her default path",
+      "depth_front": false,
+      "node_tint": "#2a3a2f"
     },
     {
       "node_id": 0,
@@ -199,70 +181,6 @@
     {
       "node_id": 0,
       "node_type": "about",
-      "title": "This is incredible to actually use",
-      "uuid": "5c50f10fc350481880c2c0e23e36d7df",
-      "x": 1227.0979097444513,
-      "y": 1964.8216090800079,
-      "width": 356.84375,
-      "height": 31.0,
-      "z_value": -9.899000000000056,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "label": "This is incredible to actually use",
-      "depth_front": false,
-      "node_tint": "#2a3a2f"
-    },
-    {
-      "node_id": 0,
-      "node_type": "about",
-      "title": "She grew there by her default path",
-      "uuid": "a775281d6a434aae9fb652817f4fa3b6",
-      "x": 973.3003333276129,
-      "y": -500.536606376726,
-      "width": 368.86322084167557,
-      "height": 31.176963838994993,
-      "z_value": -9.98100000000001,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "label": "She grew there by her default path",
-      "depth_front": false,
-      "node_tint": "#2a3a2f"
-    },
-    {
-      "node_id": 0,
-      "node_type": "about",
-      "title": "It's A Visual Poem",
-      "uuid": "142e9198c0de4a19a4fc180ea14c0750",
-      "x": 514.2494563008036,
-      "y": -1109.248190904114,
-      "width": 208.58788348300584,
-      "height": 27.986575040972184,
-      "z_value": -9.985000000000008,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "label": "It's A Visual Poem",
-      "depth_front": false,
-      "node_tint": "#2a3a2f"
-    },
-    {
-      "node_id": 0,
-      "node_type": "about",
-      "title": "To become all that she became",
-      "uuid": "09a08f3422ea4ae6adabea0f7cb7d638",
-      "x": 970.6593891650041,
-      "y": -293.50372832530593,
-      "width": 316.30464644223855,
-      "height": 34.02447792563743,
-      "z_value": -9.978000000000012,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "label": "To become all that she became",
-      "depth_front": false,
-      "node_tint": "#2a3a2f"
-    },
-    {
-      "node_id": 0,
-      "node_type": "about",
       "title": "Chapter 16",
       "uuid": "2648068cccce4e1b984760037788230e",
       "x": 685.2546340260619,
@@ -273,6 +191,22 @@
       "ports_visible": false,
       "shelf_visible": false,
       "label": "Chapter 16",
+      "depth_front": false,
+      "node_tint": "#2a3a2f"
+    },
+    {
+      "node_id": 0,
+      "node_type": "about",
+      "title": "This is incredible to actually use",
+      "uuid": "5c50f10fc350481880c2c0e23e36d7df",
+      "x": 1227.0979097444513,
+      "y": 1964.8216090800079,
+      "width": 356.84375,
+      "height": 31.0,
+      "z_value": -9.899000000000056,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "label": "This is incredible to actually use",
       "depth_front": false,
       "node_tint": "#2a3a2f"
     },
@@ -295,16 +229,16 @@
     {
       "node_id": 0,
       "node_type": "about",
-      "title": "The Tale of The Sun's Love",
-      "uuid": "32ead154f64c47aa81c3762a2395d7b0",
-      "x": 421.8726656925098,
-      "y": -1329.5856674116071,
-      "width": 286.10753063373977,
-      "height": 28.774377068117474,
-      "z_value": -9.989000000000006,
+      "title": "To become all that she became",
+      "uuid": "09a08f3422ea4ae6adabea0f7cb7d638",
+      "x": 970.6593891650041,
+      "y": -293.50372832530593,
+      "width": 316.30464644223855,
+      "height": 34.02447792563743,
+      "z_value": -9.978000000000012,
       "ports_visible": false,
       "shelf_visible": false,
-      "label": "The Tale of The Sun's Love",
+      "label": "To become all that she became",
       "depth_front": false,
       "node_tint": "#2a3a2f"
     },
@@ -321,6 +255,22 @@
       "ports_visible": false,
       "shelf_visible": false,
       "label": "And zoology",
+      "depth_front": false,
+      "node_tint": "#2a3a2f"
+    },
+    {
+      "node_id": 0,
+      "node_type": "about",
+      "title": "The Tale of The Sun's Love",
+      "uuid": "32ead154f64c47aa81c3762a2395d7b0",
+      "x": 421.8726656925098,
+      "y": -1329.5856674116071,
+      "width": 286.10753063373977,
+      "height": 28.774377068117474,
+      "z_value": -9.989000000000006,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "label": "The Tale of The Sun's Love",
       "depth_front": false,
       "node_tint": "#2a3a2f"
     },
@@ -359,18 +309,18 @@
     {
       "node_id": 0,
       "node_type": "about",
-      "title": "In the Goodness of God",
-      "uuid": "81390269fabb4d7b9a3e8e73865c05a4",
-      "x": 588.9494220110125,
-      "y": -84.02926676987049,
-      "width": 248.93840264871505,
-      "height": 29.840150411114024,
-      "z_value": -9.960000000000022,
+      "title": "That years from now someone will ask you",
+      "uuid": "5cc3380763394f6aaa779819a3170aac",
+      "x": 1194.1351031976787,
+      "y": 2249.729258668471,
+      "width": 415.390625,
+      "height": 31.0,
+      "z_value": -9.867000000000074,
       "ports_visible": false,
       "shelf_visible": false,
-      "label": "In the Goodness of God",
+      "label": "That years from now someone will ask you",
       "depth_front": false,
-      "node_tint": "#2a3a2f"
+      "node_tint": ""
     },
     {
       "node_id": 0,
@@ -391,18 +341,18 @@
     {
       "node_id": 0,
       "node_type": "about",
-      "title": "That years from now someone will ask you",
-      "uuid": "5cc3380763394f6aaa779819a3170aac",
-      "x": 1194.1351031976787,
-      "y": 2249.729258668471,
-      "width": 415.390625,
-      "height": 31.0,
-      "z_value": -9.867000000000074,
+      "title": "In the Goodness of God",
+      "uuid": "81390269fabb4d7b9a3e8e73865c05a4",
+      "x": 588.9494220110125,
+      "y": -84.02926676987049,
+      "width": 248.93840264871505,
+      "height": 29.840150411114024,
+      "z_value": -9.960000000000022,
       "ports_visible": false,
       "shelf_visible": false,
-      "label": "That years from now someone will ask you",
+      "label": "In the Goodness of God",
       "depth_front": false,
-      "node_tint": ""
+      "node_tint": "#2a3a2f"
     },
     {
       "node_id": 0,
@@ -438,6 +388,27 @@
     },
     {
       "node_id": 0,
+      "node_type": "image",
+      "title": "Image",
+      "uuid": "2ed4196b008e4902a2e358a82df20bca",
+      "x": 1946.8020687264266,
+      "y": -105.77134800087447,
+      "width": 376.75958122669886,
+      "height": 392.0470775964508,
+      "z_value": 0.0,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "image_b64": "",
+      "cache_key": "d54f47c2d5dae523c7729fdc467c23a32545d5fc71aa0726be1e35b9d98f7db8",
+      "caption": "Assorted decorative clay or soap molds",
+      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\downloadedImage (4).png",
+      "source_size": 1563293,
+      "source_mtime": 1746360664.6527257,
+      "show_border": true,
+      "depth_front": false
+    },
+    {
+      "node_id": 0,
       "node_type": "about",
       "title": "Why we act the way we do",
       "uuid": "91c309d1add8493ebc3ba4e736475348",
@@ -449,6 +420,68 @@
       "ports_visible": false,
       "shelf_visible": false,
       "label": "Why we act the way we do",
+      "depth_front": false,
+      "node_tint": "#2a3a2f"
+    },
+    {
+      "node_id": 0,
+      "node_type": "video",
+      "title": "Video",
+      "uuid": "0272947eface4c75b6253d884c3ca0e0",
+      "x": -455.50070229521344,
+      "y": -1293.719870062104,
+      "width": 820.6333032478377,
+      "height": 208.10016687321365,
+      "z_value": -9.991000000000005,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "source_path": "C:\\Users\\thebe\\Desktop\\Chapter 16\\Documents\\Data\\Cache\\48e06a557698d9d2e4396b14e2078f455fcffeb44a25f9181ebaa5bfd5292add.mp4",
+      "cache_key": "48e06a557698d9d2e4396b14e2078f455fcffeb44a25f9181ebaa5bfd5292add.mp4",
+      "source_size": 4776267,
+      "source_mtime": 1761486823.1269565,
+      "caption": "Alongside his Grace",
+      "volume": 50,
+      "playback_pos": 3003,
+      "looping": true,
+      "muted": false,
+      "show_border": true,
+      "was_playing": true,
+      "cache_enabled": true
+    },
+    {
+      "node_id": 0,
+      "node_type": "image",
+      "title": "Image",
+      "uuid": "86c23557ac1f41af813d20b94c1b5f1a",
+      "x": 3228.308155111654,
+      "y": -415.2519606943823,
+      "width": 231.85460260090554,
+      "height": 242.63503665089604,
+      "z_value": 0.0,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "image_b64": "",
+      "cache_key": "4597478c10d46714e3d3aa19eecca22926e3012dfddff61d10e3a858ba1f8c26",
+      "caption": "Thing 3",
+      "source_path": "C:\\Users\\thisg\\Desktop\\Chapter 16\\Images\\Thing 3.png",
+      "source_size": 1383028,
+      "source_mtime": 1741197632.0278726,
+      "show_border": true,
+      "depth_front": false
+    },
+    {
+      "node_id": 0,
+      "node_type": "about",
+      "title": "She never made a conscious decision to grow",
+      "uuid": "54463cc0760c47f3ad74b2539894cd6b",
+      "x": 725.2226449944471,
+      "y": -575.0372966289124,
+      "width": 458.5,
+      "height": 29.0,
+      "z_value": -9.98200000000001,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "label": "She never made a conscious decision to grow",
       "depth_front": false,
       "node_tint": "#2a3a2f"
     },
@@ -486,22 +519,6 @@
     },
     {
       "node_id": 0,
-      "node_type": "about",
-      "title": "She never made a conscious decision to grow",
-      "uuid": "54463cc0760c47f3ad74b2539894cd6b",
-      "x": 725.2226449944471,
-      "y": -575.0372966289124,
-      "width": 458.5,
-      "height": 29.0,
-      "z_value": -9.98200000000001,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "label": "She never made a conscious decision to grow",
-      "depth_front": false,
-      "node_tint": "#2a3a2f"
-    },
-    {
-      "node_id": 0,
       "node_type": "image",
       "title": "Image",
       "uuid": "0244a9916d964d9391aa445eed8384a6",
@@ -520,6 +537,68 @@
       "source_mtime": 1744609826.106294,
       "show_border": true,
       "depth_front": false
+    },
+    {
+      "node_id": 0,
+      "node_type": "video",
+      "title": "Video",
+      "uuid": "f8e51735ef6645578648e0940b567312",
+      "x": 671.3760242418721,
+      "y": -836.1343511293131,
+      "width": 236.4328974655653,
+      "height": 161.65973847933918,
+      "z_value": -9.843000000000087,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "source_path": "C:\\Users\\thebe\\Desktop\\Chapter 16\\Clips\\Alongside Our Grace\\Walking 01.mp4",
+      "cache_key": "3ab65d2b855a6b05e2ffe89b7b92af402b202abe8e2938396d5014f51b5bf939.mp4",
+      "source_size": 10853755,
+      "source_mtime": 1780535517.988034,
+      "caption": "Walking 01",
+      "volume": 0,
+      "playback_pos": 1333,
+      "looping": true,
+      "muted": false,
+      "show_border": true,
+      "was_playing": true,
+      "cache_enabled": true
+    },
+    {
+      "node_id": 0,
+      "node_type": "about",
+      "title": "Famously",
+      "uuid": "88a7eb7e6d774b4a86ad83bc95c427b8",
+      "x": 1081.830556602719,
+      "y": 155.28176240210115,
+      "width": 105.65150021299655,
+      "height": 27.74274803788532,
+      "z_value": -9.956000000000024,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "label": "Famously",
+      "depth_front": false,
+      "node_tint": "#2a3a2f"
+    },
+    {
+      "node_id": 0,
+      "node_type": "audio",
+      "title": "Hopeful Interim",
+      "uuid": "91e74c5285bc4c24bbdcc6a29362279f",
+      "x": 1185.924137791585,
+      "y": -200.69977382225375,
+      "width": 320.954447733561,
+      "height": 118.09240066774882,
+      "z_value": -9.870000000000072,
+      "ports_visible": false,
+      "shelf_visible": true,
+      "source_path": "C:\\Users\\thebe\\Desktop\\_asset\\Audio\\Grok Samples\\Hopeful Interim.wav",
+      "caption": "Hopeful Interim",
+      "volume": 50,
+      "playback_pos": 9195,
+      "looping": true,
+      "muted": false,
+      "depth_front": false,
+      "node_tint": ""
     },
     {
       "node_id": 0,
@@ -561,26 +640,10 @@
     {
       "node_id": 0,
       "node_type": "about",
-      "title": "Famously",
-      "uuid": "88a7eb7e6d774b4a86ad83bc95c427b8",
-      "x": 1081.830556602719,
-      "y": 155.28176240210115,
-      "width": 105.65150021299655,
-      "height": 27.74274803788532,
-      "z_value": -9.956000000000024,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "label": "Famously",
-      "depth_front": false,
-      "node_tint": "#2a3a2f"
-    },
-    {
-      "node_id": 0,
-      "node_type": "about",
       "title": "Huge Folder Structure Nodes",
       "uuid": "6a396298ddb54ee08cce6bb4e164214a",
-      "x": 1569.8261112985797,
-      "y": -1441.9528861847339,
+      "x": 1315.2375449673086,
+      "y": -1102.5014644097057,
       "width": 298.0,
       "height": 29.0,
       "z_value": -9.960000000000022,
@@ -589,31 +652,6 @@
       "label": "Huge Folder Structure Nodes",
       "depth_front": false,
       "node_tint": ""
-    },
-    {
-      "node_id": 0,
-      "node_type": "video",
-      "title": "Video",
-      "uuid": "0d80d97658104827a41ca2850e56e401",
-      "x": 1374.8445633963793,
-      "y": -572.895676447175,
-      "width": 454.6263011185324,
-      "height": 292.57578067111945,
-      "z_value": -9.977000000000013,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "source_path": "C:\\Users\\thebe\\Desktop\\Chapter 16\\Documents\\Data\\Cache\\3c6750335b7e611328626507d908b6e9b698be54c17c15513c6f86284dbbbcfb.mp4",
-      "cache_key": "3c6750335b7e611328626507d908b6e9b698be54c17c15513c6f86284dbbbcfb.mp4",
-      "source_size": 1443251,
-      "source_mtime": 1746619720.3192794,
-      "caption": "Blooming",
-      "volume": 50,
-      "playback_pos": 4125,
-      "looping": true,
-      "muted": false,
-      "show_border": true,
-      "was_playing": true,
-      "cache_enabled": true
     },
     {
       "node_id": 0,
@@ -665,6 +703,47 @@
     },
     {
       "node_id": 0,
+      "node_type": "video",
+      "title": "Video",
+      "uuid": "0d80d97658104827a41ca2850e56e401",
+      "x": 1374.8445633963793,
+      "y": -572.895676447175,
+      "width": 454.6263011185324,
+      "height": 292.57578067111945,
+      "z_value": -9.977000000000013,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "source_path": "C:\\Users\\thebe\\Desktop\\Chapter 16\\Documents\\Data\\Cache\\3c6750335b7e611328626507d908b6e9b698be54c17c15513c6f86284dbbbcfb.mp4",
+      "cache_key": "3c6750335b7e611328626507d908b6e9b698be54c17c15513c6f86284dbbbcfb.mp4",
+      "source_size": 1443251,
+      "source_mtime": 1746619720.3192794,
+      "caption": "Blooming",
+      "volume": 50,
+      "playback_pos": 4541,
+      "looping": true,
+      "muted": false,
+      "show_border": true,
+      "was_playing": true,
+      "cache_enabled": true
+    },
+    {
+      "node_id": 0,
+      "node_type": "about",
+      "title": "Psychology",
+      "uuid": "089a6317c18740a3a4576b3df1f27b62",
+      "x": 1148.6736993585894,
+      "y": 371.23653130568573,
+      "width": 125.51330148540228,
+      "height": 30.7349715040084,
+      "z_value": -9.950000000000028,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "label": "Psychology",
+      "depth_front": false,
+      "node_tint": "#2a3a2f"
+    },
+    {
+      "node_id": 0,
       "node_type": "image",
       "title": "Image",
       "uuid": "f1c0a3af3ee744569869b43722e0111e",
@@ -689,8 +768,8 @@
       "node_type": "about",
       "title": "Objective facts are the source of truth in this world and the only thing that information can be extrapolated from",
       "uuid": "13c2c4d81d784e4f84b29844e40e3d6e",
-      "x": 396.6857710657132,
-      "y": 717.5247948125058,
+      "x": 491.19213280989743,
+      "y": 798.5302477360922,
       "width": 419.46368702783917,
       "height": 87.38761839083827,
       "z_value": -9.902000000000054,
@@ -699,63 +778,6 @@
       "label": "Objective facts are the source of truth in this world and the only thing that information can be extrapolated from",
       "depth_front": false,
       "node_tint": "#2a3a2f"
-    },
-    {
-      "node_id": 0,
-      "node_type": "about",
-      "title": "Psychology",
-      "uuid": "089a6317c18740a3a4576b3df1f27b62",
-      "x": 1148.6736993585894,
-      "y": 371.23653130568573,
-      "width": 125.51330148540228,
-      "height": 30.7349715040084,
-      "z_value": -9.950000000000028,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "label": "Psychology",
-      "depth_front": false,
-      "node_tint": "#2a3a2f"
-    },
-    {
-      "node_id": 0,
-      "node_type": "about",
-      "title": "To explain",
-      "uuid": "e7984cb6fdd141bb9366786909f6ff95",
-      "x": 1178.6731645303096,
-      "y": 496.3810657400512,
-      "width": 124.69676230563027,
-      "height": 33.689177463267185,
-      "z_value": -9.948000000000029,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "label": "To explain",
-      "depth_front": false,
-      "node_tint": "#2a3a2f"
-    },
-    {
-      "node_id": 0,
-      "node_type": "video",
-      "title": "Video",
-      "uuid": "b29b1628b27e4ef2a59da02a529f3635",
-      "x": 2522.610295143176,
-      "y": 950.7790027970358,
-      "width": 637.470634269383,
-      "height": 402.2823805616298,
-      "z_value": -9.8190000000001,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "source_path": "C:\\Users\\thebe\\Desktop\\Chapter 16\\Clips\\Blending.mp4",
-      "cache_key": "b6f1c2b0ec04f9ce3b5d7208bf72e689a5b4d800f8fa2b36423015edcbe71589.mp4",
-      "source_size": 1501132,
-      "source_mtime": 1780535518.0196283,
-      "caption": "Blending",
-      "volume": 0,
-      "playback_pos": 4041,
-      "looping": true,
-      "muted": false,
-      "show_border": true,
-      "was_playing": true,
-      "cache_enabled": true
     },
     {
       "node_id": 0,
@@ -791,28 +813,49 @@
     },
     {
       "node_id": 0,
-      "node_type": "video",
-      "title": "Video",
-      "uuid": "21a46485ec36473ba64cdd17896bb669",
-      "x": 465.08113540205045,
-      "y": 213.62551965636624,
-      "width": 629.4646996106476,
-      "height": 397.97186512674045,
-      "z_value": -9.825000000000097,
+      "node_type": "about",
+      "title": "To explain",
+      "uuid": "e7984cb6fdd141bb9366786909f6ff95",
+      "x": 1178.6731645303096,
+      "y": 496.3810657400512,
+      "width": 124.69676230563027,
+      "height": 33.689177463267185,
+      "z_value": -9.948000000000029,
       "ports_visible": false,
       "shelf_visible": false,
-      "source_path": "C:\\Users\\thebe\\Desktop\\Chapter 16\\Clips\\The Majestic.mp4",
-      "cache_key": "f5ec3238ae0801d849e8389f51f5b1d25583900f96dc1ad5dc0673d387157649.mp4",
-      "source_size": 2414796,
-      "source_mtime": 1780535518.051318,
-      "caption": "The Majestic",
-      "volume": 0,
-      "playback_pos": 3458,
-      "looping": true,
-      "muted": false,
-      "show_border": true,
-      "was_playing": true,
-      "cache_enabled": true
+      "label": "To explain",
+      "depth_front": false,
+      "node_tint": "#2a3a2f"
+    },
+    {
+      "node_id": 0,
+      "node_type": "warm",
+      "title": "Elegant",
+      "uuid": "28f1b6e7f18140afa7ff9c9f88d34b3e",
+      "x": 3494.267901306027,
+      "y": -389.48246798922946,
+      "width": 193.08112550273336,
+      "height": 179.64411224124026,
+      "z_value": -9.876000000000069,
+      "ports_visible": false,
+      "shelf_visible": true,
+      "body_text": "These are many lines\nAll in a row\nLike my ducks\nWhom i don't think are in a row\nAnd frankly, \nI think one of them \nIs a pigeon"
+    },
+    {
+      "node_id": 0,
+      "node_type": "about",
+      "title": "The video cache is using absolute paths on source",
+      "uuid": "71909e6e6880403289f1dbe880da58b6",
+      "x": 1287.9048037535354,
+      "y": -1033.2496679671783,
+      "width": 501.921875,
+      "height": 31.0,
+      "z_value": -9.869000000000073,
+      "ports_visible": false,
+      "shelf_visible": false,
+      "label": "The video cache is using absolute paths on source",
+      "depth_front": false,
+      "node_tint": ""
     },
     {
       "node_id": 0,
@@ -832,39 +875,23 @@
     },
     {
       "node_id": 0,
-      "node_type": "about",
-      "title": "The video cache is using absolute paths on source",
-      "uuid": "71909e6e6880403289f1dbe880da58b6",
-      "x": 1609.9979141877952,
-      "y": -1299.4104418589618,
-      "width": 501.921875,
-      "height": 31.0,
-      "z_value": -9.869000000000073,
-      "ports_visible": false,
-      "shelf_visible": false,
-      "label": "The video cache is using absolute paths on source",
-      "depth_front": false,
-      "node_tint": ""
-    },
-    {
-      "node_id": 0,
       "node_type": "video",
       "title": "Video",
-      "uuid": "446cbf2c47be42bba678a5abf2342a00",
-      "x": 818.9643540900645,
-      "y": -965.3014293576297,
-      "width": 471.9081461853198,
-      "height": 302.9448877111919,
-      "z_value": -9.8210000000001,
+      "uuid": "21a46485ec36473ba64cdd17896bb669",
+      "x": 480.5107454827337,
+      "y": 315.84668644089186,
+      "width": 626.8834915872213,
+      "height": 391.42565363516644,
+      "z_value": -9.825000000000097,
       "ports_visible": false,
       "shelf_visible": false,
-      "source_path": "C:\\Users\\thebe\\Desktop\\Chapter 16\\Clips\\Alongside Our Grace.mp4",
-      "cache_key": "953aee4f6a83bffac051e518ba737b419c6fd0824d456a7adec1e1b7350c1623.mp4",
-      "source_size": 9102109,
-      "source_mtime": 1780535517.988034,
-      "caption": "Alongside Our Grace",
+      "source_path": "C:\\Users\\thebe\\Desktop\\Chapter 16\\Clips\\The Majestic.mp4",
+      "cache_key": "f5ec3238ae0801d849e8389f51f5b1d25583900f96dc1ad5dc0673d387157649.mp4",
+      "source_size": 2414796,
+      "source_mtime": 1780535518.051318,
+      "caption": "The Majestic",
       "volume": 0,
-      "playback_pos": 9125,
+      "playback_pos": 4541,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -876,9 +903,9 @@
       "node_type": "video",
       "title": "Video",
       "uuid": "354862f19c14460c874ea7c5729c1725",
-      "x": 1738.5670445968383,
-      "y": -20.99425160678834,
-      "width": 757.6852800422444,
+      "x": 1566.912632449239,
+      "y": 474.6819722351564,
+      "width": 752.4274862360185,
       "height": 474.41116802534657,
       "z_value": -9.823000000000098,
       "ports_visible": false,
@@ -889,221 +916,192 @@
       "source_mtime": 1780535518.03558,
       "caption": "ooooo",
       "volume": 0,
-      "playback_pos": 4541,
+      "playback_pos": 4333,
       "looping": true,
       "muted": false,
       "show_border": true,
       "was_playing": true,
       "cache_enabled": true
-    },
-    {
-      "node_id": 0,
-      "node_type": "audio",
-      "title": "Hopeful Interim",
-      "uuid": "91e74c5285bc4c24bbdcc6a29362279f",
-      "x": 1207.3235543898702,
-      "y": -193.82138991566205,
-      "width": 320.954447733561,
-      "height": 118.09240066774882,
-      "z_value": -9.870000000000072,
-      "ports_visible": false,
-      "shelf_visible": true,
-      "source_path": "C:\\Users\\thebe\\Desktop\\_asset\\Audio\\Grok Samples\\Hopeful Interim.wav",
-      "caption": "Hopeful Interim",
-      "volume": 50,
-      "playback_pos": 9195,
-      "looping": true,
-      "muted": false,
-      "depth_front": false,
-      "node_tint": ""
     }
   ],
   "connections": [
     {
-      "start_uuid": "998e1218dc49492983d5b8a79168829a",
-      "end_uuid": "32ead154f64c47aa81c3762a2395d7b0"
+      "start_uuid": "91c309d1add8493ebc3ba4e736475348",
+      "end_uuid": "354862f19c14460c874ea7c5729c1725"
+    },
+    {
+      "start_uuid": "cba1fb493aa64d158b545cf5feb97a1f",
+      "end_uuid": "354862f19c14460c874ea7c5729c1725"
+    },
+    {
+      "start_uuid": "12e14db2dcc74000b59c99d4b7409f86",
+      "end_uuid": "f8e51735ef6645578648e0940b567312"
+    },
+    {
+      "start_uuid": "86c23557ac1f41af813d20b94c1b5f1a",
+      "end_uuid": "2ed4196b008e4902a2e358a82df20bca"
+    },
+    {
+      "start_uuid": "0d80d97658104827a41ca2850e56e401",
+      "end_uuid": "86c23557ac1f41af813d20b94c1b5f1a"
     },
     {
       "start_uuid": "41e36537fd2045db9147b32dc906a717",
       "end_uuid": "1b58a4b9218340999415494003f9aa76"
     },
     {
-      "start_uuid": "6faf59f5b10a4ef2a2100dcc54f86e73",
-      "end_uuid": "81390269fabb4d7b9a3e8e73865c05a4"
+      "start_uuid": "5c50f10fc350481880c2c0e23e36d7df",
+      "end_uuid": "acbc53c8326a4bac9d60e82d3cadae7b"
     },
     {
       "start_uuid": "a775281d6a434aae9fb652817f4fa3b6",
       "end_uuid": "0853cdfd1e954086a357082de1d0cb35"
     },
     {
-      "start_uuid": "b89d853c5e3d4c2c8f9ca938a0d03b63",
-      "end_uuid": "12e14db2dcc74000b59c99d4b7409f86"
-    },
-    {
-      "start_uuid": "f8edbd81a4224da98342f857111348d2",
-      "end_uuid": "88a7eb7e6d774b4a86ad83bc95c427b8"
-    },
-    {
-      "start_uuid": "2648068cccce4e1b984760037788230e",
-      "end_uuid": "32ead154f64c47aa81c3762a2395d7b0"
-    },
-    {
-      "start_uuid": "02dbc764b3a448fbaf366e48c3cd3b6b",
-      "end_uuid": "1518bb568c644364b584a16f40cf0653"
-    },
-    {
-      "start_uuid": "cba1fb493aa64d158b545cf5feb97a1f",
-      "end_uuid": "354862f19c14460c874ea7c5729c1725"
-    },
-    {
-      "start_uuid": "13c2c4d81d784e4f84b29844e40e3d6e",
-      "end_uuid": "41e36537fd2045db9147b32dc906a717"
-    },
-    {
       "start_uuid": "4ab022b3bdd44e3e85475bc65c18bcbe",
       "end_uuid": "b89d853c5e3d4c2c8f9ca938a0d03b63"
-    },
-    {
-      "start_uuid": "32ead154f64c47aa81c3762a2395d7b0",
-      "end_uuid": "0498f443d0804e2cb9a45e27cd9a7fba"
-    },
-    {
-      "start_uuid": "b5b6b1fcdd6c4a5fa3a84ecde6b41195",
-      "end_uuid": "4ab022b3bdd44e3e85475bc65c18bcbe"
-    },
-    {
-      "start_uuid": "91c309d1add8493ebc3ba4e736475348",
-      "end_uuid": "cba1fb493aa64d158b545cf5feb97a1f"
-    },
-    {
-      "start_uuid": "e7984cb6fdd141bb9366786909f6ff95",
-      "end_uuid": "91c309d1add8493ebc3ba4e736475348"
-    },
-    {
-      "start_uuid": "5cc3380763394f6aaa779819a3170aac",
-      "end_uuid": "0b5c73b405f74774abd88cb81021b47b"
-    },
-    {
-      "start_uuid": "12e14db2dcc74000b59c99d4b7409f86",
-      "end_uuid": "446cbf2c47be42bba678a5abf2342a00"
-    },
-    {
-      "start_uuid": "6a396298ddb54ee08cce6bb4e164214a",
-      "end_uuid": "71909e6e6880403289f1dbe880da58b6"
-    },
-    {
-      "start_uuid": "142e9198c0de4a19a4fc180ea14c0750",
-      "end_uuid": "69f10e6662004526a70fee0845945049"
-    },
-    {
-      "start_uuid": "089a6317c18740a3a4576b3df1f27b62",
-      "end_uuid": "04eb90c9e1be43f882ee2b40307c1e2b"
-    },
-    {
-      "start_uuid": "5c50f10fc350481880c2c0e23e36d7df",
-      "end_uuid": "acbc53c8326a4bac9d60e82d3cadae7b"
-    },
-    {
-      "start_uuid": "88a7eb7e6d774b4a86ad83bc95c427b8",
-      "end_uuid": "02dbc764b3a448fbaf366e48c3cd3b6b"
-    },
-    {
-      "start_uuid": "a279f5146aec4e05b8cc4216cbcc721a",
-      "end_uuid": "f8edbd81a4224da98342f857111348d2"
-    },
-    {
-      "start_uuid": "1518bb568c644364b584a16f40cf0653",
-      "end_uuid": "089a6317c18740a3a4576b3df1f27b62"
-    },
-    {
-      "start_uuid": "04eb90c9e1be43f882ee2b40307c1e2b",
-      "end_uuid": "e7984cb6fdd141bb9366786909f6ff95"
-    },
-    {
-      "start_uuid": "4c49dac3c4904bc096b474b29eebb80f",
-      "end_uuid": "5c50f10fc350481880c2c0e23e36d7df"
-    },
-    {
-      "start_uuid": "4c49dac3c4904bc096b474b29eebb80f",
-      "end_uuid": "0244a9916d964d9391aa445eed8384a6"
-    },
-    {
-      "start_uuid": "3018a01b7934455eb25f17dc46ec8de3",
-      "end_uuid": "09a08f3422ea4ae6adabea0f7cb7d638"
-    },
-    {
-      "start_uuid": "54463cc0760c47f3ad74b2539894cd6b",
-      "end_uuid": "a775281d6a434aae9fb652817f4fa3b6"
     },
     {
       "start_uuid": "acbc53c8326a4bac9d60e82d3cadae7b",
       "end_uuid": "924574173f72473c80fd90f376687337"
     },
     {
-      "start_uuid": "cba1fb493aa64d158b545cf5feb97a1f",
-      "end_uuid": "4c49dac3c4904bc096b474b29eebb80f"
+      "start_uuid": "089a6317c18740a3a4576b3df1f27b62",
+      "end_uuid": "04eb90c9e1be43f882ee2b40307c1e2b"
     },
     {
-      "start_uuid": "0853cdfd1e954086a357082de1d0cb35",
-      "end_uuid": "3018a01b7934455eb25f17dc46ec8de3"
+      "start_uuid": "2648068cccce4e1b984760037788230e",
+      "end_uuid": "32ead154f64c47aa81c3762a2395d7b0"
+    },
+    {
+      "start_uuid": "04eb90c9e1be43f882ee2b40307c1e2b",
+      "end_uuid": "e7984cb6fdd141bb9366786909f6ff95"
+    },
+    {
+      "start_uuid": "13c2c4d81d784e4f84b29844e40e3d6e",
+      "end_uuid": "41e36537fd2045db9147b32dc906a717"
     },
     {
       "start_uuid": "81390269fabb4d7b9a3e8e73865c05a4",
       "end_uuid": "a279f5146aec4e05b8cc4216cbcc721a"
     },
     {
+      "start_uuid": "142e9198c0de4a19a4fc180ea14c0750",
+      "end_uuid": "69f10e6662004526a70fee0845945049"
+    },
+    {
+      "start_uuid": "6faf59f5b10a4ef2a2100dcc54f86e73",
+      "end_uuid": "81390269fabb4d7b9a3e8e73865c05a4"
+    },
+    {
+      "start_uuid": "b89d853c5e3d4c2c8f9ca938a0d03b63",
+      "end_uuid": "12e14db2dcc74000b59c99d4b7409f86"
+    },
+    {
       "start_uuid": "09a08f3422ea4ae6adabea0f7cb7d638",
       "end_uuid": "6faf59f5b10a4ef2a2100dcc54f86e73"
-    },
-    {
-      "start_uuid": "69f10e6662004526a70fee0845945049",
-      "end_uuid": "4ef7c11edcf641f8838d149a8cc3930c"
-    },
-    {
-      "start_uuid": "924574173f72473c80fd90f376687337",
-      "end_uuid": "5cc3380763394f6aaa779819a3170aac"
     },
     {
       "start_uuid": "4ef7c11edcf641f8838d149a8cc3930c",
       "end_uuid": "b5b6b1fcdd6c4a5fa3a84ecde6b41195"
     },
     {
-      "start_uuid": "91c309d1add8493ebc3ba4e736475348",
-      "end_uuid": "354862f19c14460c874ea7c5729c1725"
+      "start_uuid": "02dbc764b3a448fbaf366e48c3cd3b6b",
+      "end_uuid": "1518bb568c644364b584a16f40cf0653"
     },
     {
-      "start_uuid": "0244a9916d964d9391aa445eed8384a6",
-      "end_uuid": "852da4272cb94a438c44f580b8cf632d"
+      "start_uuid": "f8edbd81a4224da98342f857111348d2",
+      "end_uuid": "88a7eb7e6d774b4a86ad83bc95c427b8"
+    },
+    {
+      "start_uuid": "b5b6b1fcdd6c4a5fa3a84ecde6b41195",
+      "end_uuid": "4ab022b3bdd44e3e85475bc65c18bcbe"
+    },
+    {
+      "start_uuid": "a279f5146aec4e05b8cc4216cbcc721a",
+      "end_uuid": "f8edbd81a4224da98342f857111348d2"
+    },
+    {
+      "start_uuid": "91c309d1add8493ebc3ba4e736475348",
+      "end_uuid": "cba1fb493aa64d158b545cf5feb97a1f"
+    },
+    {
+      "start_uuid": "32ead154f64c47aa81c3762a2395d7b0",
+      "end_uuid": "0498f443d0804e2cb9a45e27cd9a7fba"
+    },
+    {
+      "start_uuid": "4c49dac3c4904bc096b474b29eebb80f",
+      "end_uuid": "5c50f10fc350481880c2c0e23e36d7df"
+    },
+    {
+      "start_uuid": "54463cc0760c47f3ad74b2539894cd6b",
+      "end_uuid": "a775281d6a434aae9fb652817f4fa3b6"
     },
     {
       "start_uuid": "0498f443d0804e2cb9a45e27cd9a7fba",
       "end_uuid": "142e9198c0de4a19a4fc180ea14c0750"
     },
     {
+      "start_uuid": "cba1fb493aa64d158b545cf5feb97a1f",
+      "end_uuid": "4c49dac3c4904bc096b474b29eebb80f"
+    },
+    {
       "start_uuid": "852da4272cb94a438c44f580b8cf632d",
       "end_uuid": "13c2c4d81d784e4f84b29844e40e3d6e"
+    },
+    {
+      "start_uuid": "924574173f72473c80fd90f376687337",
+      "end_uuid": "5cc3380763394f6aaa779819a3170aac"
+    },
+    {
+      "start_uuid": "0244a9916d964d9391aa445eed8384a6",
+      "end_uuid": "852da4272cb94a438c44f580b8cf632d"
+    },
+    {
+      "start_uuid": "e7984cb6fdd141bb9366786909f6ff95",
+      "end_uuid": "91c309d1add8493ebc3ba4e736475348"
+    },
+    {
+      "start_uuid": "69f10e6662004526a70fee0845945049",
+      "end_uuid": "4ef7c11edcf641f8838d149a8cc3930c"
+    },
+    {
+      "start_uuid": "5cc3380763394f6aaa779819a3170aac",
+      "end_uuid": "0b5c73b405f74774abd88cb81021b47b"
+    },
+    {
+      "start_uuid": "4c49dac3c4904bc096b474b29eebb80f",
+      "end_uuid": "0244a9916d964d9391aa445eed8384a6"
+    },
+    {
+      "start_uuid": "1518bb568c644364b584a16f40cf0653",
+      "end_uuid": "089a6317c18740a3a4576b3df1f27b62"
+    },
+    {
+      "start_uuid": "6a396298ddb54ee08cce6bb4e164214a",
+      "end_uuid": "71909e6e6880403289f1dbe880da58b6"
+    },
+    {
+      "start_uuid": "0853cdfd1e954086a357082de1d0cb35",
+      "end_uuid": "3018a01b7934455eb25f17dc46ec8de3"
     },
     {
       "start_uuid": "12e14db2dcc74000b59c99d4b7409f86",
       "end_uuid": "54463cc0760c47f3ad74b2539894cd6b"
     },
     {
-      "start_uuid": "998e1218dc49492983d5b8a79168829a",
-      "end_uuid": "69f10e6662004526a70fee0845945049"
+      "start_uuid": "3018a01b7934455eb25f17dc46ec8de3",
+      "end_uuid": "09a08f3422ea4ae6adabea0f7cb7d638"
     },
     {
-      "start_uuid": "0d80d97658104827a41ca2850e56e401",
-      "end_uuid": "cc9caaf851a2422ba156a39f00eac356"
-    },
-    {
-      "start_uuid": "b29b1628b27e4ef2a59da02a529f3635",
-      "end_uuid": "cc9caaf851a2422ba156a39f00eac356"
+      "start_uuid": "88a7eb7e6d774b4a86ad83bc95c427b8",
+      "end_uuid": "02dbc764b3a448fbaf366e48c3cd3b6b"
     }
   ],
   "viewport": {
-    "camera_x": 2894.639237011119,
-    "camera_y": 994.6278494369922,
-    "camera_zoom": 0.44820783999999997
+    "camera_x": 370.9518126052428,
+    "camera_y": -1496.6375012210476,
+    "camera_zoom": 0.8885251097310327
   },
   "ui_migrations": [
     "image_border_default_on_v1"
@@ -1111,5 +1109,5 @@
   "last_browse_dirs": {
     "audio": "C:\\Users\\thebe\\Desktop\\_asset\\Audio\\Grok Samples"
   },
-  "checksum": "96ff1f5df816b899"
+  "checksum": "cc347efb5ae560f1"
 }

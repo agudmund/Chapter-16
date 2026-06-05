@@ -750,7 +750,7 @@
       "source_mtime": 1780535518.0196283,
       "caption": "Blending",
       "volume": 0,
-      "playback_pos": 4041,
+      "playback_pos": 4000,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -1101,8 +1101,8 @@
     }
   ],
   "viewport": {
-    "camera_x": 2894.639237011119,
-    "camera_y": 994.6278494369922,
+    "camera_x": 2891.51568611562,
+    "camera_y": 1956.6815252495362,
     "camera_zoom": 0.44820783999999997
   },
   "ui_migrations": [
@@ -1111,5 +1111,5 @@
   "last_browse_dirs": {
     "audio": "C:\\Users\\thebe\\Desktop\\_asset\\Audio\\Grok Samples"
   },
-  "checksum": "96ff1f5df816b899"
+  "checksum": "774565ed722b39ea"
 }

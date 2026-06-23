@@ -143,7 +143,7 @@
       "source_mtime": 1780535518.0037863,
       "caption": "Alongside his Grace",
       "volume": 0,
-      "playback_pos": 5171,
+      "playback_pos": 5839,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -168,7 +168,7 @@
       "source_mtime": 1780535518.0037863,
       "caption": "Blending Alternate Version",
       "volume": 0,
-      "playback_pos": 333,
+      "playback_pos": 7708,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -608,7 +608,7 @@
       "source_mtime": 1746619720.3192794,
       "caption": "Blooming",
       "volume": 50,
-      "playback_pos": 4125,
+      "playback_pos": 2541,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -750,7 +750,7 @@
       "source_mtime": 1780535518.0196283,
       "caption": "Blending",
       "volume": 0,
-      "playback_pos": 2541,
+      "playback_pos": 2916,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -807,7 +807,7 @@
       "source_mtime": 1780535518.051318,
       "caption": "The Majestic",
       "volume": 0,
-      "playback_pos": 4041,
+      "playback_pos": 0,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -864,7 +864,7 @@
       "source_mtime": 1780535517.988034,
       "caption": "Alongside Our Grace",
       "volume": 0,
-      "playback_pos": 9125,
+      "playback_pos": 3458,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -889,7 +889,7 @@
       "source_mtime": 1780535518.03558,
       "caption": "ooooo",
       "volume": 0,
-      "playback_pos": 4541,
+      "playback_pos": 0,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -911,7 +911,7 @@
       "source_path": "C:\\Users\\thebe\\Desktop\\_asset\\Audio\\Grok Samples\\Hopeful Interim.wav",
       "caption": "Hopeful Interim",
       "volume": 50,
-      "playback_pos": 9195,
+      "playback_pos": 835,
       "looping": true,
       "muted": false,
       "depth_front": false,
@@ -1101,9 +1101,9 @@
     }
   ],
   "viewport": {
-    "camera_x": 2585.853919913583,
-    "camera_y": 1731.3396392173775,
-    "camera_zoom": 0.44820783999999997
+    "camera_x": 4459.974806698312,
+    "camera_y": 1183.9089965619169,
+    "camera_zoom": 0.1255164040745812
   },
   "ui_migrations": [
     "image_border_default_on_v1"
@@ -1111,5 +1111,5 @@
   "last_browse_dirs": {
     "audio": "C:\\Users\\thebe\\Desktop\\_asset\\Audio\\Grok Samples"
   },
-  "checksum": "de487f2041fa588e"
+  "checksum": "792bd7ca112c733e"
 }

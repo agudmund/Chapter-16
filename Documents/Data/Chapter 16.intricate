@@ -878,7 +878,7 @@
       "source_mtime": 1780535518.051318,
       "caption": "The Majestic",
       "volume": 0,
-      "playback_pos": 3291,
+      "playback_pos": 375,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -1101,8 +1101,8 @@
     }
   ],
   "viewport": {
-    "camera_x": 154.05346986245854,
-    "camera_y": 893.9851799551391,
+    "camera_x": 153.714145038973,
+    "camera_y": 893.7815850610482,
     "camera_zoom": 2.9470287193487983
   },
   "ui_migrations": [
@@ -1111,5 +1111,5 @@
   "last_browse_dirs": {
     "audio": "C:\\Users\\thebe\\Desktop\\_asset\\Audio\\Grok Samples"
   },
-  "checksum": "a0c82678436671d6"
+  "checksum": "7e621ba240923d45"
 }

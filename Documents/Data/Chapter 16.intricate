@@ -222,7 +222,7 @@
       "source_mtime": 1780535517.988034,
       "caption": "Alongside Our Grace",
       "volume": 0,
-      "playback_pos": 10083,
+      "playback_pos": 10166,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -336,7 +336,7 @@
       "source_mtime": 1787761954.4967213,
       "caption": "Chapter 16 - intro",
       "volume": 0,
-      "playback_pos": 11261,
+      "playback_pos": 5714,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -482,21 +482,6 @@
       "label": "Alongside Our Grace",
       "depth_front": false,
       "node_tint": "#2a3a2f"
-    },
-    {
-      "node_id": 0,
-      "node_type": "git",
-      "title": "Git Status",
-      "uuid": "c33cdb027d374e988b2946a6fc7cb535",
-      "x": -906.7134268121938,
-      "y": -851.4838720400014,
-      "width": 372.0218082355583,
-      "height": 312.0,
-      "z_value": -9.807000000000107,
-      "ports_visible": false,
-      "shelf_visible": true,
-      "depth_front": false,
-      "node_tint": ""
     },
     {
       "node_id": 0,
@@ -1032,7 +1017,7 @@
       "source_mtime": 1780535518.0037863,
       "caption": "Alongside his Grace",
       "volume": 0,
-      "playback_pos": 5380,
+      "playback_pos": 3878,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -1286,7 +1271,7 @@
       "source_mtime": 1780535518.051318,
       "caption": "The Majestic",
       "volume": 0,
-      "playback_pos": 1416,
+      "playback_pos": 1041,
       "looping": true,
       "muted": false,
       "show_border": true,
@@ -1864,7 +1849,7 @@
   ],
   "viewport": {
     "camera_x": -276.48660548533286,
-    "camera_y": -1205.562919505899,
+    "camera_y": -480.46324335563963,
     "camera_zoom": 0.5902636755712842
   },
   "ui_migrations": [
@@ -1874,5 +1859,5 @@
     "audio": "C:\\Users\\thebe\\Desktop\\_asset\\Audio\\Grok Samples",
     "video": "C:\\Users\\thebe\\Desktop\\Chapter 16\\Clips"
   },
-  "checksum": "35614447afde2524"
+  "checksum": "4be501c0bcf24f2f"
 }
